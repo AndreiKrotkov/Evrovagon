@@ -201,7 +201,7 @@ $(document).ready(function() {
             "height": "100vh"
         })
         $('body').addClass('menu-mob-open');
-    })
+    });
 
     // Закрытие меню
     $('.js-menu-close').on('click', function () {
@@ -210,14 +210,14 @@ $(document).ready(function() {
             "transform":"rotate(180deg)",
             "width":"0",
             "opacity": "0"
-        })
+        });
         $this.find('.js-field-close-two').css({
             "transform":"rotate(-180deg)",
             "width":"0",
             "opacity": "0"
-        })
+        });
         $('body').removeClass('menu-mob-open');
-    })
+    });
 
 
     $('.js-menu-btn-desc').on('click', function (e) {
@@ -232,7 +232,7 @@ $(document).ready(function() {
             $this.parent().removeClass('menu-desc-open');
             $('.js-menu-categories-desc').hide(300);
         }
-    })
+    });
 
 
     $( ".js-menu-elem__item" ).hover(function(e) {

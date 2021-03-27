@@ -7,20 +7,20 @@
 
 /* Шрифт */
 @font-face {
-    font-family: Ubuntu-M;
+    font-family: Ubuntu-M, sans-serif;
     src: url("../fonts/Ubuntu-M.ttf");
 }
 @font-face {
-    font-family: Ubuntu-L;
+    font-family: Ubuntu-L, sans-serif;
     src: url("../fonts/Ubuntu-L.ttf");
 }
 @font-face {
-    font-family: Ubuntu-N;
+    font-family: Ubuntu-N, sans-serif;
     src: url("../fonts/Ubuntu-R.ttf");
 }
-*{
-    font-family: Ubuntu-N;
-}
+/**{*/
+/*    font-family: Ubuntu-M, sans-serif;*/
+/*}*/
 ul, li {
     margin: 0;
     padding: 0;
@@ -395,7 +395,7 @@ b, strong {
         display: none;
     }
     .wrp__nav-icons .header-call {
-        margin-right: 9px;
+        margin-right: 5px;
     }
     .wrp__nav-icons .header-call a{
         font-size: 18px;
@@ -1237,7 +1237,7 @@ b, strong {
     .card-product {
         position: relative;
         background: #F4EFE6;
-        border-radius: 15px;
+        border-radius: 10px;
         padding: 15px;
         margin-bottom: 10px;
 
@@ -1440,6 +1440,7 @@ b, strong {
     /*}*/
 
     .case {
+        width: 100%;
         background: #FFFFFF;
         border-radius: 10px;
         padding: 10px 0 10px 15px;

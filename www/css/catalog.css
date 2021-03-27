@@ -1,0 +1,385 @@
+@media screen and (min-width: 320px) {
+    /* Общие стили */
+    .content {
+        padding: 2rem 0;
+    }
+
+    /* Хлебные крошки */
+    .breadcrumbs {
+        margin-bottom: 12px;
+    }
+    .breadcrumbs a, span {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        color: #6C6C75;
+    }
+
+    /* Каталог */
+    .catalog {
+        margin-bottom: 4.6rem;
+    }
+    .catalog__title {
+        margin-bottom: 1.5rem;
+    }
+    .catalog__title h1 {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #212121;
+        margin-bottom: 0;
+    }
+
+    /* Навигационное меню */
+    .nav-elem {
+        margin-bottom: 2rem;
+    }
+    .nav-elem__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        height: 65px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        transition: all .3s;
+    }
+    .nav-elem__list:after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        width: 100%;
+        height: 25%;
+        background: rgba(246, 236, 223, 0.6);
+        z-index: 2;
+    }
+    .nav-elem__item a {
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 10px 15px;
+        background: #C07E29;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 20px;
+        color: #FFFFFF;
+        transition: all 0.3s;
+    }
+    .nav-elem__item a:hover {
+        text-decoration: none;
+        background: #D2A060;
+    }
+    .nav-elem__link {
+        max-width: 154px;
+        margin: -30px auto 0 auto;
+        position: relative;
+        background: white;
+        border-radius: 5px;
+        padding: 8px 0;
+        text-align: center;
+        z-index: 5;
+        cursor: pointer;
+    }
+    .nav-elem__link span {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 20px;
+        color: #C07E29;
+    }
+    .nav-elem__link img {
+        transition: all .3s;
+    }
+
+    /* Раскрывашка навигации */
+    .active .nav-elem__link {
+        background: #F4EFE6;
+    }
+    .active .nav-elem__link img {
+        transform: rotate(-180deg);
+    }
+    .active .nav-elem__list {
+        height: auto;
+    }
+    .active .nav-elem__link {
+        margin: 0 auto;
+    }
+    .active .nav-elem__list:after {
+        content: none;
+    }
+
+    /* Доставка */
+    .baner-deliv {
+        position: relative;
+        z-index: 2;
+        background: #F4EFE6;
+        border-radius: 10px;
+        padding: 31px;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    .baner-deliv:after {
+        position: absolute;
+        z-index: 0;
+        content: url("/www/images/catalog/delivery/deliv-icon.png");
+        right: 0;
+        bottom: -7px;
+    }
+    .baner-deliv:before {
+        position: absolute;
+        z-index: -1;
+        content: url("/www/images/catalog/coupon/before.png");
+        right: 25px;
+        bottom: -7px;
+    }
+    .baner-deliv p {
+        font-size: 18px;
+        line-height: 27px;
+        color: #212121;
+        max-width: 140px;
+        margin: 0 0 2px 0;
+    }
+    .baner-deliv span {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 29px;
+        line-height: 33px;
+        color: #C07E29;
+        margin-bottom: 2px;
+    }
+
+    /* Купон на скидку */
+    /* Моб версия */
+    .baner-coupon {
+        position: relative;
+        z-index: 2;
+        background: #F4EFE6;
+        border-radius: 10px;
+        padding: 31px;
+        overflow: hidden;
+        margin-bottom: 3.1rem;
+    }
+    .baner-coupon:after {
+        position: absolute;
+        z-index: 0;
+        content: url("/www/images/catalog/coupon/after-catalog.png");
+        right: 0;
+        bottom: -7px;
+    }
+    .baner-coupon:before {
+        position: absolute;
+        z-index: -1;
+        content: url("/www/images/catalog/coupon/before.png");
+        right: 25px;
+        bottom: -7px;
+    }
+    .baner-coupon p {
+        font-size: 18px;
+        line-height: 27px;
+        color: #212121;
+        max-width: 140px;
+        margin: 0;
+    }
+    .baner-coupon span {
+        font-size: 24px;
+        color: #48A941;
+        font-weight: bold;
+    }
+
+    /* Доставка */
+    .baner-sale {
+        position: relative;
+        z-index: 2;
+        background: #F4EFE6;
+        border-radius: 10px;
+        padding: 40px 31px;
+        overflow: hidden;
+        margin-bottom: 3.1rem;
+    }
+    .baner-sale:after {
+        position: absolute;
+        z-index: 0;
+        content: url("/www/images/catalog/sale/sale-01.png");
+        right: 0;
+        bottom: -7px;
+    }
+    .baner-sale:before {
+        position: absolute;
+        z-index: -1;
+        content: url("/www/images/catalog/coupon/before.png");
+        right: 25px;
+        bottom: -7px;
+    }
+    .baner-sale p {
+        font-size: 16px;
+        line-height: 18px;
+        color: #212121;
+        max-width: 90px;
+    }
+    .baner-sale span {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #48A941;
+    }
+
+
+/*  Рекомендованные статьи  */
+    .recom-articl {
+
+    }
+    .recom-articl__title {
+        margin-bottom: 1rem;
+    }
+    .recom-articl__title h2 {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #212121;
+        margin-bottom: 0;
+    }
+    .recom-articl__item {
+        position: relative;
+        padding-left: 12px;
+    }
+    .recom-articl__item:after {
+        position: absolute;
+        content: '';
+        width: 3px;
+        height: 3px;
+        background: #C07E29;
+        left: 0;
+        top: calc(50% - 1px);
+    }
+    .recom-articl__item a {
+        font-size: 13px;
+        line-height: 15px;
+        color: #C07E29;
+    }
+
+/* Каталог. Карточки товара формируются на основе карточек с главной, модифицируются посредством каскадности стилей */
+    .catalog__card .card-product .content {
+        margin-bottom: 1.4rem;
+        padding: 0;
+    }
+    .catalog__card .card-product .content-descript {
+        flex-basis: 100%;
+    }
+    .catalog__card .card-product .sale {
+        position: static;
+    }
+    .catalog__card .card-product .wrp__case {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .catalog__card .card-product .case {
+        padding: 10px 15px 15px 15px;
+        margin-bottom: 1.5rem;
+    }
+    .catalog__card .card-product .case .case-item {
+        height: 100%;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .catalog__card .card-product .case .wrp__case-item-img {
+        margin-bottom: 20px;
+    }
+    .catalog__card .card-product .case .wrp__case-item-img img {
+        max-width: 100%;
+        max-height: 111px;
+    }
+    .catalog__card .card-product .case .case-item .wrp__case-item-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .catalog__card .card-product .case .case-item .wrp__case-item-content .case-item-title {
+        margin-bottom: 1rem;
+    }
+    .catalog__card .card-product .case .case-item .wrp__case-item-content .case__item-price {
+        margin-bottom: 12px;
+    }
+    .catalog__card .card-product .case .case-item .wrp__case-item-content .case__item-price p {
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 15px;
+        color: #C07E29;
+        margin-bottom: 0;
+    }
+
+    /* Модификации карточек. из 2х - 3х - 6 кейсов*/
+    /* Черз классы catalog-2-case catalog-3-case и т.д */
+
+    .catalog__card .card-product .catalog-2-case .case {
+        flex-basis: 48%;
+    }
+    .catalog__card .card-product .catalog-3-case .case {
+        flex-basis: 32%;
+    }
+
+    /* Доп услуги. Класс add-serv модицифирует картинки */
+    .catalog__card .card-product .catalog-2-case .add-serv {
+        flex-basis: 47.5%;
+        padding: 0;
+    }
+    .catalog__card .card-product .catalog-2-case .add-serv .wrp__case-item-content {
+        padding: 0 15px 15px 15px;
+    }
+    .catalog__card .card-product .catalog-2-case .add-serv .wrp__case-item-img img {
+        margin: 0;
+    }
+
+    /* Этот класс добавляет ширины */
+    .catalog__card .card-product .flex-basic-2-3 {
+        padding: 10px 0 15px 15px;
+        flex-basis: 66% !important;
+    }
+
+    /* и перестраивает блоки  */
+    .catalog__card .card-product .flex-basic-2-3 .case-item {
+        flex-direction: initial;
+    }
+    .catalog__card .card-product .flex-basic-2-3 .case-item .wrp__case-item-content {
+        flex-basis: 40%;
+    }
+    .catalog__card .card-product .flex-basic-2-3 .case-item .wrp__case-item-img {
+        margin-bottom: 0;
+    }
+    .catalog__card .card-product .flex-basic-2-3 .case-item .wrp__case-item-img img {
+        max-height: 176px;
+    }
+
+    /*  3-3  */
+    .catalog__card .card-product .flex-basic-3-3 {
+        padding: 10px 0 15px 15px;
+        flex-basis: 100% !important;
+    }
+    .catalog__card .card-product .flex-basic-3-3 .case-item {
+        flex-direction: initial;
+    }
+    .catalog__card .card-product .flex-basic-3-3 .case-item .wrp__case-item-content {
+        flex-basis: 40%;
+    }
+    .catalog__card .card-product .flex-basic-3-3 .case-item .wrp__case-item-img {
+        margin-bottom: 0;
+    }
+    .catalog__card .card-product .flex-basic-3-3 .case-item .wrp__case-item-img img {
+        max-height: 176px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
