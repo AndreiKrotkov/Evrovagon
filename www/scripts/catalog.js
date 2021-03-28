@@ -19,8 +19,6 @@ $(document).ready(function() {
         $('.saidbar-nav__prev').on('click', function (e) {
             e.preventDefault();
             let $this = $(this);
-            console.log('хуй')
-            // let active = $this.closest('.saidbar-nav__item').hasClass('active-nav-saidbar');
             $('.saidbar-nav__item').removeClass('active-nav-saidbar');
             $this.closest('.saidbar-nav__item').addClass('active-nav-saidbar');
         });
