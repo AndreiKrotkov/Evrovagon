@@ -8,19 +8,19 @@
 /* Шрифт */
 @font-face {
     font-family: Ubuntu-M, sans-serif;
-    src: url("../fonts/Ubuntu-M.ttf");
+    src: url("../fonts/Ubuntu-M.woff");
 }
 @font-face {
     font-family: Ubuntu-L, sans-serif;
-    src: url("../fonts/Ubuntu-L.ttf");
+    src: url("../fonts/Ubuntu-L.woff");
 }
 @font-face {
     font-family: Ubuntu-N, sans-serif;
     src: url("../fonts/Ubuntu-R.ttf");
 }
-/**{*/
-/*    font-family: Ubuntu-M, sans-serif;*/
-/*}*/
+*{
+    font-family: Ubuntu-M, sans-serif;
+}
 ul, li {
     margin: 0;
     padding: 0;
