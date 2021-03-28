@@ -115,7 +115,7 @@
         z-index: 2;
         background: #F4EFE6;
         border-radius: 10px;
-        padding: 31px;
+        padding: 31px 15px;
         overflow: hidden;
         margin-bottom: 10px;
     }
@@ -123,7 +123,7 @@
         position: absolute;
         z-index: 0;
         content: url("/www/images/catalog/delivery/deliv-icon.png");
-        right: 0;
+        right: -30px;
         bottom: -7px;
     }
     .baner-deliv:before {
@@ -187,13 +187,13 @@
         font-weight: bold;
     }
 
-    /* Доставка */
+    /* Скидка */
     .baner-sale {
         position: relative;
         z-index: 2;
         background: #F4EFE6;
         border-radius: 10px;
-        padding: 40px 31px;
+        padding: 34px 15px;
         overflow: hidden;
         margin-bottom: 3.1rem;
     }
@@ -227,9 +227,6 @@
 
 
 /*  Рекомендованные статьи  */
-    .recom-articl {
-
-    }
     .recom-articl__title {
         margin-bottom: 1rem;
     }
@@ -276,7 +273,7 @@
         justify-content: space-between;
     }
     .catalog__card .card-product .case {
-        padding: 10px 15px 15px 15px;
+        padding: 10px 5px 15px 5px;
         margin-bottom: 1.5rem;
     }
     .catalog__card .card-product .case .case-item {
@@ -318,7 +315,7 @@
         flex-basis: 48%;
     }
     .catalog__card .card-product .catalog-3-case .case {
-        flex-basis: 32%;
+        flex-basis: 125px;
     }
 
     /* Доп услуги. Класс add-serv модицифирует картинки */
@@ -327,7 +324,7 @@
         padding: 0;
     }
     .catalog__card .card-product .catalog-2-case .add-serv .wrp__case-item-content {
-        padding: 0 15px 15px 15px;
+        padding: 0 5px 15px 5px;
     }
     .catalog__card .card-product .catalog-2-case .add-serv .wrp__case-item-img img {
         margin: 0;
@@ -335,8 +332,8 @@
 
     /* Этот класс добавляет ширины */
     .catalog__card .card-product .flex-basic-2-3 {
-        padding: 10px 0 15px 15px;
-        flex-basis: 66% !important;
+        padding: 10px 0 10px 10px;
+        flex-basis: 100% !important;
     }
 
     /* и перестраивает блоки  */
@@ -344,7 +341,7 @@
         flex-direction: initial;
     }
     .catalog__card .card-product .flex-basic-2-3 .case-item .wrp__case-item-content {
-        flex-basis: 40%;
+        flex-basis: 48%;
     }
     .catalog__card .card-product .flex-basic-2-3 .case-item .wrp__case-item-img {
         margin-bottom: 0;
@@ -362,7 +359,7 @@
         flex-direction: initial;
     }
     .catalog__card .card-product .flex-basic-3-3 .case-item .wrp__case-item-content {
-        flex-basis: 40%;
+        flex-basis: 48%;
     }
     .catalog__card .card-product .flex-basic-3-3 .case-item .wrp__case-item-img {
         margin-bottom: 0;
@@ -370,16 +367,279 @@
     .catalog__card .card-product .flex-basic-3-3 .case-item .wrp__case-item-img img {
         max-height: 176px;
     }
+}
+
+@media screen and (min-width: 480px) {
+    .catalog__card .card-product .case {
+        padding: 10px 15px 15px 15px;
+    }
+    .catalog__card .card-product .catalog-3-case .case {
+        flex-basis: 32%;
+    }
+    .catalog__card .card-product .flex-basic-2-3 {
+        padding: 10px 0 15px 15px;
+        flex-basis: 66% !important;
+    }
+    .catalog__card .card-product .flex-basic-2-3 .case-item .wrp__case-item-content {
+        flex-basis: 42%;
+    }
+    .catalog__card .card-product .flex-basic-3-3 .case-item .wrp__case-item-content {
+        flex-basis: 42%;
+    }
+    .catalog__card .card-product .catalog-2-case .add-serv .wrp__case-item-content {
+        padding: 0 15px 15px 15px;
+    }
+
+    /* Доставка */
+    .baner-deliv {
+        padding: 31px;
+    }
+    .baner-deliv:after {
+        position: absolute;
+        z-index: 0;
+        content: url("/www/images/catalog/delivery/deliv-icon.png");
+        right: 0;
+        bottom: -7px;
+    }
+    .baner-deliv:before {
+        position: absolute;
+        z-index: -1;
+        content: url("/www/images/catalog/coupon/before.png");
+        right: 25px;
+        bottom: -7px;
+    }
+
+    /* Скидка */
+    .baner-sale {
+        padding: 40px 31px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    /* Общие стили */
+    .content {
+        padding: 2.5rem 0;
+    }
+
+    /* Каталог */
+    .catalog {
+        margin-bottom: 3.75rem;
+    }
+    .catalog__title h1 {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #212121;
+        margin-bottom: 0;
+    }
+
+    /* Купон на скидку */
+    /* Моб версия */
+    .baner-coupon p {
+        line-height: 32px;
+    }
+
+    .wrp__group-saidbar {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.5rem;
+    }
+
+    /* Доставка */
+    .baner-deliv {
+        flex-basis: 48%;
+        margin-bottom: 0;
+    }
+
+    /* Скидка */
+    .baner-sale {
+        flex-basis: 48%;
+        margin-bottom: 0;
+    }
+    .baner-sale:after {
+        right: 25px;
+    }
+    .baner-sale:before {
+        right: 10px;
+    }
+
+    /* Каталог. Карточки товара */
+    .catalog__card .card-product {
+        flex-direction: column;
+    }
+    .catalog__card .card-product .wrp__case {
+        max-width: 100%;
+    }
+    .catalog__card .card-product .case {
+        padding: 10px 15px 20px 15px;
+        margin-bottom: 0;
+    }
+    .catalog__card .card-product .case .case-item .wrp__case-item-content .case-item-title {
+        max-width: 100%;
+    }
+    .catalog__card .card-product .case .wrp__case-item-img {
+        width: 100%;
+    }
+
+    /* Модификации карточек. из 2х - 3х - 6 кейсов*/
+    /* Черз классы catalog-2-case catalog-3-case и т.д */
+    .catalog__card .card-product .catalog-3-case .case {
+        margin-bottom: 1.5rem;
+        flex-basis: 31%;
+    }
+    .catalog__card .card-product .catalog-3-case .case .wrp__case-item-img img {
+        margin: 0 auto;
+    }
+    .catalog__card .card-product .flex-basic-2-3 .case-item .wrp__case-item-img {
+        order: 0;
+    }
+    .catalog__card .card-product .flex-basic-2-3 .case-item .wrp__case-item-content {
+        flex-basis: 50%;
+    }
+    .catalog__card .card-product .flex-basic-3-3 .case-item .wrp__case-item-img {
+        order: 0;
+        text-align: end;
+    }
+    .catalog__card .card-product .flex-basic-3-3 .case-item .wrp__case-item-img img {
+        margin: 0 auto;
+    }
+
+    .catalog__card .card-product .catalog-2-case .add-serv .wrp__case-item-img img {
+        max-height: 150px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .catalog .nav-elem .nav-elem__list {
+        height: auto;
+    }
+    .catalog .nav-elem .nav-elem__list:after {
+        content: none;
+    }
+    .catalog .nav-elem .nav-elem__link {
+        display: none;
+    }
+
+    .catalog .card-product {
+        padding: 20px;
+        flex-direction: initial;
+    }
+    .catalog .card-product:after {
+        content: none;
+    }
+    .catalog .card-product .wrp__case {
+        flex-direction: initial;
+        flex-basis: 60%;
+    }
+    .catalog .card-product .content {
+        flex-basis: 37%;
+    }
+    .catalog .card-product .content .wrp_sale {
+        text-align: start;
+    }
+    .catalog__card .card-product .catalog-2-case .case .case-item .wrp__case-item-img {
+        order: -1;
+    }
+    .catalog__card .card-product .catalog-3-case .case .case-item .wrp__case-item-img {
+        order: -1;
+    }
+    .catalog__card .card-product .catalog-3-case .flex-basic-2-3 .case-item .wrp__case-item-img {
+        order: 0;
+    }
+    .catalog__card .card-product .catalog-3-case .flex-basic-3-3 .case-item .wrp__case-item-img {
+        order: 0;
+    }
+
+    /*  saidbar  */
+    .baner-coupon {
+        padding: 30px 20px;
+        margin-bottom: 2.5rem;
+    }
+    .baner-coupon:after {
+        right: -45px;
+    }
+    .baner-coupon:before {
+        right: -35px;
+    }
+    .wrp__group-saidbar {
+        flex-direction: column;
+    }
+    .baner-deliv {
+        margin-bottom: 20px;
+        padding: 30px 20px;
+    }
+    .baner-deliv:after {
+        right: -60px;
+    }
+    .baner-deliv:before {
+        right: -40px;
+    }
+    .baner-sale {
+        padding: 30px 20px;
+    }
+    .baner-sale:before {
+        right: -30px;
+    }
+    .baner-sale:after {
+        right: -20px;
+    }
+
+/*  saidbar-nav  */
+    .saidbar-nav {
+        padding: 20px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-bottom: 2.5rem;
+    }
+    .saidbar-nav__item {
+        padding: 14px 0;
+    }
+    .saidbar-nav__item:not(:last-child) {
+        border-bottom: 1px solid #EFEFEF;
+    }
+    .saidbar-nav__detals {
+        transition: all 0.3s;
+        display: none;
+        flex-direction: column;
+    }
+    .saidbar-nav__detals a {
+        font-size: 12px;
+        line-height: 189%;
+        color: #212121;
+        transition: all 0.3s;
+    }
+    .saidbar-nav__detals a:hover {
+        text-decoration: none;
+        color: #D2A060;
+    }
+    .saidbar-nav__prev {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    .saidbar-nav__prev span {
+        font-size: 14px;
+        line-height: 16px;
+        color: #212121;
+        font-weight: 600;
+    }
+    .saidbar-nav__prev img {
+        transition: all 0.3s;
+        transform: rotate(-180deg);
+    }
 
 
-
-
-
-
-
-
-
-
-
-
+    /* Активное состояние навигации сайдбара */
+    .active-nav-saidbar .saidbar-nav__prev {
+        padding-bottom: 1rem;
+    }
+    .active-nav-saidbar .saidbar-nav__prev img {
+        transform: rotate(0deg);
+    }
+    .active-nav-saidbar .saidbar-nav__detals {
+        transition: all 0.3s;
+        display: flex;
+    }
 }
