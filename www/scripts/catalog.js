@@ -14,8 +14,8 @@ $(document).ready(function() {
     });
 
 
-    // var isSaidbarNav = $('.js-saidbar-nav').is(':visible');
-    // if (isSaidbarNav) {
+    var isSaidbarNav = $('.js-saidbar-nav').is(':visible');
+    if (isSaidbarNav) {
         $('.saidbar-nav__prev').on('click', function (e) {
             e.preventDefault();
             let $this = $(this);
@@ -23,17 +23,6 @@ $(document).ready(function() {
             // let active = $this.closest('.saidbar-nav__item').hasClass('active-nav-saidbar');
             $('.saidbar-nav__item').removeClass('active-nav-saidbar');
             $this.closest('.saidbar-nav__item').addClass('active-nav-saidbar');
-
-            // $("#selectBackground ul li a").removeClass("active");
-            // $(this).toggleClass("active");
-
-            // if(!active) {
-            //     $this.closest('.saidbar-nav__item').addClass('active');
-            //     $this.find('span').text('Свернуть');
-            // } else {
-            //     $this.closest('.js-nav-elem').removeClass('active');
-            //     $this.find('span').text('Смотреть все');
-            // }
         });
-    // }
+    }
 });
