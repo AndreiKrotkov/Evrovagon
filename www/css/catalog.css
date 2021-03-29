@@ -70,7 +70,7 @@
         display: inline-block;
         margin-right: 10px;
         margin-bottom: 10px;
-        padding: 10px 15px;
+        padding: 10px 5px;
         background: #C07E29;
         border-radius: 5px;
         font-weight: bold;
@@ -455,6 +455,10 @@
         padding: 0 15px 15px 15px;
     }
 
+    .nav-elem__item a {
+        padding: 10px 15px;
+    }
+
     /* Доставка */
     .baner-deliv {
         padding: 31px;
@@ -748,6 +752,7 @@
         cursor: pointer;
     }
     .saidbar-nav__prev span {
+        max-width: 90%;
         font-size: 14px;
         line-height: 16px;
         color: #212121;

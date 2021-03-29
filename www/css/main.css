@@ -188,7 +188,13 @@ b, strong {
 #toTop:hover {
     background: url("../images/arrow-up/arrow-up-hover.svg") center no-repeat;
     background-size: contain;
+
+}@media screen and (max-width: 480px){
+    #toTop {
+        bottom: 20px;
+    }
 }
+
 
 @media screen and (min-width: 320px){
     /* Global style */
