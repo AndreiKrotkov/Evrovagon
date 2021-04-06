@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="www/css/libs/slick.css">
     <link rel="stylesheet" href="www/css/libs/jquery.fancybox.min.css">
     <link rel="stylesheet" href="www/css/catalog.css">
+    <link rel="stylesheet" href="www/css/catalog-category.css">
     <link rel="stylesheet" href="www/css/main.css">
     <script src="www/scripts/libs/Jquery-3.5.1.js"></script>
     <script src="www/scripts/libs/bootstrap.bundle.min.js"></script>
     <script src="www/scripts/libs/jquery.fancybox.min.js"></script>
     <script src="www/scripts/libs/slick.min.js"></script>
+    <script src="www/scripts/catalog.js"></script>
     <script src="www/scripts/scripts.js"></script>
 </head>
 <body>
@@ -464,144 +466,359 @@
                         <div class="breadcrumbs">
                             <a href="/">Главная</a> - <span>Каталог</span>
                         </div>
-                        <div class="catalog">
+                        <div class="catalog catalog-category">
                             <div class="catalog__title">
-                                <h1>Каталог товаров</h1>
+                                <h1>Террасная доска из лиственницы</h1>
                             </div>
+            <!--         Навигация           -->
                             <nav>
-                                <div class="nav-elem js-nav-elem">
-                                    <ul class="nav-elem__list">
-                                        <li class="nav-elem__item">
-                                            <a href="#td">Террасная доска</a>
-                                        </li>
-                                        <li class="nav-elem__item">
-                                            <a href="#p">Планкен</a>
-                                        </li>
-                                        <li class="nav-elem__item">
-                                            <a href="#fd">Фасадная доска</a>
-                                        </li>
-                                        <li class="nav-elem__item">
-                                            <a href="#v">Вагонка</a>
-                                        </li>
-                                        <li class="nav-elem__item">
-                                            <a href="#m">Мебельный щит</a>
-                                        </li>
-                                        <li class="nav-elem__item">
-                                            <a href="#pard">Паркетная доска</a>
-                                        </li>
-                                        <li class="nav-elem__item">
-                                            <a href="#bx">Блок хаус</a>
-                                        </li>
-                                        <li class="nav-elem__item">
-                                            <a href="#ib">Имитация бруса</a>
-                                        </li>
-                                        <li class="nav-elem__item">
-                                            <a href="#edl">Элементы деревянных лестниц</a>
-                                        </li>
-                                        <li class="nav-elem__item">
-                                            <a href="#pd">Половая доска</a>
-                                        </li>
-                                        <li class="nav-elem__item">
-                                            <a href="#pisd">Погонажные изделия из дерева</a>
-                                        </li>
-                                        <li class="nav-elem__item">
-                                            <a href="#dp">Другие пиломатериалы</a>
-                                        </li>
-                                        <li class="nav-elem__item">
-                                            <a href="#vs">Вспомогательные метариалы (крепеж)</a>
-                                        </li>
-                                        <li class="nav-elem__item">
-                                            <a href="#km">Натуральные краски и масла</a>
-                                        </li>
-                                        <li class="nav-elem__item">
-                                            <a href="#dy">Дополнительные услуги</a>
-                                        </li>
-                                    </ul>
-                                    <div class="nav-elem__link js-nav-elem__link">
-                                        <img src="/www/images/catalog/icon/arrow-all.svg" alt="">
-                                        <span>Смотреть все</span>
+                                <div class="wrp__saidbar-nav">
+                                    <div class="catalog__nav-pre js-nav-pre">
+                                        <div class="catalog__nav-pre-burger">
+                                            <img src="/www/images/catalog-category/burger-icon.png" alt="">
+                                        </div>
+                                        <div class="catalog__nav-pre-title">
+                                            <h4>Каталог товаров</h4>
+                                        </div>
+                                        <div class="catalog__nav-pre-arrow">
+                                            <img src="/www/images/catalog/icon/arrow-nav-big.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="saidbar-nav js-saidbar-nav d-xl-none">
+                                        <ul class="saidbar-nav__list">
+                                            <li class="saidbar-nav__item">
+                                                <div class="saidbar-nav__prev js-saidbar-nav">
+                                                    <span>Террасная доска</span>
+                                                    <img src="/www/images/catalog/icon/arrow-nav.svg" alt="">
+                                                </div>
+                                                <div class="saidbar-nav__detals">
+                                                    <a href="">Вагонка из ели и сосны</a>
+                                                    <a href="">Вагонка штиль из ели и сосны</a>
+                                                    <a href="">Вагонка из ангарской сосны</a>
+                                                    <a href="">Вагонка из лиственницы</a>
+                                                    <a href="">Вагонка из кедра</a>
+                                                    <a href="">Вагонка из липы</a>
+                                                    <a href="">Вагонка из осины</a>
+                                                </div>
+                                            </li>
+                                            <li class="saidbar-nav__item">
+                                                <div class="saidbar-nav__prev js-saidbar-nav">
+                                                    <span>Планкен</span>
+                                                    <img src="/www/images/catalog/icon/arrow-nav.svg" alt="">
+                                                </div>
+                                                <div class="saidbar-nav__detals">
+                                                    <a href="">Вагонка из ели и сосны</a>
+                                                    <a href="">Вагонка штиль из ели и сосны</a>
+                                                    <a href="">Вагонка из ангарской сосны</a>
+                                                    <a href="">Вагонка из лиственницы</a>
+                                                    <a href="">Вагонка из кедра</a>
+                                                    <a href="">Вагонка из липы</a>
+                                                    <a href="">Вагонка из осины</a>
+                                                </div>
+                                            </li>
+                                            <li class="saidbar-nav__item">
+                                                <div class="saidbar-nav__prev js-saidbar-nav">
+                                                    <span>Фасадная доска</span>
+                                                    <img src="/www/images/catalog/icon/arrow-nav.svg" alt="">
+                                                </div>
+                                                <div class="saidbar-nav__detals">
+                                                    <a href="">Вагонка из ели и сосны</a>
+                                                    <a href="">Вагонка штиль из ели и сосны</a>
+                                                    <a href="">Вагонка из ангарской сосны</a>
+                                                    <a href="">Вагонка из лиственницы</a>
+                                                    <a href="">Вагонка из кедра</a>
+                                                    <a href="">Вагонка из липы</a>
+                                                    <a href="">Вагонка из осины</a>
+                                                </div>
+                                            </li>
+                                            <li class="saidbar-nav__item">
+                                                <div class="saidbar-nav__prev js-saidbar-nav">
+                                                    <span>Вагонка</span>
+                                                    <img src="/www/images/catalog/icon/arrow-nav.svg" alt="">
+                                                </div>
+                                                <div class="saidbar-nav__detals">
+                                                    <a href="">Вагонка из ели и сосны</a>
+                                                    <a href="">Вагонка штиль из ели и сосны</a>
+                                                    <a href="">Вагонка из ангарской сосны</a>
+                                                    <a href="">Вагонка из лиственницы</a>
+                                                    <a href="">Вагонка из кедра</a>
+                                                    <a href="">Вагонка из липы</a>
+                                                    <a href="">Вагонка из осины</a>
+                                                </div>
+                                            </li>
+                                            <li class="saidbar-nav__item">
+                                                <div class="saidbar-nav__prev js-saidbar-nav">
+                                                    <span>Мебельный щит</span>
+                                                    <img src="/www/images/catalog/icon/arrow-nav.svg" alt="">
+                                                </div>
+                                                <div class="saidbar-nav__detals">
+                                                    <a href="">Вагонка из ели и сосны</a>
+                                                    <a href="">Вагонка штиль из ели и сосны</a>
+                                                    <a href="">Вагонка из ангарской сосны</a>
+                                                    <a href="">Вагонка из лиственницы</a>
+                                                    <a href="">Вагонка из кедра</a>
+                                                    <a href="">Вагонка из липы</a>
+                                                    <a href="">Вагонка из осины</a>
+                                                </div>
+                                            </li>
+                                            <li class="saidbar-nav__item">
+                                                <div class="saidbar-nav__prev js-saidbar-nav">
+                                                    <span>Паркетная доска</span>
+                                                    <img src="/www/images/catalog/icon/arrow-nav.svg" alt="">
+                                                </div>
+                                                <div class="saidbar-nav__detals">
+                                                    <a href="">Вагонка из ели и сосны</a>
+                                                    <a href="">Вагонка штиль из ели и сосны</a>
+                                                    <a href="">Вагонка из ангарской сосны</a>
+                                                    <a href="">Вагонка из лиственницы</a>
+                                                    <a href="">Вагонка из кедра</a>
+                                                    <a href="">Вагонка из липы</a>
+                                                    <a href="">Вагонка из осины</a>
+                                                </div>
+                                            </li>
+                                            <li class="saidbar-nav__item">
+                                                <div class="saidbar-nav__prev js-saidbar-nav">
+                                                    <span>Блок хаус</span>
+                                                    <img src="/www/images/catalog/icon/arrow-nav.svg" alt="">
+                                                </div>
+                                                <div class="saidbar-nav__detals">
+                                                    <a href="">Вагонка из ели и сосны</a>
+                                                    <a href="">Вагонка штиль из ели и сосны</a>
+                                                    <a href="">Вагонка из ангарской сосны</a>
+                                                    <a href="">Вагонка из лиственницы</a>
+                                                    <a href="">Вагонка из кедра</a>
+                                                    <a href="">Вагонка из липы</a>
+                                                    <a href="">Вагонка из осины</a>
+                                                </div>
+                                            </li>
+                                            <li class="saidbar-nav__item">
+                                                <div class="saidbar-nav__prev js-saidbar-nav">
+                                                    <span>Имитация бруса</span>
+                                                    <img src="/www/images/catalog/icon/arrow-nav.svg" alt="">
+                                                </div>
+                                                <div class="saidbar-nav__detals">
+                                                    <a href="">Вагонка из ели и сосны</a>
+                                                    <a href="">Вагонка штиль из ели и сосны</a>
+                                                    <a href="">Вагонка из ангарской сосны</a>
+                                                    <a href="">Вагонка из лиственницы</a>
+                                                    <a href="">Вагонка из кедра</a>
+                                                    <a href="">Вагонка из липы</a>
+                                                    <a href="">Вагонка из осины</a>
+                                                </div>
+                                            </li>
+                                            <li class="saidbar-nav__item">
+                                                <div class="saidbar-nav__prev js-saidbar-nav">
+                                                    <span>Элементы деревянных лестниц</span>
+                                                    <img src="/www/images/catalog/icon/arrow-nav.svg" alt="">
+                                                </div>
+                                                <div class="saidbar-nav__detals">
+                                                    <a href="">Вагонка из ели и сосны</a>
+                                                    <a href="">Вагонка штиль из ели и сосны</a>
+                                                    <a href="">Вагонка из ангарской сосны</a>
+                                                    <a href="">Вагонка из лиственницы</a>
+                                                    <a href="">Вагонка из кедра</a>
+                                                    <a href="">Вагонка из липы</a>
+                                                    <a href="">Вагонка из осины</a>
+                                                </div>
+                                            </li>
+                                            <li class="saidbar-nav__item">
+                                                <div class="saidbar-nav__prev js-saidbar-nav">
+                                                    <span>Погонажные изделия из дерева</span>
+                                                    <img src="/www/images/catalog/icon/arrow-nav.svg" alt="">
+                                                </div>
+                                                <div class="saidbar-nav__detals">
+                                                    <a href="">Вагонка из ели и сосны</a>
+                                                    <a href="">Вагонка штиль из ели и сосны</a>
+                                                    <a href="">Вагонка из ангарской сосны</a>
+                                                    <a href="">Вагонка из лиственницы</a>
+                                                    <a href="">Вагонка из кедра</a>
+                                                    <a href="">Вагонка из липы</a>
+                                                    <a href="">Вагонка из осины</a>
+                                                </div>
+                                            </li>
+                                            <li class="saidbar-nav__item">
+                                                <div class="saidbar-nav__prev js-saidbar-nav">
+                                                    <span>Другие пиломатериалы</span>
+                                                    <img src="/www/images/catalog/icon/arrow-nav.svg" alt="">
+                                                </div>
+                                                <div class="saidbar-nav__detals">
+                                                    <a href="">Вагонка из ели и сосны</a>
+                                                    <a href="">Вагонка штиль из ели и сосны</a>
+                                                    <a href="">Вагонка из ангарской сосны</a>
+                                                    <a href="">Вагонка из лиственницы</a>
+                                                    <a href="">Вагонка из кедра</a>
+                                                    <a href="">Вагонка из липы</a>
+                                                    <a href="">Вагонка из осины</a>
+                                                </div>
+                                            </li>
+                                            <li class="saidbar-nav__item">
+                                                <div class="saidbar-nav__prev js-saidbar-nav">
+                                                    <span>Вспомогательные метариалы (крепеж)</span>
+                                                    <img src="/www/images/catalog/icon/arrow-nav.svg" alt="">
+                                                </div>
+                                                <div class="saidbar-nav__detals">
+                                                    <a href="">Вагонка из ели и сосны</a>
+                                                    <a href="">Вагонка штиль из ели и сосны</a>
+                                                    <a href="">Вагонка из ангарской сосны</a>
+                                                    <a href="">Вагонка из лиственницы</a>
+                                                    <a href="">Вагонка из кедра</a>
+                                                    <a href="">Вагонка из липы</a>
+                                                    <a href="">Вагонка из осины</a>
+                                                </div>
+                                            </li>
+                                            <li class="saidbar-nav__item">
+                                                <div class="saidbar-nav__prev js-saidbar-nav">
+                                                    <span>Натуральные краски и масла</span>
+                                                    <img src="/www/images/catalog/icon/arrow-nav.svg" alt="">
+                                                </div>
+                                                <div class="saidbar-nav__detals">
+                                                    <a href="">Вагонка из ели и сосны</a>
+                                                    <a href="">Вагонка штиль из ели и сосны</a>
+                                                    <a href="">Вагонка из ангарской сосны</a>
+                                                    <a href="">Вагонка из лиственницы</a>
+                                                    <a href="">Вагонка из кедра</a>
+                                                    <a href="">Вагонка из липы</a>
+                                                    <a href="">Вагонка из осины</a>
+                                                </div>
+                                            </li>
+                                            <li class="saidbar-nav__item">
+                                                <div class="saidbar-nav__prev js-saidbar-nav">
+                                                    <span>Дополнительные услуги</span>
+                                                    <img src="/www/images/catalog/icon/arrow-nav.svg" alt="">
+                                                </div>
+                                                <div class="saidbar-nav__detals">
+                                                    <a href="">Вагонка из ели и сосны</a>
+                                                    <a href="">Вагонка штиль из ели и сосны</a>
+                                                    <a href="">Вагонка из ангарской сосны</a>
+                                                    <a href="">Вагонка из лиственницы</a>
+                                                    <a href="">Вагонка из кедра</a>
+                                                    <a href="">Вагонка из липы</a>
+                                                    <a href="">Вагонка из осины</a>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </nav>
+
                             <div class="baner-coupon d-xl-none">
                                 <p>Купон на скидку до <span>3 000 ₽</span> в подарок!</p>
                             </div>
 
                             <div class="catalog__card">
-                    <!--  Основная карточка каталога состоящая из 2х кейсов. Класс модифицирующий catalog-2-case  -->
-                                <!--  Террасная доска  -->
-                                <div class="col-12 px-0">
-                                    <section class="card-product" id="td">
-                                        <div class="content">
-                                            <div class="wrp__group-content">
+                                <!--  Основная карточка детального каталога состоящая из 2х кейсов. Может быть скок угодно карточек.
+                                flex-basic у них 50% Класс модифицирующий card-detail  -->
+
+                                <!--  Террасная доска из лиственницы  -->
+                                <div class="card-detail">
+                                    <div class="col-12 px-0">
+                                        <section class="card-product">
+                                            <div class="content">
                                                 <div class="content-title">
                                                     <h2>
-                                                        <a href="">Террасная доска</a>
+                                                        <a href="">Террасная доска
+                                                            «Вельвет»</a>
                                                     </h2>
                                                 </div>
                                                 <div class="wrp__group-mob">
                                                     <div class="content-descript">
                                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aperiam consectetur cumque est,
-                                                            facere laboriosam minima mollitia neque provident quasi quis ratione sit sunt veritatis voluptatem voluptatibus? Nulla, totam!
+                                                            facere laboriosam minima mollitia neque provident
                                                         </p>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="wrp_sale">
-                                                <a href="" class="sale">
-                                                    <img src="./www/images/card-product/sale.svg" alt="sale-icon">
-                                                </a>
-                                            </div>
-                                        </div>
 
-                                        <div class="wrp__case catalog-2-case">
-                                            <div class="case">
-                                                <div class="case-item">
-                                                    <div class="wrp__case-item-img">
-                                                        <img src="/www/images/catalog/card-item/террасная-доска.png" alt="">
-                                                    </div>
-                                                    <div class="wrp__case-item-content">
-                                                        <div class="case-item-title">
-                                                            <h3>Палубная доска</h3>
-                                                        </div>
-                                                        <div class="case-item__content-bottom">
-                                                            <div class="case__item-price">
-                                                                <p>от 256 руб.</p>
+                                                    <div class="wrp__group-desc">
+                                                        <div class="specifications">
+                                                            <div class="specifications-title">
+                                                                <h3>Характеристики</h3>
                                                             </div>
-                                                            <div class="case-item-link">
-                                                                <a href="">Подробнее</a>
+                                                            <div class="specifications-desc">
+                                                                <ul class="specifications-desc__list">
+                                                                    <li class="specifications-desc__item">Цена от 200 р / м2</li>
+                                                                    <li class="specifications-desc__item">Влажность: 8%</li>
+                                                                    <li class="specifications-desc__item">Сорт: А, В, С, Прима, Экстра</li>
+                                                                    <li class="specifications-desc__item">Порода: лиственница</li>
+                                                                </ul>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="case">
-                                                <div class="case-item">
-                                                    <div class="wrp__case-item-img">
-                                                        <img src="/www/images/catalog/card-item/террасная-доска.png" alt="">
-                                                    </div>
-                                                    <div class="wrp__case-item-content">
-                                                        <div class="case-item-title">
-                                                            <h3>Фасадная доска из
-                                                                лиственницы 20х90
-                                                            </h3>
-                                                        </div>
-                                                        <div class="case-item__content-bottom">
-                                                            <div class="case__item-price">
-                                                                <p>от 256 руб.</p>
-                                                            </div>
-                                                            <div class="case-item-link">
-                                                                <a href="">Подробнее</a>
-                                                            </div>
+
+                                                <div class="wrp__group-mob--two">
+                                                    <div class="tip">
+                                                        <div class="wrp_sale">
+                                                            <a href="" class="sale">
+                                                                <img src="./www/images/card-product/sale.svg" alt="sale-icon">
+                                                            </a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </section>
+
+                                            <div class="case">
+                                                <div class="case-item">
+                                                    <div class="wrp__case-item-img">
+                                                        <img src="/www/images/catalog-category/img-01.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section class="card-product">
+                                            <div class="content">
+                                                <div class="content-title">
+                                                    <h2>
+                                                        <a href="">Палубная
+                                                            доска</a>
+                                                    </h2>
+                                                </div>
+                                                <div class="wrp__group-mob">
+                                                    <div class="content-descript">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aperiam consectetur cumque est,
+                                                            facere laboriosam minima mollitia neque provident quasi
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="wrp__group-desc">
+                                                        <div class="specifications">
+                                                            <div class="specifications-title">
+                                                                <h3>Характеристики</h3>
+                                                            </div>
+                                                            <div class="specifications-desc">
+                                                                <ul class="specifications-desc__list">
+                                                                    <li class="specifications-desc__item">Цена от 200 р / м2</li>
+                                                                    <li class="specifications-desc__item">Влажность: 8%</li>
+                                                                    <li class="specifications-desc__item">Сорт: А, В, С, Прима, Экстра</li>
+                                                                    <li class="specifications-desc__item">Порода: лиственница</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="wrp__group-mob--two">
+                                                    <div class="tip">
+                                                        <div class="wrp_sale">
+                                                            <a href="" class="sale">
+                                                                <img src="./www/images/card-product/sale.svg" alt="sale-icon">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="case">
+                                                <div class="case-item">
+                                                    <div class="wrp__case-item-img">
+                                                        <img src="/www/images/catalog-category/img-02.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
                                 </div>
 
-                        <!-- Карточка каталога состоящая из 3х кейсов в ряду. Класс модифицирующий catalog-3-case  У кейсов flex-basic: 32% -->
+
+                                <!-- Карточка каталога состоящая из 3х кейсов в ряду. Класс модифицирующий catalog-3-case  У кейсов flex-basic: 32% -->
                                 <!-- Планкен -->
                                 <div class="col-12 px-0">
                                     <section class="card-product" id="p">
@@ -693,8 +910,8 @@
                                     </section>
                                 </div>
 
-                        <!-- Карточка каталога состоящая из 3х кейсов сверху и 2 кейсами снизу один из которых большой.
-                        Класс модифицирующий catalog-3-case с добавлением доп класса обертки flex-basic-2-3   -->
+                                <!-- Карточка каталога состоящая из 3х кейсов сверху и 2 кейсами снизу один из которых большой.
+                                Класс модифицирующий catalog-3-case с добавлением доп класса обертки flex-basic-2-3   -->
                                 <!-- Фасадная доска -->
                                 <div class="col-12 px-0">
                                     <section class="card-product" id="fd">
@@ -843,8 +1060,8 @@
                                     </section>
                                 </div>
 
-                        <!-- Карточка каталога состоящая из 6х кейсов в ряду.
-                        Класс модифицирующий catalog-3-case  -->
+                                <!-- Карточка каталога состоящая из 6х кейсов в ряду.
+                                Класс модифицирующий catalog-3-case  -->
                                 <!-- Вагонка -->
                                 <div class="col-12 px-0">
                                     <section class="card-product" id="v">
@@ -1007,8 +1224,8 @@
                                     </section>
                                 </div>
 
-                        <!-- Карточка каталога состоящая из 1 кейса в ряду  -->
-                        <!-- Класс модифицирующий flex-basic-3-3-->
+                                <!-- Карточка каталога состоящая из 1 кейса в ряду  -->
+                                <!-- Класс модифицирующий flex-basic-3-3-->
                                 <!-- Мебельный щит -->
                                 <div class="col-12 px-0">
                                     <section class="card-product" id="m">
@@ -1185,8 +1402,8 @@
                                     </section>
                                 </div>
 
-                        <!-- Карточка каталога состоящая из 3х кейсов в ряду сверху. Класс модифицирующий catalog-3-case  У кейсов flex-basic: 32% -->
-                        <!--  Снизу 1 большой блок модифицирующий класс flex-basic-3-3 -->
+                                <!-- Карточка каталога состоящая из 3х кейсов в ряду сверху. Класс модифицирующий catalog-3-case  У кейсов flex-basic: 32% -->
+                                <!--  Снизу 1 большой блок модифицирующий класс flex-basic-3-3 -->
                                 <!-- Имитация бруса -->
                                 <div class="col-12 px-0">
                                     <section class="card-product" id="ib">
@@ -1796,8 +2013,8 @@
                                     </section>
                                 </div>
 
-                        <!-- Карточка каталога состоящая из 3х кейсов сверху и 2 кейсами снизу один из которых большой.
-                        Класс модифицирующий catalog-3-case с добавлением доп класса обертки flex-basic-2-3   -->
+                                <!-- Карточка каталога состоящая из 3х кейсов сверху и 2 кейсами снизу один из которых большой.
+                                Класс модифицирующий catalog-3-case с добавлением доп класса обертки flex-basic-2-3   -->
                                 <!-- Вспомогательные метариалы (крепеж) -->
                                 <div class="col-12 px-0">
                                     <section class="card-product" id="vs">
@@ -1938,8 +2155,8 @@
                                     </section>
                                 </div>
 
-                        <!-- Карточка каталога состоящая из 6х кейсов в ряду.
-                        Класс модифицирующий catalog-3-case  -->
+                                <!-- Карточка каталога состоящая из 6х кейсов в ряду.
+                                Класс модифицирующий catalog-3-case  -->
                                 <!-- Натуральные краски и масла -->
                                 <div class="col-12 px-0">
                                     <section class="card-product" id="km">
@@ -2104,7 +2321,7 @@
                                 </div>
 
                                 <!--  Дополнительные услуги  -->
-                        <!--  Модифицируются с помощью класса add-serv  -->
+                                <!--  Модифицируются с помощью класса add-serv  -->
                                 <div class="col-12 px-0">
                                     <section class="card-product" id="dy">
                                         <div class="content">
@@ -2191,21 +2408,21 @@
                         <nav class="d-none d-xl-block">
                             <div class="saidbar-nav js-saidbar-nav">
                                 <ul class="saidbar-nav__list">
-                                  <li class="saidbar-nav__item">
-                                      <div class="saidbar-nav__prev js-saidbar-nav">
-                                          <span>Террасная доска</span>
-                                          <img src="/www/images/catalog/icon/arrow-nav.svg" alt="">
-                                      </div>
-                                      <div class="saidbar-nav__detals">
-                                          <a href="">Вагонка из ели и сосны</a>
-                                          <a href="">Вагонка штиль из ели и сосны</a>
-                                          <a href="">Вагонка из ангарской сосны</a>
-                                          <a href="">Вагонка из лиственницы</a>
-                                          <a href="">Вагонка из кедра</a>
-                                          <a href="">Вагонка из липы</a>
-                                          <a href="">Вагонка из осины</a>
-                                      </div>
-                                  </li>
+                                    <li class="saidbar-nav__item">
+                                        <div class="saidbar-nav__prev js-saidbar-nav">
+                                            <span>Террасная доска</span>
+                                            <img src="/www/images/catalog/icon/arrow-nav.svg" alt="">
+                                        </div>
+                                        <div class="saidbar-nav__detals">
+                                            <a href="">Вагонка из ели и сосны</a>
+                                            <a href="">Вагонка штиль из ели и сосны</a>
+                                            <a href="">Вагонка из ангарской сосны</a>
+                                            <a href="">Вагонка из лиственницы</a>
+                                            <a href="">Вагонка из кедра</a>
+                                            <a href="">Вагонка из липы</a>
+                                            <a href="">Вагонка из осины</a>
+                                        </div>
+                                    </li>
                                     <li class="saidbar-nav__item">
                                         <div class="saidbar-nav__prev js-saidbar-nav">
                                             <span>Планкен</span>

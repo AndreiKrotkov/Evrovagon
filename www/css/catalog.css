@@ -423,6 +423,91 @@
     .catalog__card .card-product .flex-basic-3-3 .case-item .wrp__case-item-img img {
         max-height: 176px;
     }
+
+
+    /*  saidbar-nav  */
+    .saidbar-nav {
+        padding: 20px;
+        background: #FFFFFF;
+        -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-bottom: 2.5rem;
+    }
+    .saidbar-nav__item {
+        padding: 14px 0;
+    }
+    .saidbar-nav__item:not(:last-child) {
+        border-bottom: 1px solid #EFEFEF;
+    }
+    .saidbar-nav__detals {
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        display: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .saidbar-nav__detals a {
+        font-size: 12px;
+        line-height: 189%;
+        color: #212121;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .saidbar-nav__detals a:hover {
+        text-decoration: none;
+        color: #D2A060;
+    }
+    .saidbar-nav__prev {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    .saidbar-nav__prev span {
+        max-width: 90%;
+        font-size: 14px;
+        line-height: 16px;
+        color: #212121;
+        font-weight: 600;
+    }
+    .saidbar-nav__prev img {
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+
+
+    /* Активное состояние навигации сайдбара */
+    .active-nav-saidbar .saidbar-nav__prev {
+        padding-bottom: 1rem;
+    }
+    .active-nav-saidbar .saidbar-nav__prev img {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    .active-nav-saidbar .saidbar-nav__detals {
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
 }
 @media screen and (min-width: 359px) {
     .catalog__card .card-product .catalog-3-case .case {
@@ -700,89 +785,5 @@
     }
     .baner-sale:after {
         right: -20px;
-    }
-
-    /*  saidbar-nav  */
-    .saidbar-nav {
-        padding: 20px;
-        background: #FFFFFF;
-        -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
-        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        margin-bottom: 2.5rem;
-    }
-    .saidbar-nav__item {
-        padding: 14px 0;
-    }
-    .saidbar-nav__item:not(:last-child) {
-        border-bottom: 1px solid #EFEFEF;
-    }
-    .saidbar-nav__detals {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        display: none;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-    .saidbar-nav__detals a {
-        font-size: 12px;
-        line-height: 189%;
-        color: #212121;
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-    }
-    .saidbar-nav__detals a:hover {
-        text-decoration: none;
-        color: #D2A060;
-    }
-    .saidbar-nav__prev {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        cursor: pointer;
-    }
-    .saidbar-nav__prev span {
-        max-width: 90%;
-        font-size: 14px;
-        line-height: 16px;
-        color: #212121;
-        font-weight: 600;
-    }
-    .saidbar-nav__prev img {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        -webkit-transform: rotate(-180deg);
-        -ms-transform: rotate(-180deg);
-        transform: rotate(-180deg);
-    }
-
-
-    /* Активное состояние навигации сайдбара */
-    .active-nav-saidbar .saidbar-nav__prev {
-        padding-bottom: 1rem;
-    }
-    .active-nav-saidbar .saidbar-nav__prev img {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    .active-nav-saidbar .saidbar-nav__detals {
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
     }
 }
