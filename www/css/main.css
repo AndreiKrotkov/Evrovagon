@@ -31,6 +31,9 @@ li {
 b, strong {
     font-weight: bold;
 }
+.bold {
+    font-weight: 600;
+}
 
 /* popup form */
 .popup-callback {

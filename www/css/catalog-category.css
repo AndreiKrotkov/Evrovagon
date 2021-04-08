@@ -49,6 +49,9 @@
         box-shadow: none;
     }
 
+    .card-detail {
+        margin-bottom: 3rem;
+    }
     .card-detail .card-product {
         display: flex;
         justify-content: space-between;
@@ -79,6 +82,7 @@
 
     .card-detail .card-product .wrp__case-item-img {
         width: 100%;
+        text-align: right;
     }
     .card-detail .card-product .wrp__case-item-img img {
         margin-top: 0;
@@ -87,4 +91,189 @@
     .card-detail .card-product .wrp__group-mob {
         flex-direction: column;
     }
+
+/*  Популярные продукты  */
+    .popular-products {
+
+    }
+    .popular-products__title {
+        margin-bottom: 1.3rem;
+    }
+    .popular-products__title h2 {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #212121;
+    }
+    .popular-product__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .popular-product__item {
+        background: #F4EFE6;
+        border-radius: 10px;
+        flex-basis: 47%;
+        padding: 12px 10px 20px 10px;
+        margin-bottom: 2rem;
+    }
+    .popular-product__image {
+        background: white;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .popular-product__content {
+        padding: 0 10px;
+    }
+    .popular-product__content-title {
+        margin-bottom: 8px;
+    }
+    .popular-product__content-title h3 {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: #212121;
+        margin-bottom: 0;
+    }
+    .popular-product__content-text {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    .popular-product__content-text span {
+        font-size: 12px;
+        line-height: 20px;
+        color: #212121;
+    }
+    .popular-product__content-text span:not(:last-child) {
+        margin-bottom: 4px;
+    }
+
+    .popular-product__content-btn a {
+        display: inline-block;
+        position: relative;
+        padding: 8px 20px 8px 40px;
+        background: #48A941;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+    .popular-product__content-btn a:after {
+        content: url("../images/icons/pop-product-icon-btn.svg");
+        position: absolute;
+        left: 19px;
+        top: 8px;
+    }
+
+/*  Доп информация  */
+    .card-info {
+        margin-bottom: 1.5rem;
+    }
+    .card-info__title {
+        margin-bottom: 1rem;
+    }
+    .card-info__title h2 {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #212121;
+    }
+    .card-info__text p {
+        font-size: 14px;
+        line-height: 20px;
+        color: #212121;
+        margin-bottom: 1rem;
+    }
+    .card-info__text p:last-child {
+        margin-bottom: 0;
+    }
+
+    .card-info__down {
+        margin-bottom: 3.1rem;
+    }
+    .card-info__down-title {
+        margin-bottom: 12px;
+    }
+    .card-info__down-title h3 {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 18px;
+        color: #212121;
+    }
+    .card-info__down-item {
+        margin-bottom: 2px;
+    }
+    .card-info__down-item:last-child {
+        margin-bottom: 0;
+    }
+    .card-info__down-item a {
+        display: inline-block;
+        position: relative;
+        padding-left: 12px;
+        font-size: 13px;
+        line-height: 15px;
+        color: #C07E29;
+    }
+    .card-info__down-item a:after {
+        position: absolute;
+        content: '';
+        width: 3px;
+        height: 3px;
+        background: #C07E29;
+        left: 0;
+        top: calc(50% - 2px);
+    }
+
+    /*  Таблица  */
+    .card-table {
+        margin-bottom: 3.1rem;
+        overflow-x: auto;
+    }
+    .card-table table thead {
+        background: #C07E29;
+    }
+    .card-table table thead th {
+        width: 76px;
+        position: relative;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 12px;
+    }
+    .card-table table thead th:not(:last-child):after {
+        position: absolute;
+        right: 0;
+        top: 12px;
+        content: '';
+        width: 1px;
+        height: 70%;
+        background: #CD9854;
+    }
+    .card-table table tbody td {
+        width: 76px;
+        position: relative;
+        padding: 12px 0;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #212121;
+    }
+    .card-table table tbody td:not(:last-child):after {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        content: '';
+        width: 1px;
+        height: 60%;
+        background: #DFDBD2;
+    }
+    .card-table table tbody tr:nth-child(odd) {
+        background: #F4EFE6;
+    }
+
 }
