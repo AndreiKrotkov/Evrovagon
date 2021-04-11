@@ -196,7 +196,7 @@
         font-size: 18px;
         line-height: 27px;
         color: #212121;
-        max-width: 140px;
+        max-width: 150px;
         margin: 0;
     }
     .baner-coupon span {
@@ -479,7 +479,7 @@
         font-size: 14px;
         line-height: 16px;
         color: #212121;
-        font-weight: 600;
+        font-weight: 500;
     }
     .saidbar-nav__prev img {
         -webkit-transition: all 0.3s;
@@ -577,13 +577,6 @@
     /* Каталог */
     .catalog {
         margin-bottom: 3.75rem;
-    }
-    .catalog__title h1 {
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 28px;
-        color: #212121;
-        margin-bottom: 0;
     }
 
     /* Купон на скидку */
@@ -744,7 +737,10 @@
     .nav-elem__item a {
         padding: 5px 15px;
     }
-
+    /* Хлебные крошки */
+    .breadcrumbs {
+        margin-bottom: 1.5rem;
+    }
     .breadcrumbs a {
         display: inline-block;
         padding-bottom: 2px;

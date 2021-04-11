@@ -7,16 +7,16 @@
 
 /* Шрифт */
 @font-face {
-    font-family: Ubuntu-M, sans-serif;
-    src: url("../fonts/Ubuntu-M.woff");
+    font-family: 'Ubuntu-M';
+    src: url("../fonts/Ubuntu-M.woff") format('woff');
 }
 @font-face {
-    font-family: Ubuntu-L, sans-serif;
-    src: url("../fonts/Ubuntu-L.woff");
+    font-family: 'Ubuntu-L';
+    src: url("../fonts/Ubuntu-L.woff") format('woff');
 }
 @font-face {
-    font-family: Ubuntu-N, sans-serif;
-    src: url("../fonts/Ubuntu-R.ttf");
+    font-family: 'Ubuntu-N';
+    src: url("../fonts/Ubuntu-R.ttf") format('ttf');
 }
 *{
     font-family: Ubuntu-M, sans-serif;
@@ -1272,7 +1272,7 @@ b, strong {
         font-size: 20px;
         line-height: 23px;
         color: #212121;
-        font-weight: bold;
+        font-weight: 500;
         -webkit-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s;
@@ -1287,6 +1287,7 @@ b, strong {
         margin-right: 23px;
     }
     .content-descript p {
+        font-family: 'Ubuntu-L', sans-serif;
         font-size: 12px;
         line-height: 20px;
         color: #212121;
@@ -1310,13 +1311,14 @@ b, strong {
         font-size: 16px;
         line-height: 18px;
         color: #212121;
-        font-weight: bold;
+        font-weight: 500;
         margin: 0;
     }
     .specifications-desc__list {
         padding-left: 15px;
     }
     .specifications-desc__item {
+        font-family: 'Ubuntu-L', sans-serif;
         position: relative;
         font-size: 12px;
         line-height: 14px;
@@ -1758,7 +1760,7 @@ b, strong {
     }
 
     .materials-title {
-        font-weight: bold;
+        font-weight: 500;
         font-size: 24px;
         line-height: 28px;
         color: #212121;
@@ -1775,15 +1777,15 @@ b, strong {
         justify-content: space-between;
     }
     .materials__item {
-        -ms-flex-preferred-size: 210px;
-        flex-basis: 210px;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     }
     .materials__item-img {
         margin-bottom: 5px;
     }
     .materials__item-img img {
-        max-width: 210px;
-        max-height: 140px;
+        width: 100%;
+        max-height: 200px;
         -o-object-fit: scale-down;
         object-fit: scale-down;
         border-radius: 10px;
@@ -2437,7 +2439,14 @@ b, strong {
         background-size: contain;
     }
 
-    /*   FOOTER   */
+    .materials__item {
+        flex-basis: 48%;
+    }
+    .materials__item-img img {
+        max-height: 148px;
+    }
+
+        /*   FOOTER   */
     .wrp__foot-group, .group__call-social, .wrp__social {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2643,7 +2652,7 @@ b, strong {
         max-width: 80%;
     }
     .case-item-title h3 {
-        font-weight: bold;
+        font-weight: 500;
         font-size: 16px;
         line-height: 18px;
         color: #212121;
@@ -2686,7 +2695,6 @@ b, strong {
         font-size: 30px;
     }
     .materials__item-img img {
-        max-width: 334px;
         max-height: 225px;
     }
 
@@ -3317,7 +3325,6 @@ b, strong {
     }
     .content-title h2 a {
         font-size: 24px;
-        line-height: 28px;
     }
     .content-descript {
         margin-bottom: 40px;
@@ -3456,22 +3463,18 @@ b, strong {
     }
 
     /*  materials  */
-    .wrp__materials-title {
-        margin-bottom: 33px;
-    }
     .materials__item-img {
         margin-bottom: 20px;
     }
     .materials__item-img img {
-        max-width: 350px;
         max-height: 250px;
     }
     .materials__item {
-        -ms-flex-preferred-size: 330px;
-        flex-basis: 330px;
+        -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
     }
     .materials__item-date {
-        margin-bottom: 10px;
+        margin-bottom: 3px;
     }
 
 
