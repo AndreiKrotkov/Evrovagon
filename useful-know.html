@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Статьи</title>
+    <title>Полезно знать</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="www/css/catalog.css">
     <link rel="stylesheet" href="www/css/catalog-category.css">
     <link rel="stylesheet" href="www/css/articles.css">
+    <link rel="stylesheet" href="www/css/useful-know.css">
     <link rel="stylesheet" href="www/css/main.css">
     <script src="www/scripts/libs/Jquery-3.5.1.js"></script>
     <script src="www/scripts/libs/bootstrap.bundle.min.js"></script>
     <script src="www/scripts/libs/jquery.fancybox.min.js"></script>
     <script src="www/scripts/libs/slick.min.js"></script>
-    <script src="www/scripts/catalog.js"></script>
     <script src="www/scripts/scripts.js"></script>
 </head>
 <body>
@@ -458,7 +458,6 @@
 </section>
 <!-- header end -->
 
-
 <!-- Категория каталога в некоторых моментах завязанна на классе - catalog-category -->
 <section class="content">
     <div class="container px-xl-0">
@@ -467,415 +466,344 @@
                 <article>
                     <section class="center">
                         <div class="breadcrumbs">
-                            <a href="/">Главная</a> - <a href="/">Полезно знать</a> - <span>Статьи</span>
+                            <a href="/">Главная</a> - <span>Полезно знать</span>
                         </div>
-                        <div class="catalog catalog-category">
-                            <div class="catalog__title">
-                                <h1>Статьи</h1>
-                            </div>
-                            <!--         Навигация           -->
-                            <nav class="d-xl-none">
-                                <div class="wrp__saidbar-nav">
-                                    <div class="catalog__nav-pre js-nav-pre">
-                                        <div class="catalog__nav-pre-burger">
-                                            <img src="./www/images/catalog-category/burger-icon.png" alt="">
-                                        </div>
-                                        <div class="catalog__nav-pre-title">
-                                            <h4>Каталог товаров</h4>
-                                        </div>
-                                        <div class="catalog__nav-pre-arrow">
-                                            <img src="/www/images/catalog/icon/arrow-nav-big.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="saidbar-nav js-saidbar-nav">
-                                        <ul class="saidbar-nav__list">
-                                            <li class="saidbar-nav__item">
-                                                <div class="saidbar-nav__prev js-saidbar-nav">
-                                                    <span>Террасная доска</span>
-                                                    <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
-                                                </div>
-                                                <div class="saidbar-nav__detals">
-                                                    <a href="">Вагонка из ели и сосны</a>
-                                                    <a href="">Вагонка штиль из ели и сосны</a>
-                                                    <a href="">Вагонка из ангарской сосны</a>
-                                                    <a href="">Вагонка из лиственницы</a>
-                                                    <a href="">Вагонка из кедра</a>
-                                                    <a href="">Вагонка из липы</a>
-                                                    <a href="">Вагонка из осины</a>
-                                                </div>
-                                            </li>
-                                            <li class="saidbar-nav__item">
-                                                <div class="saidbar-nav__prev js-saidbar-nav">
-                                                    <span>Планкен</span>
-                                                    <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
-                                                </div>
-                                                <div class="saidbar-nav__detals">
-                                                    <a href="">Вагонка из ели и сосны</a>
-                                                    <a href="">Вагонка штиль из ели и сосны</a>
-                                                    <a href="">Вагонка из ангарской сосны</a>
-                                                    <a href="">Вагонка из лиственницы</a>
-                                                    <a href="">Вагонка из кедра</a>
-                                                    <a href="">Вагонка из липы</a>
-                                                    <a href="">Вагонка из осины</a>
-                                                </div>
-                                            </li>
-                                            <li class="saidbar-nav__item">
-                                                <div class="saidbar-nav__prev js-saidbar-nav">
-                                                    <span>Фасадная доска</span>
-                                                    <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
-                                                </div>
-                                                <div class="saidbar-nav__detals">
-                                                    <a href="">Вагонка из ели и сосны</a>
-                                                    <a href="">Вагонка штиль из ели и сосны</a>
-                                                    <a href="">Вагонка из ангарской сосны</a>
-                                                    <a href="">Вагонка из лиственницы</a>
-                                                    <a href="">Вагонка из кедра</a>
-                                                    <a href="">Вагонка из липы</a>
-                                                    <a href="">Вагонка из осины</a>
-                                                </div>
-                                            </li>
-                                            <li class="saidbar-nav__item">
-                                                <div class="saidbar-nav__prev js-saidbar-nav">
-                                                    <span>Вагонка</span>
-                                                    <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
-                                                </div>
-                                                <div class="saidbar-nav__detals">
-                                                    <a href="">Вагонка из ели и сосны</a>
-                                                    <a href="">Вагонка штиль из ели и сосны</a>
-                                                    <a href="">Вагонка из ангарской сосны</a>
-                                                    <a href="">Вагонка из лиственницы</a>
-                                                    <a href="">Вагонка из кедра</a>
-                                                    <a href="">Вагонка из липы</a>
-                                                    <a href="">Вагонка из осины</a>
-                                                </div>
-                                            </li>
-                                            <li class="saidbar-nav__item">
-                                                <div class="saidbar-nav__prev js-saidbar-nav">
-                                                    <span>Мебельный щит</span>
-                                                    <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
-                                                </div>
-                                                <div class="saidbar-nav__detals">
-                                                    <a href="">Вагонка из ели и сосны</a>
-                                                    <a href="">Вагонка штиль из ели и сосны</a>
-                                                    <a href="">Вагонка из ангарской сосны</a>
-                                                    <a href="">Вагонка из лиственницы</a>
-                                                    <a href="">Вагонка из кедра</a>
-                                                    <a href="">Вагонка из липы</a>
-                                                    <a href="">Вагонка из осины</a>
-                                                </div>
-                                            </li>
-                                            <li class="saidbar-nav__item">
-                                                <div class="saidbar-nav__prev js-saidbar-nav">
-                                                    <span>Паркетная доска</span>
-                                                    <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
-                                                </div>
-                                                <div class="saidbar-nav__detals">
-                                                    <a href="">Вагонка из ели и сосны</a>
-                                                    <a href="">Вагонка штиль из ели и сосны</a>
-                                                    <a href="">Вагонка из ангарской сосны</a>
-                                                    <a href="">Вагонка из лиственницы</a>
-                                                    <a href="">Вагонка из кедра</a>
-                                                    <a href="">Вагонка из липы</a>
-                                                    <a href="">Вагонка из осины</a>
-                                                </div>
-                                            </li>
-                                            <li class="saidbar-nav__item">
-                                                <div class="saidbar-nav__prev js-saidbar-nav">
-                                                    <span>Блок хаус</span>
-                                                    <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
-                                                </div>
-                                                <div class="saidbar-nav__detals">
-                                                    <a href="">Вагонка из ели и сосны</a>
-                                                    <a href="">Вагонка штиль из ели и сосны</a>
-                                                    <a href="">Вагонка из ангарской сосны</a>
-                                                    <a href="">Вагонка из лиственницы</a>
-                                                    <a href="">Вагонка из кедра</a>
-                                                    <a href="">Вагонка из липы</a>
-                                                    <a href="">Вагонка из осины</a>
-                                                </div>
-                                            </li>
-                                            <li class="saidbar-nav__item">
-                                                <div class="saidbar-nav__prev js-saidbar-nav">
-                                                    <span>Имитация бруса</span>
-                                                    <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
-                                                </div>
-                                                <div class="saidbar-nav__detals">
-                                                    <a href="">Вагонка из ели и сосны</a>
-                                                    <a href="">Вагонка штиль из ели и сосны</a>
-                                                    <a href="">Вагонка из ангарской сосны</a>
-                                                    <a href="">Вагонка из лиственницы</a>
-                                                    <a href="">Вагонка из кедра</a>
-                                                    <a href="">Вагонка из липы</a>
-                                                    <a href="">Вагонка из осины</a>
-                                                </div>
-                                            </li>
-                                            <li class="saidbar-nav__item">
-                                                <div class="saidbar-nav__prev js-saidbar-nav">
-                                                    <span>Элементы деревянных лестниц</span>
-                                                    <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
-                                                </div>
-                                                <div class="saidbar-nav__detals">
-                                                    <a href="">Вагонка из ели и сосны</a>
-                                                    <a href="">Вагонка штиль из ели и сосны</a>
-                                                    <a href="">Вагонка из ангарской сосны</a>
-                                                    <a href="">Вагонка из лиственницы</a>
-                                                    <a href="">Вагонка из кедра</a>
-                                                    <a href="">Вагонка из липы</a>
-                                                    <a href="">Вагонка из осины</a>
-                                                </div>
-                                            </li>
-                                            <li class="saidbar-nav__item">
-                                                <div class="saidbar-nav__prev js-saidbar-nav">
-                                                    <span>Погонажные изделия из дерева</span>
-                                                    <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
-                                                </div>
-                                                <div class="saidbar-nav__detals">
-                                                    <a href="">Вагонка из ели и сосны</a>
-                                                    <a href="">Вагонка штиль из ели и сосны</a>
-                                                    <a href="">Вагонка из ангарской сосны</a>
-                                                    <a href="">Вагонка из лиственницы</a>
-                                                    <a href="">Вагонка из кедра</a>
-                                                    <a href="">Вагонка из липы</a>
-                                                    <a href="">Вагонка из осины</a>
-                                                </div>
-                                            </li>
-                                            <li class="saidbar-nav__item">
-                                                <div class="saidbar-nav__prev js-saidbar-nav">
-                                                    <span>Другие пиломатериалы</span>
-                                                    <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
-                                                </div>
-                                                <div class="saidbar-nav__detals">
-                                                    <a href="">Вагонка из ели и сосны</a>
-                                                    <a href="">Вагонка штиль из ели и сосны</a>
-                                                    <a href="">Вагонка из ангарской сосны</a>
-                                                    <a href="">Вагонка из лиственницы</a>
-                                                    <a href="">Вагонка из кедра</a>
-                                                    <a href="">Вагонка из липы</a>
-                                                    <a href="">Вагонка из осины</a>
-                                                </div>
-                                            </li>
-                                            <li class="saidbar-nav__item">
-                                                <div class="saidbar-nav__prev js-saidbar-nav">
-                                                    <span>Вспомогательные метариалы (крепеж)</span>
-                                                    <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
-                                                </div>
-                                                <div class="saidbar-nav__detals">
-                                                    <a href="">Вагонка из ели и сосны</a>
-                                                    <a href="">Вагонка штиль из ели и сосны</a>
-                                                    <a href="">Вагонка из ангарской сосны</a>
-                                                    <a href="">Вагонка из лиственницы</a>
-                                                    <a href="">Вагонка из кедра</a>
-                                                    <a href="">Вагонка из липы</a>
-                                                    <a href="">Вагонка из осины</a>
-                                                </div>
-                                            </li>
-                                            <li class="saidbar-nav__item">
-                                                <div class="saidbar-nav__prev js-saidbar-nav">
-                                                    <span>Натуральные краски и масла</span>
-                                                    <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
-                                                </div>
-                                                <div class="saidbar-nav__detals">
-                                                    <a href="">Вагонка из ели и сосны</a>
-                                                    <a href="">Вагонка штиль из ели и сосны</a>
-                                                    <a href="">Вагонка из ангарской сосны</a>
-                                                    <a href="">Вагонка из лиственницы</a>
-                                                    <a href="">Вагонка из кедра</a>
-                                                    <a href="">Вагонка из липы</a>
-                                                    <a href="">Вагонка из осины</a>
-                                                </div>
-                                            </li>
-                                            <li class="saidbar-nav__item">
-                                                <div class="saidbar-nav__prev js-saidbar-nav">
-                                                    <span>Дополнительные услуги</span>
-                                                    <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
-                                                </div>
-                                                <div class="saidbar-nav__detals">
-                                                    <a href="">Вагонка из ели и сосны</a>
-                                                    <a href="">Вагонка штиль из ели и сосны</a>
-                                                    <a href="">Вагонка из ангарской сосны</a>
-                                                    <a href="">Вагонка из лиственницы</a>
-                                                    <a href="">Вагонка из кедра</a>
-                                                    <a href="">Вагонка из липы</a>
-                                                    <a href="">Вагонка из осины</a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </nav>
-
-                            <div class="baner-coupon d-xl-none">
-                                <p>Купон на скидку до <span>3 000 ₽</span> в подарок!</p>
+                        <div class="useful-know">
+                            <div class="useful-know__title">
+                                <h1>Полезно знать</h1>
                             </div>
 
-                            <div class="article">
-                                <ul class="article__list">
-                                    <li class="article__item">
-                                        <div class="article__item-img">
-                                            <img src="./www/images/articles/img-01.png" alt="">
-                                        </div>
-                                        <div class="article__item-content">
-                                            <div class="article__content-title">
-                                                <h3>Все что нужно знать о мебельном щите</h3>
+                            <div class="useful-know__case">
+                                <ul class="useful-know__list">
+                                    <li class="useful-know__item">
+                                        <div class="useful-know__item-title">
+                                            <div class="useful-know__item-title-icon">
+                                                <img src="./www/images/icons/useful-know-icon-01.svg" alt="">
                                             </div>
-                                            <div class="article__content-date">
-                                                <span>2 февраля 2021</span>
-                                            </div>
-                                            <div class="article__content-text">
-                                                <p>Интересуетесь мебельным щитом? В этой статье есть все, что нужно о нем знать перед покупкой...</p>
-                                            </div>
-                                            <div class="article__content-link case-item-link">
-                                                <a href="">Читать подробнее</a>
+                                            <div class="useful-know__item-title-text">
+                                                <h3>Статьи</h3>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="article__item">
-                                        <div class="article__item-img">
-                                            <img src="./www/images/articles/img-01.png" alt="">
+                                        <div class="useful-know__item-article">
+                                            <ul>
+                                                <li>
+                                                    <div class="useful-know__item-article-img">
+                                                        <img src="./www/images/useful-know/img-01.svg" alt="">
+                                                    </div>
+                                                    <div class="useful-know__item-article-content">
+                                                        <div class="useful-know__item-article-title">
+                                                            <p>
+                                                                Все что нужно знать о мебельном
+                                                                щите
+                                                            </p>
+                                                        </div>
+                                                        <div class="useful-know__item-article-date">
+                                                            <span>2 февраля 2021</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="useful-know__item-article-img">
+                                                        <img src="./www/images/useful-know/img-02.png" alt="">
+                                                    </div>
+                                                    <div class="useful-know__item-article-content">
+                                                        <div class="useful-know__item-article-title">
+                                                            <p>
+                                                                5 антисоветов по выбору террасной доски
+                                                                из лиственницы
+                                                            </p>
+                                                        </div>
+                                                        <div class="useful-know__item-article-date">
+                                                            <span>2 февраля 2021</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="useful-know__item-article-img">
+                                                        <img src="./www/images/useful-know/img-03.png" alt="">
+                                                    </div>
+
+                                                    <div class="useful-know__item-article-content">
+                                                        <div class="useful-know__item-article-title">
+                                                            <p>
+                                                                Преимущества и недостатки мебельных
+                                                                щитов
+                                                            </p>
+                                                        </div>
+                                                        <div class="useful-know__item-article-date">
+                                                            <span>2 февраля 2021</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <div class="article__item-content">
-                                            <div class="article__content-title">
-                                                <h3>Все что нужно знать о мебельном щите</h3>
-                                            </div>
-                                            <div class="article__content-date">
-                                                <span>2 февраля 2021</span>
-                                            </div>
-                                            <div class="article__content-text">
-                                                <p>Интересуетесь мебельным щитом? В этой статье есть все, что нужно о нем знать перед покупкой...</p>
-                                            </div>
-                                            <div class="article__content-link case-item-link">
-                                                <a href="">Читать подробнее</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="article__item">
-                                        <div class="article__item-img">
-                                            <img src="./www/images/articles/img-01.png" alt="">
-                                        </div>
-                                        <div class="article__item-content">
-                                            <div class="article__content-title">
-                                                <h3>Все что нужно знать о мебельном щите</h3>
-                                            </div>
-                                            <div class="article__content-date">
-                                                <span>2 февраля 2021</span>
-                                            </div>
-                                            <div class="article__content-text">
-                                                <p>Интересуетесь мебельным щитом? В этой статье есть все, что нужно о нем знать перед покупкой...</p>
-                                            </div>
-                                            <div class="article__content-link case-item-link">
-                                                <a href="">Читать подробнее</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="article__item">
-                                        <div class="article__item-img">
-                                            <img src="./www/images/articles/img-01.png" alt="">
-                                        </div>
-                                        <div class="article__item-content">
-                                            <div class="article__content-title">
-                                                <h3>Все что нужно знать о мебельном щите</h3>
-                                            </div>
-                                            <div class="article__content-date">
-                                                <span>2 февраля 2021</span>
-                                            </div>
-                                            <div class="article__content-text">
-                                                <p>Интересуетесь мебельным щитом? В этой статье есть все, что нужно о нем знать перед покупкой...</p>
-                                            </div>
-                                            <div class="article__content-link case-item-link">
-                                                <a href="">Читать подробнее</a>
-                                            </div>
+                                        <div class="useful-know__content-link case-item-link">
+                                            <a href="">Смотреть все</a>
                                         </div>
                                     </li>
-                                    <li class="article__item">
-                                        <div class="article__item-img">
-                                            <img src="./www/images/articles/img-01.png" alt="">
-                                        </div>
-                                        <div class="article__item-content">
-                                            <div class="article__content-title">
-                                                <h3>Все что нужно знать о мебельном щите</h3>
+                                    <li class="useful-know__item">
+                                        <div class="useful-know__item-title">
+                                            <div class="useful-know__item-title-icon">
+                                                <img src="./www/images/icons/useful-know-icon-02.svg" alt="">
                                             </div>
-                                            <div class="article__content-date">
-                                                <span>2 февраля 2021</span>
-                                            </div>
-                                            <div class="article__content-text">
-                                                <p>Интересуетесь мебельным щитом? В этой статье есть все, что нужно о нем знать перед покупкой...</p>
-                                            </div>
-                                            <div class="article__content-link case-item-link">
-                                                <a href="">Читать подробнее</a>
+                                            <div class="useful-know__item-title-text">
+                                                <h3>ГОСТы, ТУ и инструкции</h3>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="article__item">
-                                        <div class="article__item-img">
-                                            <img src="./www/images/articles/img-01.png" alt="">
+                                        <div class="useful-know__item-article">
+                                            <ul>
+                                                <li>
+                                                    <div class="useful-know__item-article-img">
+                                                        <img src="./www/images/useful-know/img-01.svg" alt="">
+                                                    </div>
+                                                    <div class="useful-know__item-article-content">
+                                                        <div class="useful-know__item-article-title">
+                                                            <p>
+                                                                Все что нужно знать о мебельном
+                                                                щите
+                                                            </p>
+                                                        </div>
+                                                        <div class="useful-know__item-article-date">
+                                                            <span>2 февраля 2021</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="useful-know__item-article-img">
+                                                        <img src="./www/images/useful-know/img-02.png" alt="">
+                                                    </div>
+                                                    <div class="useful-know__item-article-content">
+                                                        <div class="useful-know__item-article-title">
+                                                            <p>
+                                                                5 антисоветов по выбору террасной доски
+                                                                из лиственницы
+                                                            </p>
+                                                        </div>
+                                                        <div class="useful-know__item-article-date">
+                                                            <span>2 февраля 2021</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="useful-know__item-article-img">
+                                                        <img src="./www/images/useful-know/img-03.png" alt="">
+                                                    </div>
+
+                                                    <div class="useful-know__item-article-content">
+                                                        <div class="useful-know__item-article-title">
+                                                            <p>
+                                                                Преимущества и недостатки мебельных
+                                                                щитов
+                                                            </p>
+                                                        </div>
+                                                        <div class="useful-know__item-article-date">
+                                                            <span>2 февраля 2021</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <div class="article__item-content">
-                                            <div class="article__content-title">
-                                                <h3>Все что нужно знать о мебельном щите</h3>
-                                            </div>
-                                            <div class="article__content-date">
-                                                <span>2 февраля 2021</span>
-                                            </div>
-                                            <div class="article__content-text">
-                                                <p>Интересуетесь мебельным щитом? В этой статье есть все, что нужно о нем знать перед покупкой...</p>
-                                            </div>
-                                            <div class="article__content-link case-item-link">
-                                                <a href="">Читать подробнее</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="article__item">
-                                        <div class="article__item-img">
-                                            <img src="./www/images/articles/img-01.png" alt="">
-                                        </div>
-                                        <div class="article__item-content">
-                                            <div class="article__content-title">
-                                                <h3>Все что нужно знать о мебельном щите</h3>
-                                            </div>
-                                            <div class="article__content-date">
-                                                <span>2 февраля 2021</span>
-                                            </div>
-                                            <div class="article__content-text">
-                                                <p>Интересуетесь мебельным щитом? В этой статье есть все, что нужно о нем знать перед покупкой...</p>
-                                            </div>
-                                            <div class="article__content-link case-item-link">
-                                                <a href="">Читать подробнее</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="article__item">
-                                        <div class="article__item-img">
-                                            <img src="./www/images/articles/img-01.png" alt="">
-                                        </div>
-                                        <div class="article__item-content">
-                                            <div class="article__content-title">
-                                                <h3>Все что нужно знать о мебельном щите</h3>
-                                            </div>
-                                            <div class="article__content-date">
-                                                <span>2 февраля 2021</span>
-                                            </div>
-                                            <div class="article__content-text">
-                                                <p>Интересуетесь мебельным щитом? В этой статье есть все, что нужно о нем знать перед покупкой...</p>
-                                            </div>
-                                            <div class="article__content-link case-item-link">
-                                                <a href="">Читать подробнее</a>
-                                            </div>
+                                        <div class="useful-know__content-link case-item-link">
+                                            <a href="">Смотреть все</a>
                                         </div>
                                     </li>
-                                </ul>
-                            </div>
-                            <div class="pagination">
-                                <ul class="pagination__list">
-                                    <li class="pagination__item">
-                                        <img src="./www/images/icons/pagination-arrow-left.svg" alt="">
+                                    <li class="useful-know__item">
+                                        <div class="useful-know__item-title">
+                                            <div class="useful-know__item-title-icon">
+                                                <img src="./www/images/icons/useful-know-icon-03.svg" alt="">
+                                            </div>
+                                            <div class="useful-know__item-title-text">
+                                                <h3>Вопрос-ответ</h3>
+                                            </div>
+                                        </div>
+                                        <div class="useful-know__item-article">
+                                            <ul>
+                                                <li>
+                                                    <div class="useful-know__item-article-img">
+                                                        <img src="./www/images/useful-know/img-01.svg" alt="">
+                                                    </div>
+                                                    <div class="useful-know__item-article-content">
+                                                        <div class="useful-know__item-article-title">
+                                                            <p>
+                                                                Все что нужно знать о мебельном
+                                                                щите
+                                                            </p>
+                                                        </div>
+                                                        <div class="useful-know__item-article-date">
+                                                            <span>2 февраля 2021</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="useful-know__item-article-img">
+                                                        <img src="./www/images/useful-know/img-02.png" alt="">
+                                                    </div>
+                                                    <div class="useful-know__item-article-content">
+                                                        <div class="useful-know__item-article-title">
+                                                            <p>
+                                                                5 антисоветов по выбору террасной доски
+                                                                из лиственницы
+                                                            </p>
+                                                        </div>
+                                                        <div class="useful-know__item-article-date">
+                                                            <span>2 февраля 2021</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="useful-know__item-article-img">
+                                                        <img src="./www/images/useful-know/img-03.png" alt="">
+                                                    </div>
+
+                                                    <div class="useful-know__item-article-content">
+                                                        <div class="useful-know__item-article-title">
+                                                            <p>
+                                                                Преимущества и недостатки мебельных
+                                                                щитов
+                                                            </p>
+                                                        </div>
+                                                        <div class="useful-know__item-article-date">
+                                                            <span>2 февраля 2021</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="useful-know__content-link case-item-link">
+                                            <a href="">Смотреть все</a>
+                                        </div>
                                     </li>
-                                    <li class="pagination__item">1</li>
-                                    <li class="pagination__item active">2</li>
-                                    <li class="pagination__item">3</li>
-                                    <li class="pagination__item">...</li>
-                                    <li class="pagination__item">12</li>
-                                    <li class="pagination__item">
-                                        <img src="./www/images/icons/pagination-arrow-right.svg" alt="">
+                                    <li class="useful-know__item">
+                                        <div class="useful-know__item-title">
+                                            <div class="useful-know__item-title-icon">
+                                                <img src="./www/images/icons/useful-know-icon-04.svg" alt="">
+                                            </div>
+                                            <div class="useful-know__item-title-text">
+                                                <h3>Описание пород древесины</h3>
+                                            </div>
+                                        </div>
+                                        <div class="useful-know__item-article">
+                                            <ul>
+                                                <li>
+                                                    <div class="useful-know__item-article-img">
+                                                        <img src="./www/images/useful-know/img-01.svg" alt="">
+                                                    </div>
+                                                    <div class="useful-know__item-article-content">
+                                                        <div class="useful-know__item-article-title">
+                                                            <p>
+                                                                Все что нужно знать о мебельном
+                                                                щите
+                                                            </p>
+                                                        </div>
+                                                        <div class="useful-know__item-article-date">
+                                                            <span>2 февраля 2021</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="useful-know__item-article-img">
+                                                        <img src="./www/images/useful-know/img-02.png" alt="">
+                                                    </div>
+                                                    <div class="useful-know__item-article-content">
+                                                        <div class="useful-know__item-article-title">
+                                                            <p>
+                                                                5 антисоветов по выбору террасной доски
+                                                                из лиственницы
+                                                            </p>
+                                                        </div>
+                                                        <div class="useful-know__item-article-date">
+                                                            <span>2 февраля 2021</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="useful-know__item-article-img">
+                                                        <img src="./www/images/useful-know/img-03.png" alt="">
+                                                    </div>
+
+                                                    <div class="useful-know__item-article-content">
+                                                        <div class="useful-know__item-article-title">
+                                                            <p>
+                                                                Преимущества и недостатки мебельных
+                                                                щитов
+                                                            </p>
+                                                        </div>
+                                                        <div class="useful-know__item-article-date">
+                                                            <span>2 февраля 2021</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="useful-know__content-link case-item-link">
+                                            <a href="">Смотреть все</a>
+                                        </div>
+                                    </li>
+                                    <li class="useful-know__item">
+                                        <div class="useful-know__item-title">
+                                            <div class="useful-know__item-title-icon">
+                                                <img src="./www/images/icons/useful-know-icon-05.svg" alt="">
+                                            </div>
+                                            <div class="useful-know__item-title-text">
+                                                <h3>Рекомендации по использованию материалов</h3>
+                                            </div>
+                                        </div>
+                                        <div class="useful-know__item-article">
+                                            <ul>
+                                                <li>
+                                                    <div class="useful-know__item-article-img">
+                                                        <img src="./www/images/useful-know/img-01.svg" alt="">
+                                                    </div>
+                                                    <div class="useful-know__item-article-content">
+                                                        <div class="useful-know__item-article-title">
+                                                            <p>
+                                                                Все что нужно знать о мебельном
+                                                                щите
+                                                            </p>
+                                                        </div>
+                                                        <div class="useful-know__item-article-date">
+                                                            <span>2 февраля 2021</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="useful-know__item-article-img">
+                                                        <img src="./www/images/useful-know/img-02.png" alt="">
+                                                    </div>
+                                                    <div class="useful-know__item-article-content">
+                                                        <div class="useful-know__item-article-title">
+                                                            <p>
+                                                                5 антисоветов по выбору террасной доски
+                                                                из лиственницы
+                                                            </p>
+                                                        </div>
+                                                        <div class="useful-know__item-article-date">
+                                                            <span>2 февраля 2021</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="useful-know__item-article-img">
+                                                        <img src="./www/images/useful-know/img-03.png" alt="">
+                                                    </div>
+
+                                                    <div class="useful-know__item-article-content">
+                                                        <div class="useful-know__item-article-title">
+                                                            <p>
+                                                                Преимущества и недостатки мебельных
+                                                                щитов
+                                                            </p>
+                                                        </div>
+                                                        <div class="useful-know__item-article-date">
+                                                            <span>2 февраля 2021</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="useful-know__content-link case-item-link">
+                                            <a href="">Смотреть все</a>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -885,7 +813,7 @@
             </div>
 
 
-            <div class="col-12 col-xl-3 order-xl-1">
+            <div class="col-12 col-xl-3 order-xl-1 d-none d-xl-block">
                 <aside>
                     <section class="saidbar">
                         <div class="baner-coupon d-none d-xl-block">
@@ -1153,6 +1081,8 @@
         </div>
     </div>
 </section>
+
+
 <!--  footer  -->
 <section class="foot">
     <div class="container">

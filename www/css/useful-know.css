@@ -1,0 +1,102 @@
+@media screen and (min-width: 320px) {
+    .useful-know__title {
+        font-family: 'Ubuntu-M', sans-serif;
+        margin-bottom: 1.5rem;
+    }
+    .useful-know__title h1 {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #212121;
+    }
+    .useful-know__item {
+        background: #F4EFE6;
+        border-radius: 10px;
+        padding: 30px 20px 20px 20px;
+    }
+    .useful-know__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .useful-know__item-title {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 1.8rem;
+    }
+    .useful-know__item-title-icon {
+        margin-right: 15px;
+    }
+    .useful-know__item-title-text h3 {
+        font-family: 'Ubuntu-M', sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 18px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        color: #212121;
+        margin-bottom: 0;
+    }
+    .useful-know__item-article ul {
+        margin-bottom: 20px;
+    }
+    .useful-know__item-article li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .useful-know__item-article li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .useful-know__item-article-img {
+        margin-right: 1rem;
+    }
+    .useful-know__item-article-title p {
+        font-size: 14px;
+        line-height: 18px;
+        color: #212121;
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 767px) {
+    .useful-know__title h1 {
+        font-size: 36px;
+        line-height: 41px;
+    }
+    .useful-know__item-title-text span {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .useful-know__item-article li {
+        max-width: 90%;
+    }
+    .useful-know__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width: 1200px) {
+
+    .useful-know__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .useful-know__item {
+        -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+    }
+}

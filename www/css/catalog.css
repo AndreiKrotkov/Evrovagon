@@ -20,6 +20,11 @@
         font-size: 12px;
         line-height: 14px;
         color: #6C6C75;
+        transition: all .3s;
+    }
+    .breadcrumbs a:hover {
+        color: #D2A060;
+        text-decoration: none;
     }
 
     /* Каталог */
@@ -739,7 +744,7 @@
     }
     /* Хлебные крошки */
     .breadcrumbs {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
     .breadcrumbs a {
         display: inline-block;
