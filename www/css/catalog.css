@@ -140,14 +140,14 @@
     .baner-deliv:after {
         position: absolute;
         z-index: 0;
-        content: url("/www/images/catalog/delivery/deliv-icon.png");
+        content: url("../../www/images/catalog/delivery/deliv-icon.png");
         right: -30px;
         bottom: -7px;
     }
     .baner-deliv:before {
         position: absolute;
         z-index: -1;
-        content: url("/www/images/catalog/coupon/before.png");
+        content: url("../../www/images/catalog/coupon/before.png");
         right: 25px;
         bottom: -7px;
     }
@@ -181,14 +181,14 @@
     .baner-coupon:after {
         position: absolute;
         z-index: 0;
-        content: url("/www/images/catalog/coupon/after-catalog.png");
+        content: url("../../www/images/catalog/coupon/after-catalog.png");
         right: 0;
         bottom: -7px;
     }
     .baner-coupon:before {
         position: absolute;
         z-index: -1;
-        content: url("/www/images/catalog/coupon/before.png");
+        content: url("../../www/images/catalog/coupon/before.png");
         right: 25px;
         bottom: -7px;
     }
@@ -218,14 +218,14 @@
     .baner-sale:after {
         position: absolute;
         z-index: 0;
-        content: url("/www/images/catalog/sale/sale-01.png");
+        content: url("../../www/images/catalog/sale/sale-01.png");
         right: 0;
         bottom: -7px;
     }
     .baner-sale:before {
         position: absolute;
         z-index: -1;
-        content: url("/www/images/catalog/coupon/before.png");
+        content: url("../../www/images/catalog/coupon/before.png");
         right: 25px;
         bottom: -7px;
     }
@@ -551,14 +551,14 @@
     .baner-deliv:after {
         position: absolute;
         z-index: 0;
-        content: url("/www/images/catalog/delivery/deliv-icon.png");
+        content: url("../../www/images/catalog/delivery/deliv-icon.png");
         right: 0;
         bottom: -7px;
     }
     .baner-deliv:before {
         position: absolute;
         z-index: -1;
-        content: url("/www/images/catalog/coupon/before.png");
+        content: url("../../www/images/catalog/coupon/before.png");
         right: 25px;
         bottom: -7px;
     }

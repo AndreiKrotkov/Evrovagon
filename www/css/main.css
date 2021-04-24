@@ -191,8 +191,10 @@ b, strong {
 #toTop:hover {
     background: url("../images/arrow-up/arrow-up-hover.svg") center no-repeat;
     background-size: contain;
+}
 
-}@media screen and (max-width: 480px){
+
+@media screen and (max-width: 480px){
     #toTop {
         bottom: 20px;
     }
@@ -221,6 +223,40 @@ b, strong {
         width: 100%;
         max-width: 371px;
     }
+
+    /* Пагинация */
+    .pagination {
+        margin-top: 2rem;
+    }
+
+    .pagination__list {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .pagination__item {
+        width: 30px;
+        height: 30px;
+        font-family: 'Ubuntu-L', sans-serif;
+        text-align: center;
+        padding: 7px 6px;
+        background: #F4EFE6;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6C6C75;
+    }
+    .pagination__item:not(:last-child) {
+        margin-right: 10px;
+    }
+    .pagination__list .active {
+        background: #C07E29;
+        color: white;
+    }
+
+    /* ============= */
 
     /*header*/
     .header {
@@ -1517,8 +1553,9 @@ b, strong {
         margin-bottom: 0;
     }
     .case-item-link a {
+        font-family: Ubuntu-N, sans-serif;
         position: relative;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 14px;
         line-height: 16px;
         color: #48A941;
