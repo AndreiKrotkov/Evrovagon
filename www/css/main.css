@@ -255,6 +255,9 @@ b, strong {
         background: #C07E29;
         color: white;
     }
+    .pagination__list .points {
+        background: transparent;
+    }
 
     /* ============= */
 
