@@ -289,6 +289,14 @@ $(document).ready(function() {
         $this.closest('.wrp__saidbar-nav').toggleClass('active');
     });
 
+    // Универсальная функция по навешиванию класса active на списки типа аккордеон
+    $('.js-item-prev').on('click', function (e) {
+        e.preventDefault();
+        let $this = $(this);
+        $this.closest('.js-item-anchor').toggleClass('active');
+    });
+
+
 
 });
 

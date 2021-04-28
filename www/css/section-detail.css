@@ -1,0 +1,170 @@
+@media screen and (min-width: 320px) {
+    .section-detail__content {
+        background: #F4EFE6;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+    .section-detail__content-title {
+        margin-bottom: 11px;
+    }
+    .section-detail__content-title p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #212121;
+        margin-bottom: 0;
+    }
+    .section-detail__list-ol ol {
+        margin: 0;
+        padding: 0;
+        counter-reset: item;
+    }
+    .section-detail__list-ol ol li {
+        position: relative;
+        padding: 0 0 0 20px;
+    }
+    .section-detail__list-ol ol li:not(:last-child) {
+        margin-bottom: 12px;
+    }
+    .section-detail__list-ol ol li:before {
+        position: absolute;
+        top: -5px;
+        left: 0;
+        content: counter(item) ". ";
+        counter-increment: item;
+        color: #C07E29;
+    }
+
+    /* Активное состояние списка */
+    .active .section-detail__item-content {
+        display: block;
+    }
+    /*  ===========  */
+
+    .section-detail__item-prev {
+        cursor: pointer;
+        margin-bottom: 5px;
+    }
+    .section-detail__item-prev p {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 17px;
+        color: #C07E29;
+        margin-bottom: 0;
+    }
+    .section-detail__item-content {
+        display: none;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+    }
+    .section-detail__item-content ul {
+        padding: 0;
+    }
+    .section-detail__item-content ul li {
+        padding: 0;
+        list-style: initial;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        color: #212121;
+    }
+    .section-detail__item-content ul li:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    .section-detail__item-content ul li:before {
+        content: none;
+    }
+    .section-detail__desc-img {
+        margin-bottom: 20px;
+    }
+    .section-detail__desc-img img {
+        width: 100%;
+    }
+    .section-detail__desc-title {
+        margin-bottom: 1rem;
+    }
+    .section-detail__desc-title h2 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #212121;
+        margin-bottom: 0;
+    }
+    .section-detail__desc-text {
+        margin-bottom: 2rem;
+    }
+    .section-detail__desc-text a {
+        color: #C07E29;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+    }
+    .section-detail__desc-text a:hover {
+        color: #D09E5F;
+        text-decoration: none;
+    }
+    .section-detail__desc-text p {
+        font-family: 'Ubuntu-L', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        color: #212121;
+    }
+    .section-detail__desc-text p:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .section-detail__desc-subtitle {
+        margin-bottom: 10px;
+    }
+    .section-detail__desc-subtitle h3 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+        color: #212121;
+    }
+    .section-detail__desc-ol ol {
+        padding: 0;
+    }
+    .section-detail__desc-ol ol li {
+        font-family: 'Ubuntu-L', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        color: #212121;
+        list-style: decimal;
+        margin-left: 1rem;
+    }
+    .section-detail__desc-ol ol li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .section-detail__desc-ul ul {
+        padding: 0;
+    }
+    .section-detail__desc-ul ul li {
+        list-style: initial;
+        font-family: 'Ubuntu-L', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        color: #212121;
+        margin-left: 1rem;
+    }
+    .section-detail__desc-ul ul li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width: 767px) {
+    .section-detail__content {
+        margin-bottom: 3rem;
+    }
+    .section-detail__desc-img {
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .section-detail__content {
+        padding: 22px 30px;
+    }
+}

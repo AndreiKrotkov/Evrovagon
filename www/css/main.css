@@ -258,8 +258,15 @@ b, strong {
     .pagination__list .points {
         background: transparent;
     }
-
     /* ============= */
+
+    /* line */
+    .line {
+        width: 100%;
+        height: 1px;
+        background: #EFEFEF;
+    }
+    /* ======== */
 
     /*header*/
     .header {
