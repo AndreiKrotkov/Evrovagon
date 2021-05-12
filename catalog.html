@@ -37,10 +37,15 @@
             <div class="contact-item contact__schedule">
                 <span>Режим работы: склад пн-пт 09-18, офис пн - вс 09-20</span>
             </div>
-            <div class="contact-item contact__lk">
-                <span class="contact__lk-after-elem"></span>
-                <span>Личный кабинет</span>
-                <span class="contact__lk--before"></span>
+            <div class="enter-lk js-enter-lk">
+                <div class="contact-item contact__lk js-contact__lk">
+                    <span class="contact__lk-after-elem"></span>
+                    <span>Личный кабинет</span>
+                    <span class="contact__lk--before"></span>
+                </div>
+                <div class="menu-lk js-popup-menu-lk">
+                    <a href="" class="enter js-enter">Вход</a>
+                </div>
             </div>
         </div>
     </div>
@@ -399,7 +404,7 @@
         </div>
     </div>
 
-    <!--  popap формы обратного звонка  -->
+    <!--  popup формы обратного звонка  -->
     <div style="display: none;" id="callBackPopup" class="popup-callback">
         <div class="section-success">
             <div class="reply-img">
@@ -427,12 +432,12 @@
         </div>
 
         <div class="section-form">
-            <div class="popup-callback-title">
+            <div class="popup-title">
                 <p>Оставьте заявку</p>
                 <p>и мы вам перезвоним!</p>
             </div>
             <form action="" type="post" id="formPopup">
-                <div class="popup-callback-form">
+                <div class="popup-form">
                     <div class="wrp_form-name">
                         <input type="text" class="pop-form-inp js-form-inp-name">
                         <div class="pop-form-inp-name js-form-name--focus">Ваше имя</div>
@@ -451,6 +456,54 @@
             </form>
         </div>
 
+    </div>
+
+    <!--  popup входа в лк -->
+    <div class="popup-enter" id="popupEnter">
+        <div class="section-success js-section-success">
+            <div class="reply-img">
+                <img src="./www/images/pop-form/seccess-img.png" alt="success-img">
+            </div>
+            <div class="reply-title">
+                <p>Все окей</p>
+            </div>
+        </div>
+
+        <div class="section-error js-section-error">
+            <div class="error-popup-passw">
+                <div class="reply-img">
+                    <img src="./www/images/icons/error-passw.svg" alt="" >
+                </div>
+                <div class="reply-text">
+                    <p>Неправильный логин или пароль</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-form js-section-form">
+            <div class="popup-title popup-title--enter">
+                <p>Вход на сайт</p>
+            </div>
+            <form action="" type="post">
+                <div class="popup-form">
+                    <div class="wrp__input-form js-input-focus" >
+                        <span>E-mail</span>
+                        <input type="text" maxlength="50" name="popupEmail">
+                    </div>
+                    <div class="wrp__input-form js-input-focus">
+                        <span>Пароль</span>
+                        <input type="password" class="js-pass-check-first" maxlength="50" name="popupPassw">
+                        <img src="./www/images/icons/showPassw.svg" alt="show-passw" class="js-pass-show-first">
+                    </div>
+                    <div class="wrp__form-btn">
+                        <button type="submit" class="pop-form-btn">Войти</button>
+                    </div>
+                    <div class="wrp__form-help">
+                        <a href="">Забыли пароль?</a>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </section>
 <!-- header end -->

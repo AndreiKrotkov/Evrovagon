@@ -1,0 +1,114 @@
+@media screen and (min-width: 320px) {
+    .price-list {
+        margin-bottom: 2rem;
+    }
+    .price-list .card-table {
+        margin-bottom: 0;
+    }
+    .price-list__item {
+        -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 1rem 1.8rem;
+    }
+    .price-list__item:not(:last-child) {
+        margin-bottom: 0.9rem;
+    }
+    .price-list__prev {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    .price-list__prev span {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 18px;
+        color: #212121;
+    }
+
+    .price-list__details {
+        display: none;
+    }
+    .price-list__details li {
+        padding: 11px 0;
+        border-bottom: 1px solid #EFEFEF;
+    }
+    .price-list__details li:first-child {
+        border-top: 1px solid #EFEFEF;
+    }
+    .price-list__details-det {
+        display: none;
+        margin-top: 1rem;
+    }
+    .price-list__details-det tr td a {
+        font-family: Ubuntu-N, sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 13px;
+        color: #C07E29;
+    }
+
+    .price-list__details-det tr td:last-child {
+        width: 190px;
+    }
+    .price-list__details li .price-list__detals-prev {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .price-list__details li .price-list__detals-prev span {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: #212121;
+    }
+    .price-list__details li .price-list__detals-prev .open-plus {
+        width: 15px;
+        height: 15px;
+        margin-right: 8px;
+        background: url("../../www/images/icons/accordeon-plus.svg") center center no-repeat;
+        background-size: contain;
+    }
+
+    .active .price-list__details {
+        margin-top: 1rem;
+        display: block;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    .active .price-list__prev span {
+        padding: 0;
+    }
+    .price-list__details .active .price-list__detals-prev .open-plus {
+        background: url("../../www/images/icons/accordeon-minus.svg") center center no-repeat!important;
+        background-size: contain!important;
+    }
+    .price-list__details .active .price-list__details-det {
+        display: block;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+
+
+
+}
+@media screen and (min-width: 1200px) {
+    .price-list {
+        margin-bottom: 3.75rem;
+    }
+}

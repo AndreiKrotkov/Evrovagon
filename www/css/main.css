@@ -35,112 +35,6 @@ b, strong {
     font-weight: 600;
 }
 
-/* popup form */
-.popup-callback {
-    padding: 51px 35px 41px 35px;
-    width: 100%;
-    max-width: 371px;
-}
-.popup-callback-title {
-    margin-bottom: 22px;
-}
-
-.popup-callback-title p {
-    font-size: 36px;
-    line-height: 32px;
-    text-align: center;
-    color: #212121;
-    margin-bottom: 0;
-}
-.popup-callback-title p:last-child {
-    font-size: 22px;
-    font-family: Ubuntu-L;
-}
-
-.pop-form-inp, .pop-form-btn {
-    display: block;
-    width: 270px;
-    margin: 0 auto;
-    padding: 18px 5px 18px 20px;
-    background: #FFFFFF;
-    border: 1px solid #B6B6BA;
-    border-radius: 4px;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-.pop-form-btn {
-    font-size: 18px;
-    line-height: 18px;
-    text-align: center;
-    color: #FFFFFF;
-    background: #C07E29;
-}
-.pop-form-inp-name {
-    position: absolute;
-    top: 20px;
-    left: 26px;
-    font-family: Ubuntu-L;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 18px;
-    color: #6C6C75;
-    background: white;
-    padding: 0 2px;
-    z-index: 0;
-}
-.pop-form-inp:focus {
-    border: 1px solid #D2A060;
-    outline:none;
-}
-.inp-name-focus {
-    color: #D2A060;
-    font-size: 12px;
-    top: -9px;
-}
-
-.pop-form-btn:hover {
-    color: #FFFFFF;
-    text-decoration: none;
-    background: #D2A060;
-}
-.wrp__form-btn {
-    margin-bottom: 22px;
-}
-.wrp_form-name, .wrp_form-tel {
-    position: relative;
-    margin-bottom: 20px;
-}
-.wrp__pop-form-accept {
-    position: relative;
-    max-width: 230px;
-    padding-left: 25px;
-}
-.wrp__pop-form-accept p {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 16px;
-    color: #6C6C75;
-    margin-bottom: 0;
-}
-.wrp__pop-form-accept p a {
-    font-weight: bold;
-    color: #6C6C75;
-    text-decoration: underline;
-}
-.wrp__pop-form-accept:after {
-    content: url("../images/pop-form/pop-form-check.png");
-    width: 11px;
-    position: absolute;
-    top: -5px;
-    left: 7px;
-}
-
-.pop-form--error {
-    border: 1px solid red;
-}
-
 .section-success, .section-error {
     display: none;
 }
@@ -222,6 +116,184 @@ b, strong {
         padding: 51px 20px 41px 20px;
         width: 100%;
         max-width: 371px;
+    }
+
+    /* popup form */
+    .popup-title {
+        margin-bottom: 22px;
+    }
+    .popup-title p {
+        font-size: 36px;
+        line-height: 32px;
+        text-align: center;
+        color: #212121;
+        margin-bottom: 0;
+    }
+    .popup-title p:last-child {
+        font-size: 22px;
+        font-family: Ubuntu-M, sans-serif;
+    }
+    .pop-form-inp, .pop-form-btn {
+        display: block;
+        width: 270px;
+        margin: 0 auto;
+        padding: 18px 5px 18px 20px;
+        background: #FFFFFF;
+        border: 1px solid #B6B6BA;
+        border-radius: 4px;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .pop-form-btn {
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        background: #C07E29;
+    }
+    .pop-form-inp-name {
+        position: absolute;
+        top: 20px;
+        left: 26px;
+        font-family: Ubuntu-N, sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        color: #6C6C75;
+        background: white;
+        padding: 0 2px;
+        z-index: 0;
+        transition: all 0.3s;
+    }
+    .pop-form-inp:focus {
+        border: 1px solid #D2A060;
+        outline:none;
+    }
+    .inp-name-focus {
+        color: #D2A060;
+        font-size: 12px;
+        top: -9px;
+    }
+    .pop-form-btn:hover {
+        color: #FFFFFF;
+        text-decoration: none;
+        background: #D2A060;
+    }
+    .wrp__form-btn {
+        margin-bottom: 22px;
+    }
+    .wrp_form-name, .wrp_form-tel {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .wrp__pop-form-accept {
+        position: relative;
+        max-width: 230px;
+        padding-left: 25px;
+    }
+    .wrp__pop-form-accept p {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+        color: #6C6C75;
+        margin-bottom: 0;
+    }
+    .wrp__pop-form-accept p a {
+        font-weight: bold;
+        color: #6C6C75;
+        text-decoration: underline;
+    }
+    .wrp__pop-form-accept:after {
+        content: url("../images/pop-form/pop-form-check.png");
+        width: 11px;
+        position: absolute;
+        top: -5px;
+        left: 7px;
+    }
+    .pop-form--error {
+        border: 1px solid red;
+    }
+
+    .wrp__form-help {
+        text-align: center;
+    }
+    .wrp__form-help a {
+        display: inline-block;
+        padding-bottom: 2px;
+        text-decoration: underline;
+        font-size: 18px;
+        line-height: 32px;
+        color: #C07E29;
+    }
+
+    /* Вход в ЛК */
+    .popup-enter {
+        position: relative;
+        display: none;
+        overflow: initial;
+    }
+    .popup-title--enter p {
+        font-size: 36px;
+    }
+    .popup-enter .popup-form .wrp__input-form {
+        margin-bottom: 20px;
+    }
+    .enter-lk {
+        position: relative;
+    }
+    .menu-lk {
+        display: none;
+        width: 100%;
+        position: absolute;
+        bottom: -25px;
+        height: 0;
+        z-index: 2;
+    }
+
+    .menu-lk a {
+        font-size: 13px;
+        line-height: 15px;
+        color: #212121;
+        padding: 5px 0;
+    }
+
+    .error-popup-passw {
+        display: flex;
+        align-items: center;
+        background: #DC401D;
+        box-shadow: 0 4px 10px rgba(220, 64, 29, 0.5);
+        border-radius: 4px;
+        padding: 8px 18px;
+        position: absolute;
+        top: -20px;
+        left: calc(50% - 125px);
+    }
+    .error-popup-passw .reply-img {
+        margin-right: 6px;
+        margin-bottom: 0;
+    }
+    .error-popup-passw .reply-img img {
+        height: 15px;
+    }
+    .error-popup-passw .reply-text {
+        max-width: 100%;
+        margin: 0;
+    }
+    .error-popup-passw .reply-text p {
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 12px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    /* Активное состояние попапа входа в ЛК */
+    .show-enter .menu-lk {
+        display: block;
+        transition: all 0.3s;
+        height: 100%;
     }
 
     /* Пагинация */
@@ -316,7 +388,6 @@ b, strong {
     .wrp__call {
         margin-right: 10px;
     }
-
 
     .header-call a {
         font-size: 16px;
@@ -439,10 +510,6 @@ b, strong {
         top: 10px;
     }
 
-    /* wrp__nav-icons  */
-    /*.wrp__nav-icons {*/
-    /*    padding: 11px 0;*/
-    /*}*/
     .wrp__nav-fixed-group {
         -webkit-box-align: center;
         -ms-flex-align: center;
@@ -511,10 +578,6 @@ b, strong {
     .nav-icons__item:first-child {
         padding-left: 0;
     }
-    /*.nav-icons {*/
-    /*    width: 25px;*/
-    /*    height: 25px;*/
-    /*}*/
     .nav-icons__bask-counter {
         min-width: 32px;
         min-height: 32px;
@@ -541,7 +604,6 @@ b, strong {
         position: fixed;
         top: 0;
         z-index: 100;
-        /*overflow: hidden;*/
     }
     .js-fix-menu-mobile .wrp__nav-fixed-group {
         display: flex;
@@ -557,7 +619,6 @@ b, strong {
     .js-fix-menu-mobile .wrp__nav-fixed-group .header-social img {
         height: 25px;
     }
-
 
     .js-fix-menu-mobile .nav-icons__list .nav-icons img {
         width: 20px;
@@ -2811,6 +2872,12 @@ b, strong {
 }
 
 @media screen and (min-width: 1200px) {
+    /* Global style*/
+    .popup-callback {
+        padding: 51px 35px 41px 35px;
+        width: 100%;
+        max-width: 371px;
+    }
     .header * {
         -webkit-box-sizing: content-box;
         box-sizing: content-box;

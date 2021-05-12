@@ -1,5 +1,13 @@
 $(document).ready(function() {
     var windowWidth = document.documentElement.clientWidth;
+    let popupEnter = $('#popupEnter');
+    let formEnter = $('#popupEnter').find('form');
+    let inputEmailFormEnter = formEnter.find('input[name = popupEmail]');
+    let inputPasswFormEnter = formEnter.find('input[name = popupPassw]');
+    let formSection = popupEnter.find('.js-section-form');
+    let formSuccess = popupEnter.find('.js-section-success');
+    let formError = popupEnter.find('.js-section-error');
+
     window.addEventListener('scroll', function() {
         if(windowWidth >= 1200 && pageYOffset >= 80) {
             $('.head').addClass('js-fix-menu-desc');
@@ -83,13 +91,28 @@ $(document).ready(function() {
     })
 
     // Попап формы обратного вызова
-    $('.js-callback').on('click', function() {
+    $('.js-callback').on('click', function(e) {
+        e.preventDefault();
         $.fancybox.open($('#callBackPopup'), {
             touch: false,
             beforeClose : function () {
                 $('.js-form-inp-name').val('').removeClass('pop-form--error');
                 $('.js-form-inp-tel').val('').removeClass('pop-form--error');
             }
+        });
+    });
+    // Попап формы обратного вызова
+    $('.js-enter').on('click', function(e) {
+        e.preventDefault();
+        $.fancybox.open($('#popupEnter'), {
+            touch: false,
+            afterLoad : function () {
+                let formEnter = $('#popupEnter').find('form');
+                let inputEmailFormEnter = formEnter.find('input[name = popupEmail]');
+
+                $('.js-enter-lk').removeClass('show-enter');
+                inputEmailFormEnter.closest('.js-input-focus').addClass('active');
+            },
         });
     });
 
@@ -113,7 +136,7 @@ $(document).ready(function() {
 
     // Валидация формы в попапе
     function checkValid () {
-        let $form = $('#formPopup');
+        let $form = $('#formCallback');
         let $formSection = $('.section-form');
         let $successForm = $('.section-success');
         let $errorForm = $('.section-error');
@@ -158,6 +181,44 @@ $(document).ready(function() {
             console.log('форма НЕ валидна!!!');
         }
     };
+
+    formEnter.submit(function(e) {
+        e.preventDefault();
+        let $form = $(this);
+        let checkFormValid;
+
+        inputPasswFormEnter.val().length < 6 ? inputPasswFormEnter.closest('.wrp__input-form').addClass('error-inp') : inputPasswFormEnter.closest('.wrp__input-form').removeClass('error-inp');
+        inputEmailFormEnter.val().length < 3 ? inputEmailFormEnter.closest('.wrp__input-form').addClass('error-inp') : inputEmailFormEnter.closest('.wrp__input-form').removeClass('error-inp');
+
+        checkFormValid = $form.find('.wrp__input-form').hasClass('error-inp');
+
+        console.log(checkFormValid);
+        if(!checkFormValid) {
+            let dataFormEnter = $form.serialize();
+            $.ajax({
+                url: "https://jsonplaceholder.typicode.com/posts",
+                method: "POST",
+                dataType: "json",
+                data: {
+                    'dataFormEnter': dataFormEnter,
+                },
+                success: function (res) {
+                    if(res) {
+                        formSection.slideUp(100);
+                        formSuccess.show(200);
+                    } else {
+                        formError.show(200);
+                    }
+                },
+                error: function () {
+                    // formError.show(200);
+                }
+            });
+
+        } else {
+            checkFormValid = false;
+        }
+    });
 
     // Проверка полей на валидность
     $('.js-form-inp-name').on('click input paste change',  function (e) {
@@ -296,7 +357,92 @@ $(document).ready(function() {
         $this.closest('.js-item-anchor').toggleClass('active');
     });
 
+    $('.js-price-list-title').on('click', function (e) {
+        e.preventDefault();
+        let $this = $(this);
+        $this.toggleClass('open-pre-title');
+    });
 
+    // Фокус на инпутах
+    $('.js-input-focus').on('click', function (e) {
+        let $this = $(this);
+        $this.addClass('active')
+    });
+
+    // Валидация формы Регистрации
+    let $formReg = $('#formReg');
+    let $formInputName = $formReg.find('input[name=firstName]');
+    let $formInputPhone = $formReg.find('input[name=phone]');
+    let $formInputEmail = $formReg.find('input[name=email]');
+    let $formInputPasswFirst = $formReg.find('input[name=passwFirst]');
+    let $formInputPasswLast = $formReg.find('input[name=passwLast]');
+
+    $formReg.submit(function(e) {
+        e.preventDefault();
+        let $form = $(this);
+        let checkFormValid;
+
+        $formInputName.val().length < 2 ? $formInputName.closest('.wrp__input-form').addClass('error-inp') : $formInputName.closest('.wrp__input-form').removeClass('error-inp');
+        $formInputPhone.val().length < 16 ? $formInputPhone.closest('.wrp__input-form').addClass('error-inp') : $formInputPhone.closest('.wrp__input-form').removeClass('error-inp');
+        $formInputEmail.val().length < 3 ? $formInputEmail.closest('.wrp__input-form').addClass('error-inp') : $formInputEmail.closest('.wrp__input-form').removeClass('error-inp');
+
+        if ($formInputPasswFirst.val().length < 6 || $formInputPasswLast.val().length < 6
+            && $formInputPasswFirst.val() !== $formInputPasswLast.val()) {
+            $formInputPasswFirst.closest('.wrp__input-form').addClass('error-inp');
+            $formInputPasswLast.closest('.wrp__input-form').addClass('error-inp');
+        } else {
+            $formInputPasswFirst.closest('.wrp__input-form').removeClass('error-inp');
+            $formInputPasswLast.closest('.wrp__input-form').removeClass('error-inp');
+        }
+
+        $formInputPasswLast.on('keyup', function () {
+            if ($(this).val() !== $formInputPasswFirst.val()) {
+                $('.js-error-passw').addClass('show-error-passw');
+            } else {
+                $('.js-error-passw').removeClass('show-error-passw');
+            }
+        });
+
+        checkFormValid = $formReg.find('.wrp__input-form').hasClass('error-inp');
+
+        console.log(checkFormValid);
+        if(!checkFormValid) {
+            $form.serialize()
+        } else {
+            checkFormValid = false;
+        }
+    });
+
+    $('.js-pass-show-first').on('click', function () {
+        let $passwFirst = $('.js-pass-check-first');
+
+        $passwFirst.toggleClass('type-text');
+        if($passwFirst.hasClass('type-text')) {
+            $passwFirst.attr('type','text');
+        } else {
+            $passwFirst.attr('type','password');
+        }
+    });
+
+    $('.js-pass-show-last').on('click', function () {
+        let $passwLast = $('.js-pass-check-last');
+
+        $passwLast.toggleClass('type-text');
+        if($passwLast.hasClass('type-text')) {
+            $passwLast.attr('type','text');
+        } else {
+            $passwLast.attr('type','password');
+        }
+    });
+
+    $('.js-input-mask').on('click', function () {
+        $(this).inputmask("+7 999-999-99-99")
+    });
+
+
+    $('.js-contact__lk').on('click', function () {
+        $(this).closest('.js-enter-lk').toggleClass('show-enter');
+    });
 
 });
 

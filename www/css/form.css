@@ -1,0 +1,246 @@
+@media screen and (min-width: 320px){
+    .form-reg {
+        margin-bottom: 2rem;
+    }
+    .form-reg__title {
+        margin-bottom: 1rem;
+    }
+    .form-reg__title h3 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #212121;
+    }
+
+    .wrp__input-form {
+        position: relative;
+    }
+    .wrp__input-form input {
+        width: 100%;
+        border: 1px solid #B6B6BA;
+        border-radius: 4px;
+        height: 54px;
+        padding-left: 20px;
+        position: relative;
+        z-index: 1;
+    }
+    .wrp__input-form span {
+        font-family: 'Ubuntu-L', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        color: #6C6C75;
+        position: absolute;
+        top: calc(50% - 9px);
+        z-index: 2;
+        left: 20px;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .wrp__input-form img {
+        position: absolute;
+        top: calc(50% - 9px);
+        right: 21px;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    /* Focus на инпуте */
+    .active span {
+        top: -9px;
+        background: white;
+        border-radius: 3px;
+        z-index: 5;
+        padding: 0 5px;
+        font-size: 12px;
+    }
+
+    /* Ошибки на инпуте */
+    .error-inp input {
+        border-color: #DC401D;
+    }
+    .error-inp span {
+        color: #DC401D;
+    }
+
+    .form-reg__input .wrp__input-form:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+    .form-reg-top {
+        border-bottom: 1px solid #EFEFEF;
+        padding-bottom: 2rem;
+        margin-bottom: 1rem;
+    }
+    .form-reg-middle {
+        border-bottom: 1px solid #EFEFEF;
+        padding-bottom: 2rem;
+        margin-bottom: 1rem;
+    }
+    .form-reg-middle .form-reg__title {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .form-reg-tooltip span {
+        font-style: italic;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 24px;
+        color: #6C6C75;
+    }
+    .form-reg-subscr {
+        margin-bottom: 1rem;
+    }
+    .form-reg-subscr input {
+    }
+    .form-reg-subscr label {
+        font-size: 12px;
+        line-height: 16px;
+        color: #6C6C75;
+    }
+    .form-reg-btn {
+
+    }
+    .form-reg-btn button {
+        background: #C07E29;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        border: none;
+        height: 54px;
+        width: 100%;
+    }
+    .form-reg-btn button:focus {
+        outline: none;
+    }
+
+    /* Плашка несовпадения паролей */
+    .error-passw {
+        display: none;
+        height: 30px;
+        background: #DC401D;
+        -webkit-box-shadow: 0 4px 10px rgba(220, 64, 29, 0.5);
+        box-shadow: 0 4px 10px rgba(220, 64, 29, 0.5);
+        border-radius: 4px;
+        padding: 0 1rem;
+    }
+    .error-passw img {
+        height: 15px;
+        margin-right: 3px;
+    }
+    .error-passw span {
+        font-family: 'Ubuntu-M', sans-serif;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 12px;
+        color: #FFFFFF;
+    }
+
+    .show-error-passw {
+        display: block;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+    }
+
+    /* Кастомный чексбокс */
+    .form-reg .custom-checkbox {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    .form-reg .custom-checkbox+label {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .form-reg .custom-checkbox + label::before {
+        content: '';
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+        border: 1px solid #adb5bd;
+        border-radius: 0.25em;
+        margin: 4px 8px 0 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 60% 60%;
+    }
+    .form-reg .custom-checkbox:checked+label::before {
+        border-color: #C07E29;
+        background-color: #C07E29;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    }
+}
+@media screen and (min-width: 767px){
+    .form-reg__input {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .wrp__input-form {
+        -ms-flex-preferred-size: 335px;
+        flex-basis: 335px;
+    }
+    .form-reg__input .wrp__input-form:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+    .form-reg__input .wrp__input-form {
+        margin-bottom: 1rem;
+    }
+    .form-reg-subscr {
+        max-width: 70%;
+    }
+}
+@media screen and (min-width: 1200px){
+    .form-reg {
+        padding: 30px 50px;
+        -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    .wrp__input-form {
+        -ms-flex-preferred-size: 370px;
+        flex-basis: 370px;
+    }
+    .form-reg-bottom {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .form-reg-subscr {
+        max-width: 60%;
+    }
+    .form-reg-btn {
+        width: 270px;
+    }
+}
