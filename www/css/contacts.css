@@ -1,0 +1,11 @@
+@media screen and (min-width: 320px) {
+    .contacts-section {
+        display: flex;
+        flex-wrap: wrap;
+        background: #F4EFE6;
+        border-radius: 10px;
+    }
+    .contacts-section:not(:last-child) {
+        margin-bottom: 3.12rem;
+    }
+}
