@@ -413,6 +413,34 @@ $(document).ready(function() {
         }
     });
 
+
+    // Валидация формы обратной связи
+    let feedBackForm = $('#feedBackForm');
+    let $feedBackInputName = feedBackForm.find('input[name=firstName]');
+    let $feedBackInputPhone = feedBackForm.find('input[name=phone]');
+    let $feedBackInputEmail = feedBackForm.find('input[name=email]');
+    let $feedBackInputTextarea = feedBackForm.find('textarea[name=textarea]');
+
+    feedBackForm.submit(function(e) {
+        e.preventDefault();
+        let $form = $(this);
+        let checkFormValid;
+
+        $feedBackInputName.val().length < 2 ? $feedBackInputName.closest('.wrp__input-form').addClass('error-inp') : $feedBackInputName.closest('.wrp__input-form').removeClass('error-inp');
+        $feedBackInputPhone.val().length < 16 ? $feedBackInputPhone.closest('.wrp__input-form').addClass('error-inp') : $feedBackInputPhone.closest('.wrp__input-form').removeClass('error-inp');
+        $feedBackInputEmail.val().length < 3 ? $feedBackInputEmail.closest('.wrp__input-form').addClass('error-inp') : $feedBackInputEmail.closest('.wrp__input-form').removeClass('error-inp');
+        $feedBackInputTextarea.val().length < 3 ? $feedBackInputTextarea.closest('.wrp__input-form').addClass('error-inp') : $feedBackInputTextarea.closest('.wrp__input-form').removeClass('error-inp');
+
+        checkFormValid = $form.find('.wrp__input-form').hasClass('error-inp');
+
+        console.log(checkFormValid);
+        if(!checkFormValid) {
+            $form.serialize()
+        } else {
+            checkFormValid = false;
+        }
+    });
+
     $('.js-pass-show-first').on('click', function () {
         let $passwFirst = $('.js-pass-check-first');
 

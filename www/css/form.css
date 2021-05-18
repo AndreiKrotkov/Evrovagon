@@ -49,7 +49,7 @@
 
     /* Focus на инпуте */
     .active span {
-        top: -9px;
+        top: -9px!important;
         background: white;
         border-radius: 3px;
         z-index: 5;
@@ -60,6 +60,9 @@
     /* Ошибки на инпуте */
     .error-inp input {
         border-color: #DC401D;
+    }
+    .error-inp textarea {
+        border-color: #DC401D!important;
     }
     .error-inp span {
         color: #DC401D;
