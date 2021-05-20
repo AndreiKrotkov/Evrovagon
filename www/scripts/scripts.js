@@ -64,8 +64,24 @@ $(document).ready(function() {
         nextArrow: "<div class=\"slider-next\"></div>",
         prevArrow: "<div class=\"slider-prev\"></div>",
         infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                  slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                  slidesToScroll: 1
+                }
+            }
+        ]
     });
 
     // смена текста в блоке materials - ссылка на новости
