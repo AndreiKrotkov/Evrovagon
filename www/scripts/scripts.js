@@ -59,6 +59,15 @@ $(document).ready(function() {
         prevArrow: "<div class=\"slider-prev\"></div>",
     });
 
+    $('.js-rel-prod').slick({
+        // adaptiveHeight: true,
+        nextArrow: "<div class=\"slider-next\"></div>",
+        prevArrow: "<div class=\"slider-prev\"></div>",
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1
+    });
+
     // смена текста в блоке materials - ссылка на новости
     if(windowWidth > 767) {
         $('.js-all-news').text('Читать все новости');
@@ -471,6 +480,8 @@ $(document).ready(function() {
     $('.js-contact__lk').on('click', function () {
         $(this).closest('.js-enter-lk').toggleClass('show-enter');
     });
+
+    $('.js-cast-select').selectpicker();
 
 });
 

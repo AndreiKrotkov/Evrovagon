@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Карточка товаров</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="www/css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="www/css/libs/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="www/css/libs/slick.css">
+    <link rel="stylesheet" href="www/css/libs/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="www/css/libs/bootstrap-select.min.css">
+    <link rel="stylesheet" href="www/css/catalog.css">
+    <link rel="stylesheet" href="www/css/catalog-category.css">
+    <link rel="stylesheet" href="www/css/articles.css">
+    <link rel="stylesheet" href="www/css/useful-know.css">
+    <link rel="stylesheet" href="www/css/card.css">
+    <link rel="stylesheet" href="www/css/main.css">
+    <script src="www/scripts/libs/Jquery-3.5.1.js"></script>
+    <script src="www/scripts/libs/bootstrap.bundle.min.js"></script>
+    <script src="www/scripts/libs/jquery.fancybox.min.js"></script>
+    <script src="www/scripts/libs/slick.min.js"></script>
+    <script src="www/scripts/libs/bootstrap-select.min.js"></script>
+    <script src="www/scripts/scripts.js"></script>
+</head>
+<body>
+
+<!-- Кнопка вверх -->
+<div id="toTop"></div>
+<!--  ==========  -->
+
+<!-- header -->
+<section class="head js-head">
+    <div class="header-top js-hidden-desc d-xl-block">
+        <div class="contact">
+            <div class="contact-item contact__address">
+                <a href="https://yandex.ru/maps/-/CCUMB-sLXB" class="contact__address-link" target="_blank">
+                    г. Москва, ул. 2-я Мякининская,
+                    стр. 3, склад №7
+                </a>
+            </div>
+            <div class="contact-item contact__schedule">
+                <span>Режим работы: склад пн-пт 09-18, офис пн - вс 09-20</span>
+            </div>
+            <div class="enter-lk js-enter-lk">
+                <div class="contact-item contact__lk js-contact__lk">
+                    <span class="contact__lk-after-elem"></span>
+                    <span>Личный кабинет</span>
+                    <span class="contact__lk--before"></span>
+                </div>
+                <div class="menu-lk js-popup-menu-lk">
+                    <a href="" class="enter js-enter">Вход</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-xl px-xl-0 js-head-hidden js-hidden-desc">
+        <div class="row">
+            <div class="col-12 px-xl-0 px-md-4">
+                <header class="header">
+                    <div class="header-item wrp__header-logo">
+                        <div class="logo">
+                            <a href="https://eurowagonka.ru/">
+                                <img src="www/images/header/logo1.png" alt="logo">
+                                <span>Лучшие пиломатериалы в Москве</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-item info--desc d-none d-xl-flex">
+                        <div class="info-item info__rating">
+                            <span>4.6 рейтинг магазина</span>
+                        </div>
+                        <div class="info-item info__email">
+                            <a href="mailto:info@eurowagonka.ru" class="info__email-link">
+                                info@eurowagonka.ru
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-item">
+                        <div class="header-group--call-social">
+                            <div class="wrp__call">
+                                <div class="header-call">
+                                    <a href="tel:+74953636225">+7(495) 36-36-225</a>
+                                </div>
+                            </div>
+                            <div class="wrp__header-social">
+                                <div class="header-social header-social--telegram">
+                                    <a href=""><img src="www/images/header/soc-telegram.svg" alt="soc-telegram"></a>
+                                </div>
+                                <div class="header-social header-social--watsap">
+                                    <a href=""><img src="www/images/header/soc-watsap.svg" alt="soc-watsap"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrp__callback d-none d-xl-block">
+                            <span class="callback js-callback">Заказать звонок</span>
+                        </div>
+                    </div>
+
+                    <div class="header-item basket-deck d-none d-xl-flex">
+                        <div class="basket-deck-img"></div>
+                        <div class="basket-deck-content">
+                            <span class="basket-deck-title">Корзина:</span>
+                            <span class="basket-deck-counter">
+                                    <a href="">2 товара на <span class="basket-sum">25799</span> P</a>
+                                </span>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid nav-bg js-fix-menu">
+        <div class="row">
+            <div class="col-12 px-0">
+                <nav class="navig nav-fixed">
+                    <div class="wrp__nav-search-hidden js-nav-hidden">
+                        <div class="nav-search-hidden">
+                            <div class="wrp__menu-btn wrp__menu-fix">
+                                <div class="menu-btn js-menu-btn-mobile d-xl-none">Меню</div>
+                                <div class="menu-btn js-menu-btn-desc d-none d-xl-block">Каталог товаров</div>
+                                <div class="wrp__menu-hamburger">
+                                    <div class="menu-hamburger">
+                                        <div class="band band--top"></div>
+                                        <div class="band band--med band--med--left"></div>
+                                        <div class="band band--med band--med--right"></div>
+                                        <div class="band band--bottm"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrp__nav-icons d-lg-flex d-xl-none">
+                                <div class="wrp__nav-fixed-group">
+                                    <div class="header-call">
+                                        <a href="tel:+74953636225">+7(495) 36-36-225</a>
+                                    </div>
+                                    <div class="wrp__header-social">
+                                        <div class="header-social header-social--telegram">
+                                            <a href=""><img src="www/images/header/soc-telegram.svg" alt="soc-telegram"></a>
+                                        </div>
+                                        <div class="header-social header-social--watsap">
+                                            <a href=""><img src="www/images/header/soc-watsap.svg" alt="soc-watsap"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="nav-icons__list">
+                                    <li class="nav-icons__item item-fix-menu-hiden js-callback">
+                                        <div class="nav-icons">
+                                            <img src="www/images/header/nav-icon-call.svg" alt="icon-call">
+                                        </div>
+                                    </li>
+                                    <li class="nav-icons__item item-fix-menu-hiden">
+                                        <div class="nav-icons nav-icons-deliv">
+                                            <a href=""><img src="www/images/header/nav-icon-deliv.svg" alt="icon-deliv"></a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-icons__item item-fix-after-line">
+                                        <div class="nav-icons nav-icons-search js-search">
+                                            <img src="www/images/header/nav-icon-search.svg" alt="icon-search">
+                                        </div>
+                                    </li>
+                                    <li class="nav-icons__item">
+                                        <div class="nav-icons nav-icons-bask">
+                                            <a href=""><img src="www/images/header/nav-icon-bask.svg" alt="icon-bask"></a>
+                                        </div>
+                                        <div class="nav-icons__bask-counter">2</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-search d-xl-block">
+                        <div class="nav-search__field">
+                            <div class="nav-search__field-text">
+                                <input type="text" id="searchNav" placeholder="Я ИЩУ..." maxlength="70">
+                            </div>
+                            <div class="nav-search__field-close js-fl-close d-xl-none">
+                                <div class="field-cls-line-one js-field-close-one"></div>
+                                <div class="field-cls-line-two js-field-close-two"></div>
+                            </div>
+                            <div class="nav-search__input-after"></div>
+                        </div>
+                    </div>
+                    <div class="nav-result-search">
+                        <div class="result-search">
+                            <div class="wrp__result-search-title">
+                                <div class="result-search-title">
+                                    <h2>Чаще всего ищут:</h2>
+                                </div>
+                            </div>
+                            <div class="result-search-group-recomend">
+                                <ul class="result-search__list">
+                                    <li class="result-search__item">
+                                        <a href="" class="result-search__item-name">Евровагонка</a>
+                                    </li>
+                                    <li class="result-search__item">
+                                        <a href="" class="result-search__item-name">Террасная доска</a>
+                                    </li>
+                                    <li class="result-search__item">
+                                        <a href="" class="result-search__item-name">Планкен</a>
+                                    </li>
+                                    <li class="result-search__item">
+                                        <a href="" class="result-search__item-name">Половая доска</a>
+                                    </li>
+                                    <li class="result-search__item">
+                                        <a href="" class="result-search__item-name">Планкен</a>
+                                    </li>
+                                    <li class="result-search__item">
+                                        <a href="" class="result-search__item-name">Фасадная доскакен и ручная ножовка</a>
+                                    </li>
+                                    <li class="result-search__item">
+                                        <a href="" class="result-search__item-name">Планкен</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="result-search-group-name">
+                                <ul class="result-search-name__list">
+                                    <li class="result-search-name__item">
+                                        <a href="" class="result-search-name__link">
+                                            <span class="result-search-name">Прямой планкен из ели и сосны сорт С 18 x 142 x 6.0</span>
+                                            <span class="result-search-name-type">Прямой x 7 шт.</span>
+                                        </a>
+                                    </li>
+                                    <li class="result-search-name__item">
+                                        <a href="" class="result-search-name__link">
+                                            <span>Планкен прямой из лиственницы сорт А 20 x 140 x 3.5 x 5 шт.</span>
+                                        </a>
+                                    </li>
+                                    <li class="result-search-name__item">
+                                        <a href="" class="result-search-name__link">
+                                            <span class="result-search-name">Прямой планкен из ели з иС 18 x 142 x 6.0</span>
+                                            <span class="result-search-name-type">Прямой x 7 шт.</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrp__menu js-menu">
+                        <div class="menu d-xl-block">
+                            <div class="wrp__menu-content">
+                                <div class="menu-content">
+                                    <div class="header-logo logo--mob d-xl-none">
+                                        <a href="https://eurowagonka.ru/">
+                                            <img src="www/images/header/logo.svg" alt="">
+                                            <span>Лучшие пиломатериалы в Москве</span>
+                                        </a>
+                                    </div>
+                                    <div class="wrp_menu-categories js-menu-categories-desc">
+                                        <div class="menu-categories">
+                                            <ul class="menu-categories__list">
+                                                <li class="menu-categories__item">
+                                                    <a href="" class="menu-categories__link">Вагонка</a>
+                                                </li>
+                                                <li class="menu-categories__item">
+                                                    <a href="" class="menu-categories__link">Евровагонка</a>
+                                                </li>
+                                                <li class="menu-categories__item">
+                                                    <a href="" class="menu-categories__link">Террасная доска из лиственницы</a>
+                                                </li>
+                                                <li class="menu-categories__item">
+                                                    <a href="" class="menu-categories__link">Планкен</a>
+                                                </li>
+                                                <li class="menu-categories__item">
+                                                    <a href="" class="menu-categories__link">Мебельный щит</a>
+                                                </li>
+                                                <li class="menu-categories__item">
+                                                    <a href="" class="menu-categories__link">Паркетная доска</a>
+                                                </li>
+                                                <li class="menu-categories__item">
+                                                    <a href="" class="menu-categories__link">Фасадная доска</a>
+                                                </li>
+                                                <li class="menu-categories__item">
+                                                    <a href="" class="menu-categories__link">Блок хаус</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="menu-categories__list">
+                                                <li class="menu-categories__item">
+                                                    <a href="" class="menu-categories__link">Иммитация бруса</a>
+                                                </li>
+                                                <li class="menu-categories__item">
+                                                    <a href="" class="menu-categories__link">Материалы для лестниц из дерева</a>
+                                                </li>
+                                                <li class="menu-categories__item">
+                                                    <a href="" class="menu-categories__link">Половая доска</a>
+                                                </li>
+                                                <li class="menu-categories__item">
+                                                    <a href="" class="menu-categories__link">Краски и масла</a>
+                                                </li>
+                                                <li class="menu-categories__item">
+                                                    <a href="" class="menu-categories__link">Обработка пиломатериалов</a>
+                                                </li>
+                                                <li class="menu-categories__item">
+                                                    <a href="" class="menu-categories__link">Половая доска</a>
+                                                </li>
+                                                <li class="menu-categories__item">
+                                                    <a href="" class="menu-categories__link">Половая доска</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="wrp__menu-elem">
+                                        <div class="menu-elem">
+                                            <ul class="menu-elem__list">
+                                                <li class="menu-elem__item js-menu-elem__item">
+                                                    О компании
+                                                    <span class="menu-elem__item--before"></span>
+                                                    <ul class="menu-elem-invest__list">
+                                                        <li class="menu-elem-invest__item">
+                                                            <a href="" class="menu-elem-invest__link">Вопрос не вопрос</a>
+                                                        </li>
+                                                        <li class="menu-elem-invest__item">
+                                                            <a href="" class="menu-elem-invest__link">Ответ не ответ, а может не может</a>
+                                                        </li>
+                                                        <li class="menu-elem-invest__item">
+                                                            <a href="" class="menu-elem-invest__link">Гладкая машина</a>
+                                                        </li>
+                                                        <li class="menu-elem-invest__item">
+                                                            <a href="" class="menu-elem-invest__link">Рекомендции по рациональному использованию времени в современном мире</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-elem__item js-menu-elem__item">
+                                                    Прайс лист
+                                                    <span class="menu-elem__item--before"></span>
+                                                    <ul class="menu-elem-invest__list">
+                                                        <li class="menu-elem-invest__item">
+                                                            <a href="" class="menu-elem-invest__link">Вопрос не вопрос</a>
+                                                        </li>
+                                                        <li class="menu-elem-invest__item">
+                                                            <a href="" class="menu-elem-invest__link">Ответ не ответ, а может не может</a>
+                                                        </li>
+                                                        <li class="menu-elem-invest__item">
+                                                            <a href="" class="menu-elem-invest__link">Гладкая машина</a>
+                                                        </li>
+                                                        <li class="menu-elem-invest__item">
+                                                            <a href="" class="menu-elem-invest__link">Рекомендции по рациональному использованию времени в современном мире</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-elem__item js-menu-elem__item">
+                                                    Полезная информация
+                                                    <span class="menu-elem__item--before"></span>
+                                                    <ul class="menu-elem-invest__list">
+                                                        <li class="menu-elem-invest__item">
+                                                            <a href="" class="menu-elem-invest__link">Вопрос не вопрос</a>
+                                                        </li>
+                                                        <li class="menu-elem-invest__item">
+                                                            <a href="" class="menu-elem-invest__link">Ответ не ответ, а может не может</a>
+                                                        </li>
+                                                        <li class="menu-elem-invest__item">
+                                                            <a href="" class="menu-elem-invest__link">Гладкая машина</a>
+                                                        </li>
+                                                        <li class="menu-elem-invest__item">
+                                                            <a href="" class="menu-elem-invest__link">Рекомендции по рациональному использованию времени в современном мире</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-elem__item">
+                                                    <a href="">Контакты</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="wrp__menu-contact d-xl-none">
+                                        <div class="contact">
+                                            <div class="contact-item contact__address">
+                                                <a href="https://yandex.ru/maps/-/CCUMB-sLXB" class="contact__address-link" target="_blank">
+                                                    г. Москва, ул. 2-я Мякининская,
+                                                    стр. 3, склад №7
+                                                </a>
+
+                                            </div>
+                                            <div class="contact-item contact__schedule">
+                                            <span>Режим работы:<br />
+                                                склад пн-пт 09-18, офис пн - вс 09-20</span>
+                                            </div>
+                                            <div class="contact-item contact__lk">
+                                                <span class="contact__lk-after-elem"></span>
+                                                <span>Личный кабинет</span>
+                                                <span class="contact__lk--before"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="info">
+                                            <div class="info-item info__rating">
+                                                <span>4.6 рейтинг магазина</span>
+                                            </div>
+                                            <div class="info-item info__email">
+                                                <a href="mailto:info@eurowagonka.ru" class="info__email-link">
+                                                    info@eurowagonka.ru
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-close js-menu-close d-xl-none">
+                                    <div class="field-cls-line-one js-field-close-one"></div>
+                                    <div class="field-cls-line-two js-field-close-two"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-bg"></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!--  popup формы обратного звонка  -->
+    <div style="display: none;" id="callBackPopup" class="popup-callback">
+        <div class="section-success">
+            <div class="reply-img">
+                <img src="./www/images/pop-form/seccess-img.png" alt="success-img">
+            </div>
+            <div class="reply-title">
+                <p>Заявка отправлена</p>
+            </div>
+
+            <div class="reply-text">
+                <p>Наш специалист свяжется с Вами в ближайшее время</p>
+            </div>
+        </div>
+
+        <div class="section-error">
+            <div class="reply-img">
+                <img src="./www/images/pop-form/seccess-img.png" alt="success-img">
+            </div>
+            <div class="reply-title">
+                <p>При отправке формы возникла ошибка</p>
+            </div>
+            <div class="reply-text">
+                <p>Попробуйте перезагрузить страницу</p>
+            </div>
+        </div>
+
+        <div class="section-form">
+            <div class="popup-title">
+                <p>Оставьте заявку</p>
+                <p>и мы вам перезвоним!</p>
+            </div>
+            <form action="" type="post" id="formPopup">
+                <div class="popup-form">
+                    <div class="wrp_form-name">
+                        <input type="text" class="pop-form-inp js-form-inp-name">
+                        <div class="pop-form-inp-name js-form-name--focus">Ваше имя</div>
+                    </div>
+                    <div class="wrp_form-tel">
+                        <input type="text" class="pop-form-inp js-form-inp-tel">
+                        <div class="pop-form-inp-name js-form-tel--focus">Ваш телефон</div>
+                    </div>
+                    <div class="wrp__form-btn">
+                        <a href="" class="pop-form-btn js-pop-form-btn">Оставить заявку</a>
+                    </div>
+                    <div class="wrp__pop-form-accept">
+                        <p>Оставляя заявку вы соглашаетесь с <a href="">политикой конфиденциальности</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!--  popup входа в лк -->
+    <div class="popup-enter" id="popupEnter">
+        <div class="section-success js-section-success">
+            <div class="reply-img">
+                <img src="./www/images/pop-form/seccess-img.png" alt="success-img">
+            </div>
+            <div class="reply-title">
+                <p>Все окей</p>
+            </div>
+        </div>
+
+        <div class="section-error js-section-error">
+            <div class="error-popup-passw">
+                <div class="reply-img">
+                    <img src="./www/images/icons/error-passw.svg" alt="" >
+                </div>
+                <div class="reply-text">
+                    <p>Неправильный логин или пароль</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-form js-section-form">
+            <div class="popup-title popup-title--enter">
+                <p>Вход на сайт</p>
+            </div>
+            <form action="" type="post">
+                <div class="popup-form">
+                    <div class="wrp__input-form js-input-focus" >
+                        <span>E-mail</span>
+                        <input type="text" maxlength="50" name="popupEmail">
+                    </div>
+                    <div class="wrp__input-form js-input-focus">
+                        <span>Пароль</span>
+                        <input type="password" class="js-pass-check-first" maxlength="50" name="popupPassw">
+                        <img src="./www/images/icons/showPassw.svg" alt="show-passw" class="js-pass-show-first">
+                    </div>
+                    <div class="wrp__form-btn">
+                        <button type="submit" class="pop-form-btn">Войти</button>
+                    </div>
+                    <div class="wrp__form-help">
+                        <a href="">Забыли пароль?</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- header end -->
+
+<!-- Категория каталога в некоторых моментах завязанна на классе - catalog-category -->
+<section class="content">
+    <div class="container px-xl-0">
+        <div class="row">
+            <div class="col-12 col-xl-9 order-xl-2 pr-xl-0">
+                <article>
+                    <section class="center">
+                        <div class="breadcrumbs">
+                            <a href="/">Главная</a> - <a href="/">Карточка товаров</a> - <span>Палубная доска 28*140*3000</span>
+                        </div>
+                        <div class="card__title">
+                            <h1>
+                                Палубная доска 28*140*3000
+                            </h1>
+                        </div>
+                        <div class="card-prd">
+                            <div class="card-section-top">
+                                <div class="card-section-img">
+                                    <img src="./www/images/card-product/case-img-02.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-section-middle">
+                                <div class="card-section__select">
+                                    <div class="wrp__select">
+                                        <span>Сорт</span>
+                                        <div class="cs-select">
+                                            <select name="" class="select js-cast-select">
+                                                <option value="C">C</option>
+                                                <option value="B">B</option>
+                                                <option value="B">A</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="wrp__select">
+                                        <span>Сечение, мм:</span>
+                                        <div class="cs-select">
+                                            <select name="" class="select js-cast-select">
+                                                <option value="20:90">20:90</option>
+                                                <option value="16:100">16:100</option>
+                                                <option value="14:120">14:120</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="wrp__select">
+                                        <span>Длина, м:</span>
+                                        <div class="cs-select">
+                                            <select name="" class="select js-cast-select">
+                                                <option value="3.0">3.0</option>
+                                                <option value="4.0">4.0</option>
+                                                <option value="5.0">5.0</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-section__group">
+                                    <div class="card-discount">
+                                        <div class="card-discount-title">
+                                            <p>
+                                                Хотите дешевле?
+                                            </p>
+                                        </div>
+                                        <div class="card-discount-group">
+                                            <div class="card-discount-link">
+                                                <span>Посмотрите</span>
+                                                <a href="">ДРУГОЙ РАЗМЕР</a>
+                                            </div>
+                                            <div class="card-discount-link">
+                                                <span>Зайдите на страницу</span>
+                                                <a href="">РАСПРОДАЖА</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-delivery">
+                                        <div class="card-delivery-link">
+                                            <img src="./www/images/icons/deliv-msk.svg" alt="">
+                                            <a href="">Доставка по Москве и МО</a>
+                                        </div>
+                                        <div class="card-delivery-link">
+                                            <img src="./www/images/icons/deliv-rf.svg" alt="">
+                                            <a href="">Доставка по РФ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-section-bottom">
+                                <div class="card-section__info">
+                                    <div class="info line">
+                                        <span>Цена за квадратный метр:</span>
+                                        <span>452 руб./м2</span>
+                                    </div>
+                                    <div class="info line">
+                                        <span>Розничная цена за упаковку</span>
+                                        <span>610 руб./упак.</span>
+                                    </div>
+                                </div>
+
+                                <div class="card-section__info info--bottom">
+                                    <div class="desc-info">
+                                        <span>Количество в упаковке:</span>
+                                        <span>5 шт.</span>
+                                    </div>
+                                    <div class="desc-info">
+                                        <span>Укрываемая площадь:</span>
+                                        <span>1.35 м2</span>
+                                    </div>
+                                    <div class="desc-info">
+                                        <span>Объём 1 упаковки:</span>
+                                        <span>0.0270 м3</span>
+                                    </div>
+                                    <div class="desc-info">
+                                        <span>Вес 1 упаковки:</span>
+                                        <span>35 кг.</span>
+                                    </div>
+
+                                    <div class="product-avail">
+                                        <img src="./www/images/icons/prd-avail-icon.svg" alt="">
+                                        <span>Товар в наличии</span>
+                                    </div>
+                                </div>
+                                <div class="wrp__card-section__btn">
+                                    <div class="counter">
+                                        <div class="counter-minus">
+                                            <img src="./www/images/icons/minus.svg" alt="">
+                                        </div>
+                                        <span class="counter-number js-counter-number">1<span>упак.</span></span>
+                                        <div class="counter-plus">
+                                            <img src="./www/images/icons/plus.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="buy-btn">
+                                        <img src="./www/images/icons/buy-icon.svg" alt="">
+                                        <button type="submit">Купить</button>
+                                    </div>
+                                    <div class="buy-one-click">
+                                        <img src="./www/images/icons/buy-one-click-icon.svg" alt="">
+                                        <button type="submit">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="related-products">
+                            <div class="related-products__title">
+                                <h3>Сопутствующие товары</h3>
+                            </div>
+                            <div class="related-products__case">
+                                <ul class="related-products__list js-rel-prod">
+                                    <li class="related-products__li">
+                                        <div class="related-products__slider">
+                                            <div class="related-products__img">
+                                                <img src="./www/images/icons/rel-prd-img.svg" alt="">
+                                            </div>
+                                            <div class="related-products__text">
+                                                <p>Саморез Spax-S 3,5х35
+                                                    (500 шт./уп.)</p>
+                                                <p>
+                                                    Цена <span>1690,00</span> руб./упак.
+                                                </p>
+                                            </div>
+                                            <div class="buy-btn">
+                                                <img src="./www/images/icons/buy-icon.svg" alt="">
+                                                <button type="submit">Купить</button>
+                                            </div>
+                                        </div>
+                                        <div class="related-products__slider">
+                                            <div class="related-products__img">
+                                                <img src="./www/images/icons/rel-prd-img.svg" alt="">
+                                            </div>
+                                            <div class="related-products__text">
+                                                <p>Саморез Spax-S 3,5х35
+                                                    (500 шт./уп.)</p>
+                                                <p>
+                                                    Цена <span>1690,00</span> руб./упак.
+                                                </p>
+                                            </div>
+                                            <div class="buy-btn">
+                                                <img src="./www/images/icons/buy-icon.svg" alt="">
+                                                <button type="submit">Купить</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="related-products__li">
+                                        <div class="related-products__slider">
+                                            <div class="related-products__img">
+                                                <img src="./www/images/icons/rel-prd-img.svg" alt="">
+                                            </div>
+                                            <div class="related-products__text">
+                                                <p>Саморез Spax-S 3,5х35
+                                                    (500 шт./уп.)</p>
+                                                <p>
+                                                    Цена <span>1690,00</span> руб./упак.
+                                                </p>
+                                            </div>
+                                            <div class="buy-btn">
+                                                <img src="./www/images/icons/buy-icon.svg" alt="">
+                                                <button type="submit">Купить</button>
+                                            </div>
+                                        </div>
+                                        <div class="related-products__slider">
+                                            <div class="related-products__img">
+                                                <img src="./www/images/icons/rel-prd-img.svg" alt="">
+                                            </div>
+                                            <div class="related-products__text">
+                                                <p>Саморез Spax-S 3,5х35
+                                                    (500 шт./уп.)</p>
+                                                <p>
+                                                    Цена <span>1690,00</span> руб./упак.
+                                                </p>
+                                            </div>
+                                            <div class="buy-btn">
+                                                <img src="./www/images/icons/buy-icon.svg" alt="">
+                                                <button type="submit">Купить</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="related-products__li">
+                                        <div class="related-products__slider">
+                                            <div class="related-products__img">
+                                                <img src="./www/images/icons/rel-prd-img.svg" alt="">
+                                            </div>
+                                            <div class="related-products__text">
+                                                <p>Саморез Spax-S 3,5х35
+                                                    (500 шт./уп.)</p>
+                                                <p>
+                                                    Цена <span>1690,00</span> руб./упак.
+                                                </p>
+                                            </div>
+                                            <div class="buy-btn">
+                                                <img src="./www/images/icons/buy-icon.svg" alt="">
+                                                <button type="submit">Купить</button>
+                                            </div>
+                                        </div>
+                                        <div class="related-products__slider">
+                                            <div class="related-products__img">
+                                                <img src="./www/images/icons/rel-prd-img.svg" alt="">
+                                            </div>
+                                            <div class="related-products__text">
+                                                <p>Саморез Spax-S 3,5х35
+                                                    (500 шт./уп.)</p>
+                                                <p>
+                                                    Цена <span>1690,00</span> руб./упак.
+                                                </p>
+                                            </div>
+                                            <div class="buy-btn">
+                                                <img src="./www/images/icons/buy-icon.svg" alt="">
+                                                <button type="submit">Купить</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="related-products__li">
+                                        <div class="related-products__slider">
+                                            <div class="related-products__img">
+                                                <img src="./www/images/icons/rel-prd-img.svg" alt="">
+                                            </div>
+                                            <div class="related-products__text">
+                                                <p>Саморез Spax-S 3,5х35
+                                                    (500 шт./уп.)</p>
+                                                <p>
+                                                    Цена <span>1690,00</span> руб./упак.
+                                                </p>
+                                            </div>
+                                            <div class="buy-btn">
+                                                <img src="./www/images/icons/buy-icon.svg" alt="">
+                                                <button type="submit">Купить</button>
+                                            </div>
+                                        </div>
+                                        <div class="related-products__slider">
+                                            <div class="related-products__img">
+                                                <img src="./www/images/icons/rel-prd-img.svg" alt="">
+                                            </div>
+                                            <div class="related-products__text">
+                                                <p>Саморез Spax-S 3,5х35
+                                                    (500 шт./уп.)</p>
+                                                <p>
+                                                    Цена <span>1690,00</span> руб./упак.
+                                                </p>
+                                            </div>
+                                            <div class="buy-btn">
+                                                <img src="./www/images/icons/buy-icon.svg" alt="">
+                                                <button type="submit">Купить</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="related-products">
+                            <div class="related-products__title">
+                                <h3>Другие размеры</h3>
+                            </div>
+                            <div class="related-products__case">
+                                <ul class="related-products__list js-rel-prod">
+                                    <li class="related-products__li">
+                                        <div class="related-products__slider">
+                                            <div class="related-products__img">
+                                                <img src="./www/images/icons/rel-prd-img.svg" alt="">
+                                            </div>
+                                            <div class="related-products__text">
+                                                <p>Саморез Spax-S 3,5х35
+                                                    (500 шт./уп.)</p>
+                                                <p>
+                                                    Цена <span>1690,00</span> руб./упак.
+                                                </p>
+                                            </div>
+                                            <div class="buy-btn">
+                                                <img src="./www/images/icons/buy-icon.svg" alt="">
+                                                <button type="submit">Купить</button>
+                                            </div>
+                                        </div>
+                                        <div class="related-products__slider">
+                                            <div class="related-products__img">
+                                                <img src="./www/images/icons/rel-prd-img.svg" alt="">
+                                            </div>
+                                            <div class="related-products__text">
+                                                <p>Саморез Spax-S 3,5х35
+                                                    (500 шт./уп.)</p>
+                                                <p>
+                                                    Цена <span>1690,00</span> руб./упак.
+                                                </p>
+                                            </div>
+                                            <div class="buy-btn">
+                                                <img src="./www/images/icons/buy-icon.svg" alt="">
+                                                <button type="submit">Купить</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="related-products__li">
+                                        <div class="related-products__slider">
+                                            <div class="related-products__img">
+                                                <img src="./www/images/icons/rel-prd-img.svg" alt="">
+                                            </div>
+                                            <div class="related-products__text">
+                                                <p>Саморез Spax-S 3,5х35
+                                                    (500 шт./уп.)</p>
+                                                <p>
+                                                    Цена <span>1690,00</span> руб./упак.
+                                                </p>
+                                            </div>
+                                            <div class="buy-btn">
+                                                <img src="./www/images/icons/buy-icon.svg" alt="">
+                                                <button type="submit">Купить</button>
+                                            </div>
+                                        </div>
+                                        <div class="related-products__slider">
+                                            <div class="related-products__img">
+                                                <img src="./www/images/icons/rel-prd-img.svg" alt="">
+                                            </div>
+                                            <div class="related-products__text">
+                                                <p>Саморез Spax-S 3,5х35
+                                                    (500 шт./уп.)</p>
+                                                <p>
+                                                    Цена <span>1690,00</span> руб./упак.
+                                                </p>
+                                            </div>
+                                            <div class="buy-btn">
+                                                <img src="./www/images/icons/buy-icon.svg" alt="">
+                                                <button type="submit">Купить</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="related-products__li">
+                                        <div class="related-products__slider">
+                                            <div class="related-products__img">
+                                                <img src="./www/images/icons/rel-prd-img.svg" alt="">
+                                            </div>
+                                            <div class="related-products__text">
+                                                <p>Саморез Spax-S 3,5х35
+                                                    (500 шт./уп.)</p>
+                                                <p>
+                                                    Цена <span>1690,00</span> руб./упак.
+                                                </p>
+                                            </div>
+                                            <div class="buy-btn">
+                                                <img src="./www/images/icons/buy-icon.svg" alt="">
+                                                <button type="submit">Купить</button>
+                                            </div>
+                                        </div>
+                                        <div class="related-products__slider">
+                                            <div class="related-products__img">
+                                                <img src="./www/images/icons/rel-prd-img.svg" alt="">
+                                            </div>
+                                            <div class="related-products__text">
+                                                <p>Саморез Spax-S 3,5х35
+                                                    (500 шт./уп.)</p>
+                                                <p>
+                                                    Цена <span>1690,00</span> руб./упак.
+                                                </p>
+                                            </div>
+                                            <div class="buy-btn">
+                                                <img src="./www/images/icons/buy-icon.svg" alt="">
+                                                <button type="submit">Купить</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="related-products__li">
+                                        <div class="related-products__slider">
+                                            <div class="related-products__img">
+                                                <img src="./www/images/icons/rel-prd-img.svg" alt="">
+                                            </div>
+                                            <div class="related-products__text">
+                                                <p>Саморез Spax-S 3,5х35
+                                                    (500 шт./уп.)</p>
+                                                <p>
+                                                    Цена <span>1690,00</span> руб./упак.
+                                                </p>
+                                            </div>
+                                            <div class="buy-btn">
+                                                <img src="./www/images/icons/buy-icon.svg" alt="">
+                                                <button type="submit">Купить</button>
+                                            </div>
+                                        </div>
+                                        <div class="related-products__slider">
+                                            <div class="related-products__img">
+                                                <img src="./www/images/icons/rel-prd-img.svg" alt="">
+                                            </div>
+                                            <div class="related-products__text">
+                                                <p>Саморез Spax-S 3,5х35
+                                                    (500 шт./уп.)</p>
+                                                <p>
+                                                    Цена <span>1690,00</span> руб./упак.
+                                                </p>
+                                            </div>
+                                            <div class="buy-btn">
+                                                <img src="./www/images/icons/buy-icon.svg" alt="">
+                                                <button type="submit">Купить</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </section>
+                </article>
+            </div>
+
+            <div class="col-12 col-xl-3 order-xl-1 d-none d-xl-block pl-xl-0">
+                <aside>
+                    <section class="saidbar">
+                        <div class="baner-coupon d-none d-xl-block">
+                            <p>Купон на скидку до <span>3 000 ₽</span> в подарок!</p>
+                        </div>
+                        <nav class="d-none d-xl-block">
+                            <div class="saidbar-nav js-saidbar-nav">
+                                <ul class="saidbar-nav__list">
+                                    <li class="saidbar-nav__item">
+                                        <div class="saidbar-nav__prev js-saidbar-nav">
+                                            <span>Террасная доска</span>
+                                            <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
+                                        </div>
+                                        <div class="saidbar-nav__detals">
+                                            <a href="">Вагонка из ели и сосны</a>
+                                            <a href="">Вагонка штиль из ели и сосны</a>
+                                            <a href="">Вагонка из ангарской сосны</a>
+                                            <a href="">Вагонка из лиственницы</a>
+                                            <a href="">Вагонка из кедра</a>
+                                            <a href="">Вагонка из липы</a>
+                                            <a href="">Вагонка из осины</a>
+                                        </div>
+                                    </li>
+                                    <li class="saidbar-nav__item">
+                                        <div class="saidbar-nav__prev js-saidbar-nav">
+                                            <span>Планкен</span>
+                                            <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
+                                        </div>
+                                        <div class="saidbar-nav__detals">
+                                            <a href="">Вагонка из ели и сосны</a>
+                                            <a href="">Вагонка штиль из ели и сосны</a>
+                                            <a href="">Вагонка из ангарской сосны</a>
+                                            <a href="">Вагонка из лиственницы</a>
+                                            <a href="">Вагонка из кедра</a>
+                                            <a href="">Вагонка из липы</a>
+                                            <a href="">Вагонка из осины</a>
+                                        </div>
+                                    </li>
+                                    <li class="saidbar-nav__item">
+                                        <div class="saidbar-nav__prev js-saidbar-nav">
+                                            <span>Фасадная доска</span>
+                                            <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
+                                        </div>
+                                        <div class="saidbar-nav__detals">
+                                            <a href="">Вагонка из ели и сосны</a>
+                                            <a href="">Вагонка штиль из ели и сосны</a>
+                                            <a href="">Вагонка из ангарской сосны</a>
+                                            <a href="">Вагонка из лиственницы</a>
+                                            <a href="">Вагонка из кедра</a>
+                                            <a href="">Вагонка из липы</a>
+                                            <a href="">Вагонка из осины</a>
+                                        </div>
+                                    </li>
+                                    <li class="saidbar-nav__item">
+                                        <div class="saidbar-nav__prev js-saidbar-nav">
+                                            <span>Вагонка</span>
+                                            <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
+                                        </div>
+                                        <div class="saidbar-nav__detals">
+                                            <a href="">Вагонка из ели и сосны</a>
+                                            <a href="">Вагонка штиль из ели и сосны</a>
+                                            <a href="">Вагонка из ангарской сосны</a>
+                                            <a href="">Вагонка из лиственницы</a>
+                                            <a href="">Вагонка из кедра</a>
+                                            <a href="">Вагонка из липы</a>
+                                            <a href="">Вагонка из осины</a>
+                                        </div>
+                                    </li>
+                                    <li class="saidbar-nav__item">
+                                        <div class="saidbar-nav__prev js-saidbar-nav">
+                                            <span>Мебельный щит</span>
+                                            <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
+                                        </div>
+                                        <div class="saidbar-nav__detals">
+                                            <a href="">Вагонка из ели и сосны</a>
+                                            <a href="">Вагонка штиль из ели и сосны</a>
+                                            <a href="">Вагонка из ангарской сосны</a>
+                                            <a href="">Вагонка из лиственницы</a>
+                                            <a href="">Вагонка из кедра</a>
+                                            <a href="">Вагонка из липы</a>
+                                            <a href="">Вагонка из осины</a>
+                                        </div>
+                                    </li>
+                                    <li class="saidbar-nav__item">
+                                        <div class="saidbar-nav__prev js-saidbar-nav">
+                                            <span>Паркетная доска</span>
+                                            <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
+                                        </div>
+                                        <div class="saidbar-nav__detals">
+                                            <a href="">Вагонка из ели и сосны</a>
+                                            <a href="">Вагонка штиль из ели и сосны</a>
+                                            <a href="">Вагонка из ангарской сосны</a>
+                                            <a href="">Вагонка из лиственницы</a>
+                                            <a href="">Вагонка из кедра</a>
+                                            <a href="">Вагонка из липы</a>
+                                            <a href="">Вагонка из осины</a>
+                                        </div>
+                                    </li>
+                                    <li class="saidbar-nav__item">
+                                        <div class="saidbar-nav__prev js-saidbar-nav">
+                                            <span>Блок хаус</span>
+                                            <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
+                                        </div>
+                                        <div class="saidbar-nav__detals">
+                                            <a href="">Вагонка из ели и сосны</a>
+                                            <a href="">Вагонка штиль из ели и сосны</a>
+                                            <a href="">Вагонка из ангарской сосны</a>
+                                            <a href="">Вагонка из лиственницы</a>
+                                            <a href="">Вагонка из кедра</a>
+                                            <a href="">Вагонка из липы</a>
+                                            <a href="">Вагонка из осины</a>
+                                        </div>
+                                    </li>
+                                    <li class="saidbar-nav__item">
+                                        <div class="saidbar-nav__prev js-saidbar-nav">
+                                            <span>Имитация бруса</span>
+                                            <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
+                                        </div>
+                                        <div class="saidbar-nav__detals">
+                                            <a href="">Вагонка из ели и сосны</a>
+                                            <a href="">Вагонка штиль из ели и сосны</a>
+                                            <a href="">Вагонка из ангарской сосны</a>
+                                            <a href="">Вагонка из лиственницы</a>
+                                            <a href="">Вагонка из кедра</a>
+                                            <a href="">Вагонка из липы</a>
+                                            <a href="">Вагонка из осины</a>
+                                        </div>
+                                    </li>
+                                    <li class="saidbar-nav__item">
+                                        <div class="saidbar-nav__prev js-saidbar-nav">
+                                            <span>Элементы деревянных лестниц</span>
+                                            <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
+                                        </div>
+                                        <div class="saidbar-nav__detals">
+                                            <a href="">Вагонка из ели и сосны</a>
+                                            <a href="">Вагонка штиль из ели и сосны</a>
+                                            <a href="">Вагонка из ангарской сосны</a>
+                                            <a href="">Вагонка из лиственницы</a>
+                                            <a href="">Вагонка из кедра</a>
+                                            <a href="">Вагонка из липы</a>
+                                            <a href="">Вагонка из осины</a>
+                                        </div>
+                                    </li>
+                                    <li class="saidbar-nav__item">
+                                        <div class="saidbar-nav__prev js-saidbar-nav">
+                                            <span>Погонажные изделия из дерева</span>
+                                            <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
+                                        </div>
+                                        <div class="saidbar-nav__detals">
+                                            <a href="">Вагонка из ели и сосны</a>
+                                            <a href="">Вагонка штиль из ели и сосны</a>
+                                            <a href="">Вагонка из ангарской сосны</a>
+                                            <a href="">Вагонка из лиственницы</a>
+                                            <a href="">Вагонка из кедра</a>
+                                            <a href="">Вагонка из липы</a>
+                                            <a href="">Вагонка из осины</a>
+                                        </div>
+                                    </li>
+                                    <li class="saidbar-nav__item">
+                                        <div class="saidbar-nav__prev js-saidbar-nav">
+                                            <span>Другие пиломатериалы</span>
+                                            <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
+                                        </div>
+                                        <div class="saidbar-nav__detals">
+                                            <a href="">Вагонка из ели и сосны</a>
+                                            <a href="">Вагонка штиль из ели и сосны</a>
+                                            <a href="">Вагонка из ангарской сосны</a>
+                                            <a href="">Вагонка из лиственницы</a>
+                                            <a href="">Вагонка из кедра</a>
+                                            <a href="">Вагонка из липы</a>
+                                            <a href="">Вагонка из осины</a>
+                                        </div>
+                                    </li>
+                                    <li class="saidbar-nav__item">
+                                        <div class="saidbar-nav__prev js-saidbar-nav">
+                                            <span>Вспомогательные метариалы (крепеж)</span>
+                                            <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
+                                        </div>
+                                        <div class="saidbar-nav__detals">
+                                            <a href="">Вагонка из ели и сосны</a>
+                                            <a href="">Вагонка штиль из ели и сосны</a>
+                                            <a href="">Вагонка из ангарской сосны</a>
+                                            <a href="">Вагонка из лиственницы</a>
+                                            <a href="">Вагонка из кедра</a>
+                                            <a href="">Вагонка из липы</a>
+                                            <a href="">Вагонка из осины</a>
+                                        </div>
+                                    </li>
+                                    <li class="saidbar-nav__item">
+                                        <div class="saidbar-nav__prev js-saidbar-nav">
+                                            <span>Натуральные краски и масла</span>
+                                            <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
+                                        </div>
+                                        <div class="saidbar-nav__detals">
+                                            <a href="">Вагонка из ели и сосны</a>
+                                            <a href="">Вагонка штиль из ели и сосны</a>
+                                            <a href="">Вагонка из ангарской сосны</a>
+                                            <a href="">Вагонка из лиственницы</a>
+                                            <a href="">Вагонка из кедра</a>
+                                            <a href="">Вагонка из липы</a>
+                                            <a href="">Вагонка из осины</a>
+                                        </div>
+                                    </li>
+                                    <li class="saidbar-nav__item">
+                                        <div class="saidbar-nav__prev js-saidbar-nav">
+                                            <span>Дополнительные услуги</span>
+                                            <img src="./www/images/catalog/icon/arrow-nav.svg" alt="">
+                                        </div>
+                                        <div class="saidbar-nav__detals">
+                                            <a href="">Вагонка из ели и сосны</a>
+                                            <a href="">Вагонка штиль из ели и сосны</a>
+                                            <a href="">Вагонка из ангарской сосны</a>
+                                            <a href="">Вагонка из лиственницы</a>
+                                            <a href="">Вагонка из кедра</a>
+                                            <a href="">Вагонка из липы</a>
+                                            <a href="">Вагонка из осины</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+
+                        <div class="wrp__group-saidbar">
+                            <div class="baner-deliv">
+                                <p>Доставка</p>
+                                <span><span class="deliv-price">50</span>₽/км</span>
+                                <div class="case-item-link">
+                                    <a href="">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="baner-sale">
+                                <span>Cкидка <span class="sale-number"> 2</span>%</span>
+                                <p>при заказе на сайте</p>
+                            </div>
+                        </div>
+
+                        <div class="recom-articl">
+                            <div class="recom-articl__title">
+                                <h2>Это интересно</h2>
+                            </div>
+
+                            <div class="wrp__recom-articl-list">
+                                <ul class="recom-articl__list">
+                                    <li class="recom-articl__item">
+                                        <a href="">Как избежать обмана при покупке стройматериалов</a>
+                                    </li>
+                                    <li class="recom-articl__item">
+                                        <a href="">Все о планкене</a>
+                                    </li>
+                                    <li class="recom-articl__item">
+                                        <a href="">Как избежать обмана при покупке стройматериалов</a>
+                                    </li>
+                                    <li class="recom-articl__item">
+                                        <a href="">Все о планкене</a>
+                                    </li>
+                                    <li class="recom-articl__item">
+                                        <a href="">Как избежать обмана при покупке стройматериалов</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--  footer  -->
+<section class="foot">
+    <div class="container">
+        <div class="row">
+            <footer class="footer">
+                <div class="col-12 px-0">
+                    <div class="wrp__foot-section-one">
+                        <div class="foot-changeover-tablet">
+                            <div class="wrp__foot-group">
+                                <div class="foot-logo">
+                                    <div class="logo">
+                                        <a href="https://eurowagonka.ru/">
+                                            <img src="www/images/header/logo1.png" alt="logo">
+                                            <span>Лучшие пиломатериалы в Москве</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="foot-info">
+                                    <a href="" class="info-link">Политика конфиденциальности</a>
+                                    <a href="" class="info-link">Пользовательское соглашение</a>
+                                </div>
+                            </div>
+                            <div class="address address--office d-none d-xl-block">
+                                <div class="address__title">
+                                    <p class="">Офис:</p>
+                                </div>
+                                <div class="address-group">
+
+                                    <div class="address__sub-title">
+                                        <p class="">Адрес:</p>
+                                    </div>
+                                    <div class="address__text">
+                                        <address>
+                                            <p>г. Красногорск, ул. Циалковского 17</p>
+                                        </address>
+                                    </div>
+                                </div>
+                                <div class="address-group">
+                                    <div class="address__sub-title">
+                                        <p class="">Режим работы:</p>
+                                    </div>
+                                    <div class="address__text mb-xl-0">
+                                        <p>Пн–Пт: с 9:00 до 20:00</p>
+                                        <p>Сб, Вс: с9:30 до 18:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="address address--warehouse d-none d-xl-block">
+                                <div class="address__title">
+                                    <p class="">Склад:</p>
+                                </div>
+                                <div class="address-group">
+                                    <div class="address__sub-title">
+                                        <p class="">Адрес:</p>
+                                    </div>
+                                    <div class="address__text">
+                                        <address>
+                                            <p>Москва, 2-я Мякининская ул. стр. 3</p>
+                                        </address>
+                                    </div>
+                                </div>
+                                <div class="address-group">
+                                    <div class="address__sub-title">
+                                        <p class="">Режим работы:</p>
+                                    </div>
+                                    <div class="address__text mb-xl-0">
+                                        <p>Пн–Пт: с 9:00 до 20:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrp__foot-group-connection">
+                                <div class="group__call-social">
+                                    <div class="wrp__call">
+                                        <div class="call call--foot">
+                                            <a href="tel:+74953636225">+7(495) 36-36-225</a>
+                                        </div>
+                                    </div>
+                                    <div class="wrp__social">
+                                        <div class="social social--footer social--telegram">
+                                            <a href=""><img src="www/images/footer/foot-soc-teleg.png" alt="soc-telegram"></a>
+                                        </div>
+                                        <div class="social social--footer social--watsap social--watsap-footer">
+                                            <a href=""><img src="www/images/footer/foot-soc-watsap.png" alt="soc-watsap"></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="wrp__callback">
+                                    <span class="callback foot--callback js-callback">Заказать звонок</span>
+                                </div>
+                                <div class="info foot--email">
+                                    <a href="mailto:info@eurowagonka.ru" class="info__email-link foot--email">
+                                        info@eurowagonka.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrp__foot-group-address d-xl-none">
+                            <div class="address address--office">
+                                <div class="address__title">
+                                    <p class="">Офис:</p>
+                                </div>
+                                <div class="address-group">
+                                    <div class="address__sub-title">
+                                        <p class="">Адрес:</p>
+                                    </div>
+                                    <div class="address__text">
+                                        <p>г. Красногорск, ул. Циалковского 17</p>
+                                    </div>
+                                </div>
+                                <div class="address-group">
+                                    <div class="address__sub-title">
+                                        <p class="">Режим работы:</p>
+                                    </div>
+                                    <div class="address__text">
+                                        <p>Пн–Пт: с 9:00 до 20:00</p>
+                                        <p>Сб, Вс: с9:30 до 18:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="address address--warehouse">
+                                <div class="address__title">
+                                    <p class="">Склад:</p>
+                                </div>
+                                <div class="address-group">
+                                    <div class="address__sub-title">
+                                        <p class="">Адрес:</p>
+                                    </div>
+                                    <div class="address__text">
+                                        <p>Москва, 2-я Мякининская ул. стр. 3</p>
+                                    </div>
+                                </div>
+                                <div class="address-group">
+                                    <div class="address__sub-title">
+                                        <p class="">Режим работы:</p>
+                                    </div>
+                                    <div class="address__text">
+                                        <p>Пн–Пт: с 9:00 до 20:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="foot-menu d-none d-md-block d-xl-none">
+                                <div class="address__title">
+                                    <p>Меню</p>
+                                </div>
+                                <ul class="foot-menu__list">
+                                    <li class="foot-menu__item">
+                                        <a href="" class="foot-menu__link">О компании</a>
+                                    </li>
+                                    <li class="foot-menu__item">
+                                        <a href="" class="foot-menu__link">Прайс лист</a>
+                                    </li>
+                                    <li class="foot-menu__item">
+                                        <a href="" class="foot-menu__link">Полезная информация</a>
+                                    </li>
+                                    <li class="foot-menu__item">
+                                        <a href="" class="foot-menu__link">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-12 px-0">
+                    <nav class="foot-nav">
+                        <div class="foot-catalog">
+                            <div class="foot-catalog__title">
+                                <p>Каталог товаров</p>
+                            </div>
+                            <div class="wrp__foot-catalog-list">
+                                <ul class="foot-catalog__list">
+                                    <li class="foot-catalog__item">
+                                        <a href="" class="foot-catalog__link">Вагонка</a>
+                                    </li>
+                                    <li class="foot-catalog__item">
+                                        <a href="" class="foot-catalog__link">Евровагонка</a>
+                                    </li>
+                                    <li class="foot-catalog__item">
+                                        <a href="" class="foot-catalog__link">Террасная доска из лиственницы</a>
+                                    </li>
+                                    <li class="foot-catalog__item">
+                                        <a href="" class="foot-catalog__link">Планкен</a>
+                                    </li>
+                                    <li class="foot-catalog__item">
+                                        <a href="" class="foot-catalog__link">Мебельный щит</a>
+                                    </li>
+                                    <li class="foot-catalog__item">
+                                        <a href="" class="foot-catalog__link">Паркетная доска</a>
+                                    </li>
+                                    <li class="foot-catalog__item">
+                                        <a href="" class="foot-catalog__link">Фасадная доска</a>
+                                    </li>
+                                    <li class="foot-catalog__item">
+                                        <a href="" class="foot-catalog__link">Блок хаус</a>
+                                    </li>
+                                    <li class="foot-catalog__item">
+                                        <a href="" class="foot-catalog__link">Иммитация бруса</a>
+                                    </li>
+                                    <li class="foot-catalog__item">
+                                        <a href="" class="foot-catalog__link">Материалы для лестниц из дерева</a>
+                                    </li>
+                                    <li class="foot-catalog__item">
+                                        <a href="" class="foot-catalog__link">Половая доска</a>
+                                    </li>
+                                    <li class="foot-catalog__item">
+                                        <a href="" class="foot-catalog__link">Крепеж</a>
+                                    </li>
+                                    <li class="foot-catalog__item">
+                                        <a href="" class="foot-catalog__link">Краски и масла</a>
+                                    </li>
+                                    <li class="foot-catalog__item">
+                                        <a href="" class="foot-catalog__link">Обработка пиломатериалов</a>
+                                    </li>
+                                    <li class="foot-catalog__item">
+                                        <a href="" class="foot-catalog__link">Материалы для лестниц из адамантия</a>
+                                    </li>
+                                    <li class="foot-catalog__item">
+                                        <a href="" class="foot-catalog__link">Фасадная доска</a>
+                                    </li>
+                                    <li class="foot-catalog__item">
+                                        <a href="" class="foot-catalog__link">Фасадная доска</a>
+                                    </li>
+                                    <li class="foot-catalog__item">
+                                        <a href="" class="foot-catalog__link">Фасадная доска</a>
+                                    </li>
+                                    <li class="foot-catalog__item">
+                                        <a href="" class="foot-catalog__link">Половая доска</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="foot-menu d-none d-xl-block">
+                            <div class="address__title">
+                                <p>Меню</p>
+                            </div>
+                            <ul class="foot-menu__list">
+                                <li class="foot-menu__item">
+                                    <a href="" class="foot-menu__link">О компании</a>
+                                </li>
+                                <li class="foot-menu__item">
+                                    <a href="" class="foot-menu__link">Прайс лист</a>
+                                </li>
+                                <li class="foot-menu__item">
+                                    <a href="" class="foot-menu__link">Полезная информация</a>
+                                </li>
+                                <li class="foot-menu__item">
+                                    <a href="" class="foot-menu__link">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="col-12 px-0">
+                    <div class="foot-bottom">
+                        <div class="copyright">
+                            <p>© 2021 «Евровагонка». Все права защищены.</p>
+                        </div>
+                        <div class="develop">
+                            <p>Сайт создан — <a href="https://svettsova.com/">svettsova.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</section>
+<!--  footer  -->
+</body>
+</html>
