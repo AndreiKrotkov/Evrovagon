@@ -68,12 +68,17 @@
         width: -webkit-fit-content;
         width: -moz-fit-content;
         width: fit-content;
-        padding-bottom: 5px;
+        padding-bottom: 3px;
         border-bottom: 1px solid #C07E29;
         font-weight: bold;
         font-size: 16px;
         line-height: 18px;
         color: #C07E29;
+        text-decoration: none;transition: all 0.3s;
+    }
+    .contacts-section__item .contacts-email:hover {
+        color: #D2A060;
+        border-color: #D2A060;
     }
 
     .contacts-section__list .item-line {
@@ -245,7 +250,6 @@
         color: #6C6C75;
     }
 }
-
 @media screen and (min-width: 767px) {
     .contact__title {
         margin-bottom: 13px;
@@ -402,10 +406,12 @@
         margin: 0 auto;
     }
 }
-
 @media screen and (min-width: 1200px) {
+    .contact__title {
+        margin-bottom: 2rem;
+    }
     .contacts-section {
-        padding: 24px 20px;
+        padding: 24px 30px;
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;

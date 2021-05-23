@@ -53,8 +53,12 @@
         font-size: 14px;
         line-height: 13px;
         color: #C07E29;
+        text-decoration: none;
+        transition: all 0.3s;
     }
-
+    .price-list__details-det tr td a:hover {
+        color: #D2A060;
+    }
     .price-list__details-det tr td:last-child {
         width: 190px;
     }
@@ -87,6 +91,12 @@
         -webkit-transition: all 0.5s;
         -o-transition: all 0.5s;
         transition: all 0.5s;
+    }
+    .active .price-list__prev img {
+        transition: all 0.3s;
+    }
+    .active .price-list__prev img {
+        transform: rotate(180deg);
     }
 
     .active .price-list__prev span {

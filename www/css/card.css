@@ -48,8 +48,13 @@
         margin-bottom: 1.5rem;
     }
     .card-discount-title {
-        text-align: center;
+        display: flex;
+        align-items: center;
         margin-bottom: 3px;
+        padding-left: 2.5rem;
+    }
+    .card-discount-title img {
+        margin-right: 5px;
     }
     .card-discount-title p {
         font-size: 16px;
@@ -69,7 +74,7 @@
     .card-discount-link span {
         font-weight: 300;
         display: inline-block;
-        margin-bottom: 3px;
+        margin-bottom: 7px;
         font-size: 12px;
         line-height: 14px;
         text-align: center;
@@ -193,11 +198,14 @@
         line-height: 18px;
         color: #6C6C75;
     }
+    .counter-number {
+        display: inline-block;
+        margin-right: 4px;
+    }
     .buy-btn {
         display: flex;
         align-items: center;
         justify-content: center;
-
         max-width: 210px;
         margin: 0 auto 15px auto;
         text-align: center;
@@ -257,17 +265,17 @@
 
 
     /* Кастомные селекты */
-    .cs-select .select {
+    .cs-select .k-select {
         width: 160px!important;
     }
 
-    .cs-select .select .filter-option-inner-inner {
+    .cs-select .k-select .filter-option-inner-inner {
         font-family: Ubuntu-L, sans-serif;
         font-size: 16px;
         line-height: 18px;
         color: #6C6C75;
     }
-    .cs-select .select .btn {
+    .cs-select .k-select .btn {
         border-radius: 4px!important;
         border: 1px solid #E9E9E9;
         padding: 13px 20px!important;
@@ -279,10 +287,13 @@
         border: 0;
         content: url("../../www/images/icons/select-arrow.svg");
     }
-    .select {
+    .cs-select .bootstrap-select>select {
+        left: 0;
+    }
+    .k-select {
         position: relative;
     }
-    .select:after {
+    .k-select:after {
         position: absolute;
         content: '';
         width: 1px;
@@ -313,6 +324,8 @@
     .related-products__img {
         margin-bottom: 1rem;
         text-align: center;
+        background: #FFFFFF;
+        border-radius: 10px;
     }
     .related-products__img img {
         width: 100%;
@@ -334,6 +347,7 @@
     }
     .related-products__li .buy-btn {
         margin-bottom: 0;
+        max-width: 105px;
     }
     .related-products__li .buy-btn img {
         left: 10%;
@@ -349,6 +363,10 @@
     }
     .related-products__slider .buy-btn button {
         height: 34px;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 18px;
+        color: #FFFFFF;
     }
     .related-products__slider .buy-btn img {
         top: calc(50% - 10px)
@@ -384,6 +402,11 @@
         line-height: 15px;
         color: #C07E29;
         position: relative;
+        transition: all 0.3s;
+        text-decoration: none;
+    }
+    .recommend__item a:hover {
+        color: #D2A060;
     }
     .recommend__item a:after {
         position: absolute;
@@ -582,7 +605,7 @@
         top: 0;
         background: #EFEFEF;
     }
-    .cs-select .select {
+    .cs-select .k-select {
         width: 180px!important;
     }
     .card-discount-link:first-child {
@@ -609,10 +632,9 @@
     }
     .related-products__slider {
         margin-bottom: 20px;
-        padding: 5px 10px 20px 10px;
+        padding: 10px 10px 20px 10px;
     }
     .related-products__li .buy-btn {
-        max-width: 135px;
         margin: 0;
         padding-left: 10px;
     }
@@ -646,6 +668,7 @@
         border: 1px solid #EFEFEF;
         border-radius: 10px;
         margin-bottom: 3.1rem;
+        overflow: hidden;
     }
     .card-tabs__head {
         border-bottom: 1px solid #EFEFEF;
@@ -796,9 +819,6 @@
     }
 
     /*  slider-present  */
-    .slider-present {
-        overflow: hidden;
-    }
     .slider-big {
         margin-bottom: 20px;
     }

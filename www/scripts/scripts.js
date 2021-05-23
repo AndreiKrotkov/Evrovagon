@@ -82,20 +82,18 @@ $(document).ready(function() {
             }
         ]
     });
+    //  Слайдер в табах, интерьер
     if(windowWidth > 767) {
         $('.js-slider-present-big').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
-            // fade: true,
             asNavFor: '.js-slider-present-small'
         });
         $('.js-slider-present-small').slick({
             slidesToShow: 4,
             slidesToScroll: 1,
             asNavFor: '.js-slider-present-big',
-            // dots: true,
-            // centerMode: false,
             focusOnSelect: true,
             nextArrow: "<div class=\"slider-next\"></div>",
             prevArrow: "<div class=\"slider-prev\"></div>",
@@ -400,6 +398,18 @@ $(document).ready(function() {
         $this.closest('.js-item-anchor').toggleClass('active');
     });
 
+    // $('.js-item-prev').on('click', function (e) {
+    //     e.preventDefault();
+    //     let $this = $(this);
+    //     let active = $this.closest('.js-item-anchor').hasClass('active');
+    //     if(!active) {
+    //         $('.js-item-anchor').removeClass('active');
+    //         $this.closest('.js-item-anchor').addClass('active');
+    //     } else {
+    //         $this.closest('.js-item-anchor').removeClass('active');
+    //     }
+    // });
+
     $('.js-price-list-title').on('click', function (e) {
         e.preventDefault();
         let $this = $(this);
@@ -519,7 +529,7 @@ $(document).ready(function() {
     $('.js-cast-select').selectpicker();
 
 
-    // Таьы на карточке после мобилке
+    // Табы на карточке после мобилке
     $('.js-tab').on('click', function (e) {
         e.preventDefault();
         let $this = $(this);
@@ -532,36 +542,33 @@ $(document).ready(function() {
             attrLink = '.' + attrLink;
             $('.tab').removeClass('active-tab');
             $(attrLink).addClass('active-tab');
-            let checkSlider = $(attrLink).find('.slider-present').hasClass('slider-present');
-            if(checkSlider) {
-                $('.js-slider-present-big').slick({
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: false,
-                    // fade: true,
-                    asNavFor: '.js-slider-present-small'
-                });
-                $('.js-slider-present-small').slick({
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    asNavFor: '.js-slider-present-big',
-                    // dots: true,
-                    // centerMode: false,
-                    focusOnSelect: true,
-                    nextArrow: "<div class=\"slider-next\"></div>",
-                    prevArrow: "<div class=\"slider-prev\"></div>",
-                });
-            }
         }
     });
-
-
-    // $('.js-tab-select').on('change', function () {
-    //     let attrLink = "." + this.value;
-    //     $('.tab-content').removeClass('active-tab');
-    //     $(attrLink).addClass('active-tab');
-    // });
     // END tab
+
+    // Counter card
+    let $counterAdd = $('.js-counter-plus');
+    let $counterDelete = $('.js-counter-minus');
+    let $counterNumber = $('.counter-number');
+    let counterPrice = 1;
+
+    $counterAdd.on('click', function (e) {
+        e.preventDefault();
+        counterPrice++;
+        $counterNumber.text(counterPrice);
+    });
+    $counterDelete.on('click', function (e) {
+        e.preventDefault();
+        let checkCounterNumber = Number($counterNumber.text());
+        console.log(checkCounterNumber)
+        if(checkCounterNumber <= 1) {
+            $counterNumber.text('1')
+        } else {
+            counterPrice--;
+            $counterNumber.text(counterPrice);
+        }
+
+    });
 
 });
 

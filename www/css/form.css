@@ -12,7 +12,6 @@
         line-height: 21px;
         color: #212121;
     }
-
     .wrp__input-form {
         position: relative;
     }
@@ -39,9 +38,9 @@
         -o-transition: all 0.5s;
         transition: all 0.5s;
     }
-    .wrp__input-form img {
+    .wrp__input-form .passw-img {
         position: absolute;
-        top: calc(50% - 9px);
+        top: calc(50% - 14px);
         right: 21px;
         z-index: 2;
         cursor: pointer;
@@ -55,6 +54,16 @@
         z-index: 5;
         padding: 0 5px;
         font-size: 12px;
+    }
+    .type-text + .passw-img:after {
+        content: '';
+        width: 2px;
+        height: 120%;
+        background: #E4C380;
+        transform: rotate(45deg);
+        position: absolute;
+        left: 11px;
+        bottom: -4px;
     }
 
     /* Ошибки на инпуте */
@@ -109,20 +118,21 @@
         line-height: 16px;
         color: #6C6C75;
     }
-    .form-reg-btn {
-
-    }
     .form-reg-btn button {
+        width: 100%;
+        height: 54px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #FFFFFF;
         background: #C07E29;
         border-radius: 4px;
-        font-weight: bold;
-        font-size: 18px;
         line-height: 18px;
         text-align: center;
-        color: #FFFFFF;
         border: none;
-        height: 54px;
-        width: 100%;
+        transition: all 0.3s;
+    }
+    .form-reg-btn button:hover {
+        background: #D2A060;
     }
     .form-reg-btn button:focus {
         outline: none;
