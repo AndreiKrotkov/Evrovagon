@@ -52,7 +52,7 @@ $(document).ready(function() {
     });
 
 
-    // Слайдер
+    // Слайдеры
     $('.js-slider-card').slick({
         adaptiveHeight: true,
         nextArrow: "<div class=\"slider-next\"></div>",
@@ -60,7 +60,6 @@ $(document).ready(function() {
     });
 
     $('.js-rel-prod').slick({
-        // adaptiveHeight: true,
         nextArrow: "<div class=\"slider-next\"></div>",
         prevArrow: "<div class=\"slider-prev\"></div>",
         infinite: true,
@@ -83,6 +82,25 @@ $(document).ready(function() {
             }
         ]
     });
+    if(windowWidth > 767) {
+        $('.js-slider-present-big').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            // fade: true,
+            asNavFor: '.js-slider-present-small'
+        });
+        $('.js-slider-present-small').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.js-slider-present-big',
+            // dots: true,
+            // centerMode: false,
+            focusOnSelect: true,
+            nextArrow: "<div class=\"slider-next\"></div>",
+            prevArrow: "<div class=\"slider-prev\"></div>",
+        });
+    }
 
     // смена текста в блоке materials - ссылка на новости
     if(windowWidth > 767) {
@@ -497,7 +515,53 @@ $(document).ready(function() {
         $(this).closest('.js-enter-lk').toggleClass('show-enter');
     });
 
+    // Кастомные селекты в карточке товаров
     $('.js-cast-select').selectpicker();
+
+
+    // Таьы на карточке после мобилке
+    $('.js-tab').on('click', function (e) {
+        e.preventDefault();
+        let $this = $(this);
+
+        let isClass = $this.hasClass('active');
+        if(!isClass) {
+            $('.js-tab').removeClass('active');
+            $this.addClass('active');
+            let attrLink = $this.attr('data-tab');
+            attrLink = '.' + attrLink;
+            $('.tab').removeClass('active-tab');
+            $(attrLink).addClass('active-tab');
+            let checkSlider = $(attrLink).find('.slider-present').hasClass('slider-present');
+            if(checkSlider) {
+                $('.js-slider-present-big').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    // fade: true,
+                    asNavFor: '.js-slider-present-small'
+                });
+                $('.js-slider-present-small').slick({
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    asNavFor: '.js-slider-present-big',
+                    // dots: true,
+                    // centerMode: false,
+                    focusOnSelect: true,
+                    nextArrow: "<div class=\"slider-next\"></div>",
+                    prevArrow: "<div class=\"slider-prev\"></div>",
+                });
+            }
+        }
+    });
+
+
+    // $('.js-tab-select').on('change', function () {
+    //     let attrLink = "." + this.value;
+    //     $('.tab-content').removeClass('active-tab');
+    //     $(attrLink).addClass('active-tab');
+    // });
+    // END tab
 
 });
 
