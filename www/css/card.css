@@ -546,6 +546,12 @@
         justify-content: space-between;
         margin-bottom: 20px;
     }
+    .price-list__details-det .card-table__link li {
+        border-bottom: none;
+    }
+    .price-list__details-det .card-table__link li:first-child {
+        border-top: none;
+    }
     .price-list__head .tab-content-title {
         margin-bottom: 0;
     }
@@ -558,10 +564,16 @@
         margin-bottom: 0;
     }
     .card-table__link a {
+        font-family: Ubuntu-N, sans-serif;
         font-weight: bold;
         font-size: 14px;
         line-height: 13px;
         color: #C07E29;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+    .card-table__link a:hover {
+        color: #D2A060;
     }
     .card-table__link li {
         display: -webkit-box;
@@ -994,12 +1006,10 @@
         flex-direction: column;
         padding: 10px 20px;
     }
-
     .card-section-middle {
         -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
     }
-
     .card-section__group {
         -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1037,4 +1047,31 @@
     .related-products__case .slider-prev {
         left: 86%;
     }
+    .card-table__link li {
+        box-shadow: none;
+    }
+    .card-table__link {
+        margin-left: -2px;
+    }
+    .price-list .card-table table thead th:last-child:after {
+        position: absolute;
+        right: 0;
+        top: 12px;
+        content: '';
+        z-index: 5;
+        width: 1px;
+        height: 70%;
+        background: #CD9854;
+    }
+    .price-list .card-table table tbody td:last-child:after {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        content: '';
+        z-index: 5;
+        width: 1px;
+        height: 60%;
+        background: #DFDBD2;
+    }
+
 }

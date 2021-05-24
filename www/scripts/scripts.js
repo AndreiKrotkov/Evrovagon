@@ -528,7 +528,6 @@ $(document).ready(function() {
     // Кастомные селекты в карточке товаров
     $('.js-cast-select').selectpicker();
 
-
     // Табы на карточке после мобилке
     $('.js-tab').on('click', function (e) {
         e.preventDefault();

@@ -4,7 +4,14 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
+@import "catalog.css";
+@import "catalog-category.css";
+@import "articles.css";
+@import "useful-know.css";
 @import "card.css";
+@import "contacts.css";
+@import "section-detail.css";
+@import "form.css";
 
 /* Шрифт */
 @font-face {
@@ -14,10 +21,6 @@
 @font-face {
     font-family: 'Ubuntu-L';
     src: url("../fonts/Ubuntu-L.woff") format('woff');
-}
-@font-face {
-    font-family: 'Ubuntu-N';
-    src: url("../fonts/Ubuntu-R.ttf") format('ttf');
 }
 *{
     font-family: Ubuntu-M, sans-serif;

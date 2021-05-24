@@ -107,18 +107,25 @@
         background-size: contain!important;
     }
     .price-list__details .active .price-list__details-det {
-        display: block;
+        display: flex;
         -webkit-transition: all 0.5s;
         -o-transition: all 0.5s;
         transition: all 0.5s;
     }
-
-
-
-
+    .price-list__details-det .card-table__link li {
+        width: 74px;
+    }
+}
+@media screen and (min-width: 767px) {
+    .price-list__details-det .card-table__link li {
+        width: 152px;
+    }
 }
 @media screen and (min-width: 1200px) {
     .price-list {
         margin-bottom: 3.75rem;
+    }
+    .price-list__details-det .card-table__link li:first-child {
+        height: 66px;
     }
 }
