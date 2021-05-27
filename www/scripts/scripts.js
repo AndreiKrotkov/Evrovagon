@@ -419,7 +419,7 @@ $(document).ready(function() {
     // Фокус на инпутах
     $('.js-input-focus').on('click', function (e) {
         let $this = $(this);
-        $this.addClass('active')
+        $this.addClass('active-input')
     });
 
     // Валидация формы Регистрации

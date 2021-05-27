@@ -47,7 +47,7 @@
     }
 
     /* Focus на инпуте */
-    .active span {
+    .active-input span {
         top: -9px!important;
         background: white;
         border-radius: 3px;

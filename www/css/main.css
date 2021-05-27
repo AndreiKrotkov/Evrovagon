@@ -24,7 +24,9 @@
 }
 *{
     font-family: Ubuntu-M, sans-serif;
-    outline: none;
+}
+*:focus {
+    outline: none!important;
 }
 ul, li {
     margin: 0;
@@ -2870,6 +2872,7 @@ b, strong {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        justify-content: space-between;
         padding: 30px;
     }
     .content {
@@ -3320,6 +3323,7 @@ b, strong {
         height: 16px;
         background: url("../images/header/input-search-after.png") center no-repeat;
         background-size: contain;
+        cursor: pointer;
     }
     .band {
         background: #C07E29;
