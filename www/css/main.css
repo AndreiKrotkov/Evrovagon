@@ -24,6 +24,7 @@
 }
 *{
     font-family: Ubuntu-M, sans-serif;
+    outline: none;
 }
 ul, li {
     margin: 0;
@@ -1945,9 +1946,6 @@ b, strong {
     }
 
     /*  extra-service   */
-    .extra-service {
-
-    }
     .extra-service-title {
         margin-bottom: 22px;
     }
@@ -2288,9 +2286,6 @@ b, strong {
         padding-left: 60px;
         margin-top: 35px;
     }
-    .group__call-social {
-        margin-bottom: 15px;
-    }
     .foot--callback {
         font-size: 18px;
         line-height: 21px;
@@ -2350,11 +2345,11 @@ b, strong {
         flex-wrap: wrap;
     }
     .address {
-        -ms-flex-preferred-size: 195px;
-        flex-basis: 195px;
+        -ms-flex-preferred-size: 160px;
+        flex-basis: 160px;
     }
     .address--office {
-        margin-right: 30px;
+        margin-right: 0;
     }
 
     .address__title p, .foot-catalog__title p {
@@ -2381,11 +2376,11 @@ b, strong {
         margin-bottom: 8px;
     }
 
-
     .wrp__foot-group-address {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        justify-content: space-between;
         margin-bottom: 40px;
     }
 
@@ -2462,6 +2457,22 @@ b, strong {
         opacity: 1;
         font-size: 12px;
         color: #ffffff;
+    }
+}
+
+@media screen and (min-width: 359px) {
+    .foot-catalog__list {
+        justify-content: space-between;
+    }
+    .foot-catalog__item {
+        flex-basis: 160px;
+        margin: 0;
+    }
+    .call--foot {
+        margin-right: 5px;
+    }
+    .call--foot a {
+        font-size: 22px;
     }
 }
 
@@ -2993,7 +3004,7 @@ b, strong {
 
     /*   FOOTER   */
     .footer {
-        padding: 62px 0 25px 0;
+        padding: 51px 0 25px 0;
     }
     .wrp__foot-group {
         -webkit-box-align: start;
@@ -3035,11 +3046,11 @@ b, strong {
         font-size: 8px;
         line-height: 10px;
     }
-    .address--office, .address--warehouse {
-        margin-right: 30px;
-    }
     .foot-catalog__list {
         padding-left: 0;
+    }
+    .foot-menu, .address, .foot-catalog__item {
+        flex-basis: 200px;
     }
 
 }
@@ -3796,8 +3807,8 @@ b, strong {
     }
     .foot-catalog__item {
         -ms-flex-preferred-size: 270px;
-        flex-basis: 270px;
-        margin: 0px 18px 0 0;
+        flex-basis: 280px;
+        margin: 0;
     }
     .foot-catalog__link {
         max-width: 100%
@@ -3810,7 +3821,7 @@ b, strong {
         padding-left: 0;
     }
     .foot-menu {
-        padding-left: 60px;
+        padding-left: 40px;
     }
     .call--foot a {
         font-size: 20px;
