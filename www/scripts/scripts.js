@@ -157,6 +157,18 @@ $(document).ready(function() {
         });
     });
 
+    // Попап добавления в корзину
+    $('.js-buy-btn').on('click', function(e) {
+        e.preventDefault();
+        $.fancybox.open($('#popupAddCart'), {
+            touch: true,
+            afterLoad : function () {
+
+            },
+        });
+    });
+
+
     // ховер имен на полях формы
     $('.js-form-inp-name').focus(function(){
         $('.js-form-name--focus').addClass('inp-name-focus');
@@ -397,18 +409,6 @@ $(document).ready(function() {
         let $this = $(this);
         $this.closest('.js-item-anchor').toggleClass('active');
     });
-
-    // $('.js-item-prev').on('click', function (e) {
-    //     e.preventDefault();
-    //     let $this = $(this);
-    //     let active = $this.closest('.js-item-anchor').hasClass('active');
-    //     if(!active) {
-    //         $('.js-item-anchor').removeClass('active');
-    //         $this.closest('.js-item-anchor').addClass('active');
-    //     } else {
-    //         $this.closest('.js-item-anchor').removeClass('active');
-    //     }
-    // });
 
     $('.js-price-list-title').on('click', function (e) {
         e.preventDefault();

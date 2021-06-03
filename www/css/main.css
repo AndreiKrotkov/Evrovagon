@@ -161,7 +161,7 @@ b, strong {
         position: absolute;
         top: 20px;
         left: 26px;
-        font-family: Ubuntu-N, sans-serif;
+        font-family: Ubuntu-L, sans-serif;
         font-weight: 300;
         font-size: 16px;
         line-height: 18px;
@@ -301,6 +301,69 @@ b, strong {
         height: 100%;
     }
 
+
+    /* Попап Добавление в корзину */
+    .popup-add-cart {
+        display: none;
+        width: 90%;
+        max-width: 570px;
+        padding: 1.8rem 1rem;
+    }
+    .form-images {
+        text-align: center;
+    }
+    .form-images img {
+        width: 257px;
+        max-height: 257px;
+    }
+    .form-name-product {
+        text-align: center;
+        max-width: 90%;
+        margin: 0 auto 1.5rem auto;
+    }
+    .form-name-product p {
+        font-size: 16px;
+        line-height: 18px;
+        color: #212121;
+        margin-bottom: 0;
+    }
+    .popup-add-cart .wrp__form-btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+    .continue-shopping, .arrange-order {
+        font-family: Ubuntu-L, sans-serif;
+        flex-basis: 100%;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        transition: all .3s;
+        padding: 1.1rem 1.9rem;
+        border: 1px solid #C07E29;
+        border-radius: 4px;
+    }
+    .continue-shopping {
+        color: #C07E29;
+        border: 1px solid #C07E29;
+        margin-bottom: 0.7rem;
+    }
+    .continue-shopping:hover {
+        text-decoration: none;
+        color: #D2A060;
+        border-color: #D2A060;
+    }
+    .arrange-order {
+        color: #FFFFFF;
+        background: #C07E29;
+        border: none;
+    }
+    .arrange-order:hover {
+        background: #D2A060;
+    }
+
     /* Пагинация */
     .pagination {
         margin-top: 2rem;
@@ -314,7 +377,7 @@ b, strong {
     .pagination__item {
         width: 30px;
         height: 30px;
-        font-family: 'Ubuntu-L', sans-serif;
+        font-family: Ubuntu-L, sans-serif;
         text-align: center;
         padding: 7px 6px;
         background: #F4EFE6;
@@ -1570,7 +1633,7 @@ b, strong {
         margin-right: 23px;
     }
     .content-descript p {
-        font-family: 'Ubuntu-L', sans-serif;
+        font-family: Ubuntu-L, sans-serif;
         font-size: 12px;
         line-height: 20px;
         color: #212121;
@@ -1601,7 +1664,7 @@ b, strong {
         padding-left: 15px;
     }
     .specifications-desc__item {
-        font-family: 'Ubuntu-L', sans-serif;
+        font-family: Ubuntu-L, sans-serif;
         position: relative;
         font-size: 12px;
         line-height: 14px;
@@ -1800,7 +1863,7 @@ b, strong {
         margin-bottom: 0;
     }
     .case-item-link a {
-        font-family: Ubuntu-N, sans-serif;
+        font-family: Ubuntu-L, sans-serif;
         position: relative;
         font-weight: 700;
         font-size: 14px;
@@ -2828,7 +2891,21 @@ b, strong {
         left: calc(50% - -147px);
     }
 
-    /*  company-info  */
+    .popup-add-cart {
+        padding: 2.8rem 3.1rem;
+    }
+    .popup-add-cart .wrp__form-btn {
+        flex-direction: inherit;
+    }
+    .continue-shopping, .arrange-order {
+        flex-basis: 48%;
+        padding: 1.1rem 1.9rem;
+    }
+    .continue-shopping {
+        margin-bottom: 0;
+    }
+
+        /*  company-info  */
     .wrp__company-info-group {
         margin-top: -25px;
     }
