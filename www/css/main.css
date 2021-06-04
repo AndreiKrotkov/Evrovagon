@@ -301,7 +301,6 @@ b, strong {
         height: 100%;
     }
 
-
     /* Попап Добавление в корзину */
     .popup-add-cart {
         display: none;
@@ -362,6 +361,12 @@ b, strong {
     }
     .arrange-order:hover {
         background: #D2A060;
+    }
+
+    /* Попап купить в 1 клик */
+    .popup-buy-one-click {
+        display: none;
+        padding: 2.8rem 3.1rem;
     }
 
     /* Пагинация */
@@ -534,45 +539,45 @@ b, strong {
         border-radius: 50%;
     }
 
-        /* down-file */
-        .down-file img {
-            margin-right: 5px;
-        }
-        .down-file a {
-            display: inline-block;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 14px;
-            color: #212121;
-            padding-bottom: 3px;
-            border-bottom: 1px solid rgba(33, 33, 33, 0.3);
-            transition: all 0.3s;
-        }
-        .down-file a:hover {
-            text-decoration: none;
-            color: #D2A060;
-            border-color: #D2A060;
-        }
+    /* down-file */
+    .down-file img {
+        margin-right: 5px;
+    }
+    .down-file a {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #212121;
+        padding-bottom: 3px;
+        border-bottom: 1px solid rgba(33, 33, 33, 0.3);
+        transition: all 0.3s;
+    }
+    .down-file a:hover {
+        text-decoration: none;
+        color: #D2A060;
+        border-color: #D2A060;
+    }
 
-        /* print */
-        .print img {
-            margin-right: 5px;
-        }
-        .print a {
-            display: inline-block;
-            padding-bottom: 3px;
-            border-bottom: 1px solid rgba(33, 33, 33, 0.3);
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 14px;
-            color: #212121;
-            transition: all 0.3s;
-        }
-        .print a:hover {
-            text-decoration: none;
-            color: #D2A060;
-            border-color: #D2A060;
-        }
+    /* print */
+    .print img {
+        margin-right: 5px;
+    }
+    .print a {
+        display: inline-block;
+        padding-bottom: 3px;
+        border-bottom: 1px solid rgba(33, 33, 33, 0.3);
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #212121;
+        transition: all 0.3s;
+    }
+    .print a:hover {
+        text-decoration: none;
+        color: #D2A060;
+        border-color: #D2A060;
+    }
 
         /* ======== */
 
@@ -1062,7 +1067,6 @@ b, strong {
         bottom: 0;
         left: 0;
     }
-
     .result-search-name__link span{
         display: inline-block;
         font-size: 14px;
@@ -2891,6 +2895,7 @@ b, strong {
         left: calc(50% - -147px);
     }
 
+    /* попап купить в карточке товара */
     .popup-add-cart {
         padding: 2.8rem 3.1rem;
     }

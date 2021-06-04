@@ -543,7 +543,7 @@
                                         <img src="./www/images/icons/buy-icon.svg" alt="">
                                         <button type="submit" class="js-buy-btn">Купить</button>
                                     </div>
-                                    <div class="buy-one-click">
+                                    <div class="buy-one-click js-buy-one-click">
                                         <img src="./www/images/icons/buy-one-click-icon.svg" alt="">
                                         <button type="submit">Купить в 1 клик</button>
                                     </div>
@@ -2353,7 +2353,7 @@
     </div>
 </div>
 
-<!--  popup покупки в 1 клик  -->
+<!--  popup покупки  -->
 <div id="popupAddCart" class="popup-add-cart">
     <div class="popup-content">
         <div class="popup-title">
@@ -2375,6 +2375,104 @@
         </form>
     </div>
 
+</div>
+
+<!--  popup покупки в 1 клик  -->
+<div id="popupBuyOneClick" class="popup-buy-one-click">
+    <div class="popup-content">
+        <div class="popup-title">
+            <p>Быстрый заказ</p>
+        </div>
+        <div class="popup-name">
+            <p>Вагонка (ангарская сосна) "Штиль", сорт А 14х116х3000х6 шт.</p>
+        </div>
+        <form action="" type="post">
+            <div class="popup-form">
+                <div class="info-buy">
+                    <div class="info-buy-top">
+                        <div class="management-buy">
+                            <div class="management-by-title">
+                                <p>Количество:</p>
+                            </div>
+                            <div class="wrp__management-group">
+                                <div class="management__counter">
+                                    <img src="./www/images/icons/minus.svg" alt="">
+                                    <div class="wrp__input">
+                                        <input type="text">
+                                        <span>упак.</span>
+                                    </div>
+                                    <img src="./www/images/icons/plus.svg" alt="">
+                                </div>
+                                <div class="management-input">
+                                    <input type="text">
+                                    <span>м2</span>
+                                </div>
+                                <div class="management-input">
+                                    <input type="text">
+                                    <span>м3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc-buy">
+                            <div class="desc-by--title">
+                                <p>Это будет:</p>
+                            </div>
+                            <div class="wrp__desc-group">
+                                <div class="desc-item">
+                                    <img src="./www/images/icons/buy-info1.svg" alt="">
+                                    <span>26.400 м2</span>
+                                </div>
+                                <div class="desc-item">
+                                    <img src="./www/images/icons/buy-info2.svg" alt="">
+                                    <span>0.0360м3</span>
+                                </div>
+                                <div class="desc-item">
+                                    <img src="./www/images/icons/buy-info3.svg" alt="">
+                                    <span>162.00 кг</span>
+                                </div>
+                                <div class="desc-item">
+                                    <img src="./www/images/icons/buy-info4.svg" alt="">
+                                    <span>10 шт/уп</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-buy-middle">
+                        <div class="total-info">
+                            <p>Итого:</p>
+                        </div>
+                        <div class="total-sum">
+                            <span>10 770.00</span>
+                            <span>руб</span>
+                        </div>
+                    </div>
+
+                    <div class="tooltip-sale">
+                        <p>С учетом скидки <span>3</span>% за оформление заказа</p>
+                    </div>
+                </div>
+
+                <div class="registration-buy">
+                    <div class="form-reg__input">
+                        <div class="wrp__input-form js-input-focus">
+                            <span>Ваше Имя</span>
+                            <input type="text" maxlength="50" name="firstName">
+                        </div>
+                        <div class="wrp__input-form js-input-focus">
+                            <span>Ваш телефон</span>
+                            <input type="tel" maxlength="20" class="js-input-mask" name="phone">
+                        </div>
+                    </div>
+                    <div class="wrp__form-btn">
+                        <button class="arrange-order" type="submit">Оформить заказ</button>
+                    </div>
+                    <div class="wrp__pop-form-accept">
+                        <p>Оставляя заявку вы соглашаетесь с <a href="">политикой конфиденциальности</a></p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
 </div>
 </body>
 </html>

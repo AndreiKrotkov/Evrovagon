@@ -162,12 +162,23 @@ $(document).ready(function() {
         e.preventDefault();
         $.fancybox.open($('#popupAddCart'), {
             touch: true,
-            afterLoad : function () {
-
-            },
         });
     });
 
+    // Попап покупки в 1 клик
+    $('.js-buy-one-click').on('click', function(e) {
+        e.preventDefault();
+        $.fancybox.open($('#popupBuyOneClick'), {
+            touch: true,
+        });
+    });
+
+
+
+    $('.js-continue-shopping').on('click', function (e) {
+        e.preventDefault();
+        $.fancybox.close();
+    });
 
     // ховер имен на полях формы
     $('.js-form-inp-name').focus(function(){
