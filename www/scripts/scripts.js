@@ -359,6 +359,14 @@ $(document).ready(function() {
         }
     });
 
+    // Закрытие меню при клике не на элементе
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest(".js-menu-categories-desc").length && !$(e.target).closest(".js-menu-btn-desc").length) {
+            $('.js-menu-btn-mobile').closest('.menu-desc-open').removeClass('menu-desc-open');
+            $('.js-menu-categories-desc').hide(300);
+        }
+        e.stopPropagation();
+    });
 
     $( ".js-menu-elem__item" ).hover(function(e) {
         let $this = $(this);

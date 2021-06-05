@@ -122,6 +122,9 @@ b, strong {
         width: 100%;
         max-width: 371px;
     }
+    .center {
+        overflow: hidden;
+    }
 
     /* popup form */
     .popup-title {
@@ -159,12 +162,12 @@ b, strong {
     }
     .pop-form-inp-name {
         position: absolute;
-        top: 20px;
-        left: 26px;
+        top: 1.2rem;
+        left: 2.6rem;
         font-family: Ubuntu-L, sans-serif;
         font-weight: 300;
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 1rem;
+        line-height: 1.1rem;
         color: #6C6C75;
         background: white;
         padding: 0 2px;
@@ -366,7 +369,7 @@ b, strong {
     /* Попап купить в 1 клик */
     .popup-buy-one-click {
         display: none;
-        padding: 2.8rem 3.1rem;
+        padding: 1.8rem 0.5rem;
     }
     .popup-buy-one-click .popup-title {
         margin-bottom: 12px;
@@ -385,14 +388,7 @@ b, strong {
         color: #212121;
         margin-bottom: 0;
     }
-    .info-buy {
-
-    }
-    .info-buy-top {
-        position: relative;
-    }
     .info-buy-top:after {
-        content: '';
         width: 1px;
         height: 100%;
         position: absolute;
@@ -406,11 +402,12 @@ b, strong {
     }
     .info-buy-top {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-bottom: 2rem;
+        position: relative;
     }
     .management-buy, .desc-buy {
-        flex-basis: 30%;
+        flex-basis: 42%;
     }
     .management-buy .counter {
         margin-bottom: 20px;
@@ -447,7 +444,7 @@ b, strong {
         margin-top: -.5rem;
     }
     .desc-group .desc-item .desc-item__icon {
-        margin-right: 1rem;
+        margin-right: 0.5rem;
     }
     .desc-group .desc-item span {
         font-size: 16px;
@@ -467,7 +464,7 @@ b, strong {
     }
     .total-info span, .total-sum span  {
         font-weight: bold;
-        font-size: 30px;
+        font-size: 26px;
         line-height: 34px;
         color: #212121;
     }
@@ -489,6 +486,9 @@ b, strong {
     }
     .registration-buy .wrp__form-btn button {
         width: 100%;
+    }
+    .registration-buy .form-reg__input {
+        margin-bottom: 1rem;
     }
 
 
@@ -2670,6 +2670,21 @@ b, strong {
 
 @media screen and (min-width: 480px) {
     /* Global style */
+    /* попап купить в 1 клик */
+    .popup-buy-one-click {
+        padding: 1.8rem 1.6rem;
+    }
+    .info-buy-top:after {
+        content: '';
+    }
+    .desc-group .desc-item .desc-item__icon {
+        margin-right: 1rem;
+    }
+    .total-info span, .total-sum span {
+        font-size: 30px;
+    }
+    /*  =======================  */
+
     .header-top {
         display: none;
     }
@@ -3033,6 +3048,11 @@ b, strong {
         margin-bottom: 0;
     }
 
+        /* попап купить в 1 клик */
+    .registration-buy .wrp__input-form {
+        flex-basis: 100%;
+    }
+
         /*  company-info  */
     .wrp__company-info-group {
         margin-top: -25px;
@@ -3266,10 +3286,24 @@ b, strong {
 @media screen and (min-width: 1200px) {
     /* Global style*/
     .popup-callback {
-        padding: 51px 35px 41px 35px;
+        padding: 3.1rem 2.1rem 2.5rem 2.1rem;
         width: 100%;
         max-width: 371px;
     }
+
+    /* popup-buy-one-click */
+    .popup-buy-one-click {
+        display: none;
+        padding: 2.8rem 3.1rem;
+    }
+    .info-buy-top {
+        justify-content: space-around;
+    }
+    .management-buy, .desc-buy {
+        flex-basis: 30%;
+    }
+
+
     .header * {
         -webkit-box-sizing: content-box;
         box-sizing: content-box;
