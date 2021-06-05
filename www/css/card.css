@@ -244,6 +244,9 @@
         line-height: 18px;
         color: #6C6C75;
     }
+    .counter-text {
+        white-space: nowrap;
+    }
     .counter-number {
         display: inline-block;
         margin-right: 4px;

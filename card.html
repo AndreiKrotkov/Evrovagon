@@ -2391,64 +2391,73 @@
                 <div class="info-buy">
                     <div class="info-buy-top">
                         <div class="management-buy">
-                            <div class="management-by-title">
+                            <div class="info-buy__title">
                                 <p>Количество:</p>
                             </div>
                             <div class="wrp__management-group">
-                                <div class="management__counter">
-                                    <img src="./www/images/icons/minus.svg" alt="">
-                                    <div class="wrp__input">
-                                        <input type="text">
-                                        <span>упак.</span>
+                                <div class="counter">
+                                    <div class="counter-minus js-counter-minus">
+                                        <img src="./www/images/icons/minus.svg" alt="">
                                     </div>
-                                    <img src="./www/images/icons/plus.svg" alt="">
+                                    <div class="counter-text">
+                                        <span class="counter-number js-counter-number">1</span><span>упак.</span>
+                                    </div>
+                                    <div class="counter-plus js-counter-plus">
+                                        <img src="./www/images/icons/plus.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="management-input">
-                                    <input type="text">
-                                    <span>м2</span>
+                                    <input type="text" placeholder="0">
+                                    <img src="./www/images/icons/manager-m2.svg" alt="">
                                 </div>
                                 <div class="management-input">
-                                    <input type="text">
-                                    <span>м3</span>
+                                    <input type="text" placeholder="0">
+                                    <img src="./www/images/icons/manager-м3.svg" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="desc-buy">
-                            <div class="desc-by--title">
+                            <div class="info-buy__title">
                                 <p>Это будет:</p>
                             </div>
-                            <div class="wrp__desc-group">
+                            <div class="desc-group">
                                 <div class="desc-item">
-                                    <img src="./www/images/icons/buy-info1.svg" alt="">
-                                    <span>26.400 м2</span>
+                                    <img src="./www/images/icons/buy-info1.svg" alt="" class="desc-item__icon">
+                                    <span>26.400 </span>
+                                    <img src="./www/images/icons/manager-m2.svg" alt="">
                                 </div>
                                 <div class="desc-item">
-                                    <img src="./www/images/icons/buy-info2.svg" alt="">
-                                    <span>0.0360м3</span>
+                                    <img src="./www/images/icons/buy-info2.svg" alt="" class="desc-item__icon">
+                                    <span>0.0360 </span>
+                                    <img src="./www/images/icons/manager-м3.svg" alt="">
                                 </div>
                                 <div class="desc-item">
-                                    <img src="./www/images/icons/buy-info3.svg" alt="">
-                                    <span>162.00 кг</span>
+                                    <img src="./www/images/icons/buy-info3.svg" alt="" class="desc-item__icon">
+                                    <span>162.00 </span>
+                                    <span>кг</span>
                                 </div>
                                 <div class="desc-item">
-                                    <img src="./www/images/icons/buy-info4.svg" alt="">
-                                    <span>10 шт/уп</span>
+                                    <img src="./www/images/icons/buy-info4.svg" alt="" class="desc-item__icon">
+                                    <span>10 </span>
+                                    <span>шт/уп</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="info-buy-middle">
-                        <div class="total-info">
-                            <p>Итого:</p>
+                        <div class="total-price">
+                            <div class="total-info">
+                                <span>Итого:</span>
+                            </div>
+                            <div class="total-sum">
+                                <span>10 770.00</span>
+                                <span>руб</span>
+                            </div>
                         </div>
-                        <div class="total-sum">
-                            <span>10 770.00</span>
-                            <span>руб</span>
-                        </div>
-                    </div>
 
-                    <div class="tooltip-sale">
-                        <p>С учетом скидки <span>3</span>% за оформление заказа</p>
+                        <div class="tooltip-sale">
+                            <span>С учетом скидки <span>3</span>% за оформление заказа</span>
+                        </div>
                     </div>
                 </div>
 
