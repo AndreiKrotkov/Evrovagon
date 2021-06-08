@@ -98,6 +98,15 @@ $(document).ready(function() {
             nextArrow: "<div class=\"slider-next\"></div>",
             prevArrow: "<div class=\"slider-prev\"></div>",
         });
+    };
+
+    // Слайдер интерьера на мобилке {
+    if(windowWidth < 767) {
+        $('.js-slider-present-mob').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+        });
     }
 
     // смена текста в блоке materials - ссылка на новости
@@ -172,8 +181,6 @@ $(document).ready(function() {
             touch: true,
         });
     });
-
-
 
     $('.js-continue-shopping').on('click', function (e) {
         e.preventDefault();
@@ -367,6 +374,17 @@ $(document).ready(function() {
         }
         e.stopPropagation();
     });
+
+    $('.js-show-more').on('click', function(e) {
+        e.preventDefault();
+        $(this).closest('.js-max-height').toggleClass('show-more');
+        if($(this).closest('.js-max-height').hasClass('show-more')) {
+            $(this).text('Свернуть');
+        } else {
+            $(this).text('Читать далее');
+        }
+    });
+
 
     $( ".js-menu-elem__item" ).hover(function(e) {
         let $this = $(this);

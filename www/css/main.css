@@ -706,6 +706,9 @@ b, strong {
 
     /*header*/
     .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         padding: 10px 0;
     }
     .header-group--call-social {
@@ -717,10 +720,10 @@ b, strong {
         align-items: center;
     }
     .wrp__header-logo {
-        width: 173px;
-        margin-right: 21px;
+        width: 130px;
     }
     .header-logo a img {
+        width: 100%;
         max-height: 27px
     }
     .logo img {
@@ -730,8 +733,8 @@ b, strong {
     .logo span {
         display: inherit;
         font-weight: bold;
-        font-size: 6.85355px;
-        line-height: 8px;
+        font-size: 5.2px;
+        line-height: 6px;
         letter-spacing: 0.085em;
         text-transform: uppercase;
         color: #C2AD86;
@@ -750,11 +753,11 @@ b, strong {
         position: relative;
     }
     .wrp__call {
-        margin-right: 10px;
+        margin-right: 5px;
     }
 
     .header-call a {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 25px;
         color: #212121;
         font-weight: bold;
@@ -795,14 +798,14 @@ b, strong {
     }
     .header-social img{
         width: 100%;
-        height: 34px;
+        height: 27px;
         cursor: pointer;
     }
     .header-social a {
         display: block;
     }
     .header-social--watsap {
-        margin-left: -5px;
+        margin-left: -11px;
     }
 
     /* nav */
@@ -1222,14 +1225,14 @@ b, strong {
     .menu-bg {
         width: 100%;
         height: 100%;
-        position: fixed;
         top: 0;
-        right: -100%;
+        right: 0;
         background: rgba(0, 0, 0, 0.8);
         -webkit-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s;
-        z-index: 1;
+        z-index: -1;
+        opacity: 0;
     }
     .menu-mob-open {
         overflow: hidden;
@@ -1245,7 +1248,9 @@ b, strong {
         left: 0;
     }
     .menu-mob-open .menu-bg {
-        right: 0;
+        z-index: 1;
+        opacity: 1;
+        position: fixed;
     }
 
     .menu-mob-open .menu-hamburger .band--med--left {
@@ -1296,13 +1301,13 @@ b, strong {
         transition: all 0.3s;
     }
     .menu .logo--mob {
-        width: 277px;
+        /*width: 277px;*/
         margin-bottom: 17px;
     }
     .menu .logo--mob span {
         padding-left: 3px;
         font-weight: bold;
-        font-size: 11px;
+        font-size: 9px;
         line-height: 13px;
         letter-spacing: 0.085em;
         text-transform: uppercase;
@@ -2653,6 +2658,20 @@ b, strong {
 }
 
 @media screen and (min-width: 359px) {
+    .menu-btn {
+        width: 107px;
+        padding: 20px 0 20px 37px;
+    }
+    .wrp__menu-hamburger {
+        left: 16px;
+    }
+    .js-fix-menu-mobile .wrp__nav-fixed-group .header-call a {
+        font-size: 14px;
+    }
+    .js-fix-menu-mobile .nav-icons__list .nav-icons__item {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
     .foot-catalog__list {
         justify-content: space-between;
     }
