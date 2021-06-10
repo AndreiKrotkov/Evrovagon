@@ -490,20 +490,16 @@
         -webkit-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s;
-        -webkit-transform: rotate(-180deg);
-        -ms-transform: rotate(-180deg);
-        transform: rotate(-180deg);
     }
-
 
     /* Активное состояние навигации сайдбара */
     .active-nav-saidbar .saidbar-nav__prev {
         padding-bottom: 1rem;
     }
     .active-nav-saidbar .saidbar-nav__prev img {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
+        -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        transform: rotate(-180deg);
     }
     .active-nav-saidbar .saidbar-nav__detals {
         -webkit-transition: all 0.3s;

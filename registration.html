@@ -61,7 +61,7 @@
                     <div class="header-item wrp__header-logo">
                         <div class="logo">
                             <a href="https://eurowagonka.ru/">
-                                <img src="www/images/header/logo1.png" alt="logo">
+                                <img src="www/images/header/logo.svg" alt="logo">
                                 <span>Лучшие пиломатериалы в Москве</span>
                             </a>
                         </div>
@@ -172,18 +172,16 @@
                     <div class="nav-search d-xl-block">
                         <div class="nav-search__field">
                             <div class="nav-search__field-text">
-                                <form action="">
-                                    <input type="text" id="searchNav" placeholder="Я ИЩУ..." maxlength="70">
-                                </form>
+                                <input type="text" id="searchNav" placeholder="Я ИЩУ..." maxlength="70">
                             </div>
                             <div class="nav-search__field-close js-fl-close d-xl-none">
                                 <div class="field-cls-line-one js-field-close-one"></div>
                                 <div class="field-cls-line-two js-field-close-two"></div>
                             </div>
-                            <div class="nav-search__input-after"></div>
+                            <div class="nav-search__input-after js-search"></div>
                         </div>
                     </div>
-                    <div class="nav-result-search">
+                    <div class="nav-result-search js-result-search">
                         <div class="result-search">
                             <div class="wrp__result-search-title">
                                 <div class="result-search-title">
@@ -379,10 +377,15 @@
                                             <span>Режим работы:<br />
                                                 склад пн-пт 09-18, офис пн - вс 09-20</span>
                                             </div>
-                                            <div class="contact-item contact__lk">
-                                                <span class="contact__lk-after-elem"></span>
-                                                <span>Личный кабинет</span>
-                                                <span class="contact__lk--before"></span>
+                                            <div class="enter-lk js-enter-lk">
+                                                <div class="contact-item contact__lk js-contact__lk">
+                                                    <span class="contact__lk-after-elem"></span>
+                                                    <span>Личный кабинет</span>
+                                                    <span class="contact__lk--before"></span>
+                                                </div>
+                                                <div class="menu-lk js-popup-menu-lk">
+                                                    <a href="" class="enter js-enter">Вход</a>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -408,110 +411,6 @@
                     </div>
                 </nav>
             </div>
-        </div>
-    </div>
-
-    <!--  popup формы обратного звонка  -->
-    <div style="display: none;" id="callBackPopup" class="popup-callback">
-        <div class="section-success">
-            <div class="reply-img">
-                <img src="./www/images/pop-form/seccess-img.png" alt="success-img">
-            </div>
-            <div class="reply-title">
-                <p>Заявка отправлена</p>
-            </div>
-
-            <div class="reply-text">
-                <p>Наш специалист свяжется с Вами в ближайшее время</p>
-            </div>
-        </div>
-
-        <div class="section-error">
-            <div class="reply-img">
-                <img src="./www/images/pop-form/seccess-img.png" alt="success-img">
-            </div>
-            <div class="reply-title">
-                <p>При отправке формы возникла ошибка</p>
-            </div>
-            <div class="reply-text">
-                <p>Попробуйте перезагрузить страницу</p>
-            </div>
-        </div>
-
-        <div class="section-form">
-            <div class="popup-title">
-                <p>Оставьте заявку</p>
-                <p>и мы вам перезвоним!</p>
-            </div>
-            <form action="" type="post" id="formPopup">
-                <div class="popup-form">
-                    <div class="wrp_form-name">
-                        <input type="text" class="pop-form-inp js-form-inp-name">
-                        <div class="pop-form-inp-name js-form-name--focus">Ваше имя</div>
-                    </div>
-                    <div class="wrp_form-tel">
-                        <input type="text" class="pop-form-inp js-form-inp-tel">
-                        <div class="pop-form-inp-name js-form-tel--focus">Ваш телефон</div>
-                    </div>
-                    <div class="wrp__form-btn">
-                        <a href="" class="pop-form-btn js-pop-form-btn">Оставить заявку</a>
-                    </div>
-                    <div class="wrp__pop-form-accept">
-                        <p>Оставляя заявку вы соглашаетесь с <a href="">политикой конфиденциальности</a></p>
-                    </div>
-                </div>
-            </form>
-        </div>
-
-    </div>
-
-    <!--  popup входа в лк -->
-    <div class="popup-enter" id="popupEnter">
-        <div class="section-success js-section-success">
-            <div class="reply-img">
-                <img src="./www/images/pop-form/seccess-img.png" alt="success-img">
-            </div>
-            <div class="reply-title">
-                <p>Все окей</p>
-            </div>
-        </div>
-
-        <div class="section-error js-section-error">
-            <div class="error-popup-passw">
-                <div class="reply-img">
-                    <img src="./www/images/icons/error-passw.svg" alt="" >
-                </div>
-                <div class="reply-text">
-                    <p>Неправильный логин или пароль</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-form js-section-form">
-            <div class="popup-title popup-title--enter">
-                <p>Вход на сайт</p>
-            </div>
-            <form action="" type="post">
-                <div class="popup-form">
-                    <div class="wrp__input-form js-input-focus" >
-                        <span>E-mail</span>
-                        <input type="text" maxlength="50" name="popupEmail">
-                    </div>
-                    <div class="wrp__input-form js-input-focus">
-                        <span>Пароль</span>
-                        <input type="password" class="js-pass-check-first" maxlength="50" name="popupPassw">
-                        <div class="passw-img">
-                            <img src="./www/images/icons/showPassw.svg" alt="show-passw" class="js-pass-show-first">
-                        </div>
-                    </div>
-                    <div class="wrp__form-btn">
-                        <button type="submit" class="pop-form-btn">Войти</button>
-                    </div>
-                    <div class="wrp__form-help">
-                        <a href="">Забыли пароль?</a>
-                    </div>
-                </div>
-            </form>
         </div>
     </div>
 </section>
@@ -664,7 +563,7 @@
                                 <div class="foot-logo">
                                     <div class="logo">
                                         <a href="https://eurowagonka.ru/">
-                                            <img src="www/images/header/logo1.png" alt="logo">
+                                            <img src="www/images/footer/logo-1.svg" alt="logo">
                                             <span>Лучшие пиломатериалы в Москве</span>
                                         </a>
                                     </div>
@@ -920,6 +819,241 @@
     </div>
 </section>
 <!--  footer  -->
+
+<!--  popup формы обратного звонка  -->
+<div id="callBackPopup" class="popup-callback">
+    <div class="section-success">
+        <div class="reply-img">
+            <img src="./www/images/pop-form/seccess-img.png" alt="success-img">
+        </div>
+        <div class="reply-title">
+            <p>Заявка отправлена</p>
+        </div>
+
+        <div class="reply-text">
+            <p>Наш специалист свяжется с Вами в ближайшее время</p>
+        </div>
+    </div>
+
+    <div class="section-error">
+        <div class="reply-img">
+            <img src="./www/images/pop-form/seccess-img.png" alt="success-img">
+        </div>
+        <div class="reply-title">
+            <p>При отправке формы возникла ошибка</p>
+        </div>
+        <div class="reply-text">
+            <p>Попробуйте перезагрузить страницу</p>
+        </div>
+    </div>
+
+    <div class="section-form">
+        <div class="popup-title">
+            <p>Оставьте заявку</p>
+            <p>и мы вам перезвоним!</p>
+        </div>
+        <form action="" type="post" id="formPopup">
+            <div class="popup-form">
+                <div class="wrp_form-name">
+                    <input type="text" class="pop-form-inp js-form-inp-name">
+                    <div class="pop-form-inp-name js-form-name--focus">Ваше имя</div>
+                </div>
+                <div class="wrp_form-tel">
+                    <input type="text" class="pop-form-inp js-form-inp-tel">
+                    <div class="pop-form-inp-name js-form-tel--focus">Ваш телефон</div>
+                </div>
+                <div class="wrp__form-btn">
+                    <a href="" class="pop-form-btn js-pop-form-btn">Оставить заявку</a>
+                </div>
+                <div class="wrp__pop-form-accept">
+                    <p>Оставляя заявку вы соглашаетесь с <a href="">политикой конфиденциальности</a></p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<!--  popup входа в лк -->
+<div id="popupEnter" class="popup-enter">
+    <div class="section-success js-section-success">
+        <div class="reply-img">
+            <img src="./www/images/pop-form/seccess-img.png" alt="success-img">
+        </div>
+        <div class="reply-title">
+            <p>Все окей</p>
+        </div>
+    </div>
+
+    <div class="section-error js-section-error">
+        <div class="error-popup-passw">
+            <div class="reply-img">
+                <img src="./www/images/icons/error-passw.svg" alt="" >
+            </div>
+            <div class="reply-text">
+                <p>Неправильный логин или пароль</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-form js-section-form">
+        <div class="popup-title popup-title--enter">
+            <p>Вход на сайт</p>
+        </div>
+        <form action="" type="post">
+            <div class="popup-form">
+                <div class="wrp__input-form js-input-focus" >
+                    <span>E-mail</span>
+                    <input type="text" maxlength="50" name="popupEmail">
+                </div>
+                <div class="wrp__input-form js-input-focus">
+                    <span>Пароль</span>
+                    <input type="password" class="js-pass-check-first" maxlength="50" name="popupPassw">
+                    <div class="passw-img">
+                        <img src="./www/images/icons/showPassw.svg" alt="show-passw" class="js-pass-show-first">
+                    </div>
+                </div>
+                <div class="wrp__form-btn">
+                    <button type="submit" class="pop-form-btn">Войти</button>
+                </div>
+                <div class="wrp__form-help">
+                    <a href="">Забыли пароль?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--  popup покупки  -->
+<div id="popupAddCart" class="popup-add-cart">
+    <div class="popup-content">
+        <div class="popup-title">
+            <p>Товар добавлен в корзину</p>
+        </div>
+        <form action="" type="post">
+            <div class="popup-form">
+                <div class="form-images">
+                    <img src="./www/images/card-product/add-cart.png" alt="">
+                </div>
+                <div class="form-name-product">
+                    <p>Вагонка (ангарская сосна) "Штиль", сорт А 14х116х3000х6 шт.</p>
+                </div>
+                <div class="wrp__form-btn">
+                    <a href="" class="continue-shopping js-continue-shopping">Продолжить покупки</a>
+                    <button class="arrange-order" type="submit">Оформить заказ</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<!--  popup покупки в 1 клик  -->
+<div id="popupBuyOneClick" class="popup-buy-one-click">
+    <div class="popup-content">
+        <div class="popup-title">
+            <p>Быстрый заказ</p>
+        </div>
+        <div class="popup-name">
+            <p>Вагонка (ангарская сосна) "Штиль", сорт А 14х116х3000х6 шт.</p>
+        </div>
+        <form action="" type="post">
+            <div class="popup-form">
+                <div class="info-buy">
+                    <div class="info-buy-top">
+                        <div class="management-buy">
+                            <div class="info-buy__title">
+                                <p>Количество:</p>
+                            </div>
+                            <div class="wrp__management-group">
+                                <div class="counter">
+                                    <div class="counter-minus js-counter-minus">
+                                        <img src="./www/images/icons/minus.svg" alt="">
+                                    </div>
+                                    <div class="counter-text">
+                                        <span class="counter-number js-counter-number">1</span><span>упак.</span>
+                                    </div>
+                                    <div class="counter-plus js-counter-plus">
+                                        <img src="./www/images/icons/plus.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="management-input">
+                                    <input type="text" placeholder="0">
+                                    <img src="./www/images/icons/manager-m2.svg" alt="">
+                                </div>
+                                <div class="management-input">
+                                    <input type="text" placeholder="0">
+                                    <img src="./www/images/icons/manager-м3.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc-buy">
+                            <div class="info-buy__title">
+                                <p>Это будет:</p>
+                            </div>
+                            <div class="desc-group">
+                                <div class="desc-item">
+                                    <img src="./www/images/icons/buy-info1.svg" alt="" class="desc-item__icon">
+                                    <span>26.400 </span>
+                                    <img src="./www/images/icons/manager-m2.svg" alt="">
+                                </div>
+                                <div class="desc-item">
+                                    <img src="./www/images/icons/buy-info2.svg" alt="" class="desc-item__icon">
+                                    <span>0.0360 </span>
+                                    <img src="./www/images/icons/manager-м3.svg" alt="">
+                                </div>
+                                <div class="desc-item">
+                                    <img src="./www/images/icons/buy-info3.svg" alt="" class="desc-item__icon">
+                                    <span>162.00 </span>
+                                    <span>кг</span>
+                                </div>
+                                <div class="desc-item">
+                                    <img src="./www/images/icons/buy-info4.svg" alt="" class="desc-item__icon">
+                                    <span>10 </span>
+                                    <span>шт/уп</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-buy-middle">
+                        <div class="total-price">
+                            <div class="total-info">
+                                <span>Итого:</span>
+                            </div>
+                            <div class="total-sum">
+                                <span>10 770.00</span>
+                                <span>руб</span>
+                            </div>
+                        </div>
+
+                        <div class="tooltip-sale">
+                            <span>С учетом скидки <span>3</span>% за оформление заказа</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="registration-buy">
+                    <div class="form-reg__input">
+                        <div class="wrp__input-form js-input-focus">
+                            <span>Ваше Имя</span>
+                            <input type="text" maxlength="50" name="firstName">
+                        </div>
+                        <div class="wrp__input-form js-input-focus">
+                            <span>Ваш телефон</span>
+                            <input type="tel" maxlength="20" class="js-input-mask" name="phone">
+                        </div>
+                    </div>
+                    <div class="wrp__form-btn">
+                        <button class="arrange-order" type="submit">Оформить заказ</button>
+                    </div>
+                    <div class="wrp__pop-form-accept">
+                        <p>Оставляя заявку вы соглашаетесь с <a href="">политикой конфиденциальности</a></p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 </body>
 </html>
 
