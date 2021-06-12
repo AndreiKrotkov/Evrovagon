@@ -124,18 +124,30 @@ $(document).ready(function() {
     // Поле поиска
     $('.js-search').on('click', function (e) {
         $('.js-fl-close').removeClass('fl-close');
-        $('.nav-search').show(300);
-        $('.nav-result-search').show(300);
+        $('.js-nav-search-mob').show(100);
+        $('.nav-result-search').show(100);
+        $('body').addClass('overflow-h');
     });
     $('.js-fl-close').on('click', function () {
         let $this = $(this);
         $this.addClass('fl-close');
-        $('.nav-search').hide(300);
-        $('.nav-result-search').hide(300);
+        $('.js-nav-search-mob').hide(100);
+        $('.nav-result-search').hide(100);
         document.getElementById("searchNav").value = "";
-    })
+        $('body').removeClass('overflow-h');
+    });
 
-    $('#searchNav').on('input paste',  function (e) {
+    $('#searchNav').on('keydown', function(e) {
+        if(e.keyCode === 13) {
+            $('body').removeClass('overflow-h');
+        }
+    });
+
+    $('#searchNav').on('input paste click',  function (e) {
+        $('.js-fl-close').removeClass('fl-close');
+        $('.js-nav-search-mob').show(100);
+        $('.nav-result-search').show(100);
+        $('body').addClass('overflow-h');
         console.log('Ввод в поле поиска')
     })
 
@@ -372,8 +384,15 @@ $(document).ready(function() {
                 $('.js-menu-categories-desc').hide(300);
             }
         }
-        if (!$(e.target).closest(".js-search").length && !$(e.target).closest(".js-result-search").length) {
+        if (!$(e.target).closest(".js-search").length
+            && !$(e.target).closest(".js-result-search").length
+            && !$(e.target).closest("#searchNav").length
+            && !$(e.target).closest(".nav-search").length) {
             $('.js-result-search').hide(100);
+            if(windowWidth <= 1200){
+                $('.js-nav-search-mob').hide(100);
+            }
+            $('body').removeClass('overflow-h');
         }
 
         if (!$(e.target).closest(".js-contact__lk").length && !$(e.target).closest(".js-popup-menu-lk").length) {
@@ -384,9 +403,10 @@ $(document).ready(function() {
     });
 
     if(windowWidth > 1200) {
-        $('.js-search').on('click', function (e) {
+        $('#searchNav').on('click', function (e) {
             e.preventDefault();
-            $('.js-result-search').show(200).addClass('desc-result-search');
+            $('.js-result-search').addClass('desc-result-search');
+            $('.js-bg-search').addClass('bg-shadow');
         });
     }
 

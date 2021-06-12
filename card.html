@@ -109,7 +109,7 @@
     </div>
     <div class="container-fluid nav-bg js-fix-menu">
         <div class="row">
-            <div class="col-12 px-0">
+            <div class="col-12 px-0 js-bg-search">
                 <nav class="navig nav-fixed">
                     <div class="wrp__nav-search-hidden js-nav-hidden">
                         <div class="nav-search-hidden">
@@ -165,10 +165,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="nav-search d-xl-block">
+                    <div class="nav-search js-nav-search-mob d-xl-block">
                         <div class="nav-search__field">
                             <div class="nav-search__field-text">
-                                <input type="text" id="searchNav" placeholder="Я ИЩУ..." maxlength="70">
+                                <form action="">
+                                    <input type="text" id="searchNav" placeholder="Я ИЩУ..." maxlength="70">
+                                </form>
                             </div>
                             <div class="nav-search__field-close js-fl-close d-xl-none">
                                 <div class="field-cls-line-one js-field-close-one"></div>

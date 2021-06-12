@@ -41,6 +41,9 @@ b, strong {
 .bold {
     font-weight: 600!important;
 }
+.overflow-h {
+    overflow: hidden;
+}
 
 .section-success, .section-error {
     display: none;
@@ -256,7 +259,7 @@ b, strong {
         display: none;
         width: 100%;
         position: absolute;
-        bottom: -25px;
+        bottom: 0;
         height: 0;
         z-index: 2;
     }
@@ -301,7 +304,7 @@ b, strong {
     .show-enter .menu-lk {
         display: block;
         transition: all 0.3s;
-        height: 100%;
+        height: fit-content;
         padding: 0 10px;
         background: #f3f3f3;
         border-radius: 4px;
@@ -1147,10 +1150,13 @@ b, strong {
         display: none;
         left: 0;
         top: 79px;
-        z-index: 10;
+        z-index: 60;
         background: white;
         position: absolute;
         padding: 26px 15px 10px 15px;
+        -webkit-box-shadow: 0px 0px 20px 4px rgba(34, 60, 80, 0.46);
+        -moz-box-shadow: 0px 0px 20px 4px rgba(34, 60, 80, 0.46);
+        box-shadow: 0px 0px 20px 4px rgba(34, 60, 80, 0.46);
     }
     .result-search-title h2 {
         font-size: 20px;
@@ -3479,11 +3485,15 @@ b, strong {
         max-width: 100%;
     }
     .desc-result-search {
-        top: 55px;
+        top: 52px;
+        left: -26px;
         width: 97.5%;
-        -webkit-box-shadow: 0px 0px 11px 0px rgba(34, 60, 80, 0.2);
-        -moz-box-shadow: 0px 0px 11px 0px rgba(34, 60, 80, 0.2);
-        box-shadow: 0px 0px 11px 0px rgba(34, 60, 80, 0.2);
+        z-index: 60;
+        padding: 1.2rem 2.5rem 1.6rem 2.5rem;
+    }
+
+    .menu-lk {
+        bottom: -25px;
     }
 
     .navig {
