@@ -209,6 +209,7 @@ $(document).ready(function() {
     });
     $('.js-form-inp-tel').focus(function(){
         $('.js-form-tel--focus').addClass('inp-name-focus');
+        $(this).inputmask({"mask": "+7 (999) 999-9999", showMaskOnHover: false});
     }).blur(function(){
         let $this = $(this);
         if($this.val() === ''){
