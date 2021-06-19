@@ -1,0 +1,161 @@
+@media screen and (min-width: 320px) {
+    .basket-tabs {
+        border: 1px solid #EFEFEF;
+        border-radius: 10px;
+    }
+    .basket-tabs .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+        width: 100%;
+    }
+    .basket-tabs .cs-select {
+        width: 100%;
+    }
+    .basket-tabs .select-basket {
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 8px 30px -13px rgba(34, 60, 80, 0.46);
+        -moz-box-shadow: 0px 8px 30px -13px rgba(34, 60, 80, 0.46);
+        box-shadow: 0px 8px 30px -13px rgba(34, 60, 80, 0.46);
+    }
+    .basket-tabs .wrp__select {
+        margin-bottom: 0;
+    }
+    .basket-tabs .cs-select .dropdown-toggle {
+        background-color: white;
+        border: none;
+    }
+    .basket-tabs .cs-select .dropdown-toggle::after {
+        margin-top: 10px;
+        content: url("../../www/images/catalog/icon/arrow-nav-big.svg");
+        transform: rotate(-180deg);
+    }
+    .basket-tabs .cs-select .dropdown-toggle::before {
+        content: url("../../www/images/icons/burger-icon.svg");
+    }
+    .basket-tabs .cs-select .btn {
+        padding: 8px 24px;
+        border-radius: 10px;
+    }
+    .basket-tabs .filter-option-inner-inner {
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #212121;
+    }
+    .basket-tabs .cs-select .bootstrap-select .dropdown-toggle:focus, .bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
+        outline: none!important;
+    }
+    .basket-tabs .price-list__btn {
+        margin: 0 auto;
+    }
+    .basket-tabs .active-tab .tab-content {
+        padding: 0;
+    }
+    .basket-tabs .active-tab .price-list {
+        padding: 1.25rem;
+    }
+    .basket-tabs .tab-content .card-table__link li {
+        width: 65px;
+    }
+    .basket-tabs .tab-content .card-table__link li:first-child {
+        height: 52px;
+    }
+    .basket-tabs .tab-content .card-table__link li:not(:first-child) {
+        height: 68px;
+    }
+    .basket-tabs .tab-content .card-table__link-head {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 12px;
+    }
+    .basket-tabs .card-table table tbody td {
+        padding: 10px;
+    }
+    .basket-tabs .card-table .counter {
+        margin: 0;
+        background-color: #FFFFFF;
+    }
+    .wrp__delete {
+        width: 15px;
+        height: 15px;
+        border: 2px solid #DCDCDC;
+        border-radius: 3px;
+        background-color: #FFFFFF;
+        cursor: pointer;
+        padding: 1px;
+    }
+    .wrp__delete:hover {
+        border-color: #D2A060;
+    }
+    .delete-product {
+        display: none;
+        width: 9px;
+        height: 9px;
+        background: #D2A060;
+        border-radius: 2px;
+    }
+    /* Удаление товара типа чексбокс */
+    .del .delete-product {
+        display: block;
+    }
+    .basket-total {
+        padding: 1.9rem 1.25rem;
+        background: #F4EFE6;
+    }
+    .basket-total__title {
+        margin-bottom: 1.6rem;
+    }
+    .basket-total__title h3 {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #212121;
+        margin-bottom: 0;
+    }
+    .basket-total__desc ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .basket-total__desc ul li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .basket-total__desc ul li .basket-total__desc-icon {
+        margin-right: 10px;
+    }
+    .basket-total__desc ul li .basket-total__desc-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .basket-total__desc ul li .basket-total__desc-text span {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 22px;
+        color: #212121;
+    }
+    .basket-total .basket-total__btn button {
+        width: 100%;
+        background: #48A941;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        border: none;
+        padding: 1.1rem 0;
+    }
+    .basket-total__desc ul li:not(:last-child) {
+        margin-right: 0.8rem;
+    }
+
+}
+@media screen and (min-width: 767px) {}
+@media screen and (min-width: 1200px) {}

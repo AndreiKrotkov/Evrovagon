@@ -12,6 +12,7 @@
 @import "contacts.css";
 @import "section-detail.css";
 @import "form.css";
+@import "basket.css";
 
 /* Шрифт */
 @font-face {
@@ -491,7 +492,6 @@ b, strong {
         line-height: 16px;
         color: #6C6C75;
     }
-
     .registration-buy {
         max-width: 370px;
         margin: 0 auto;
@@ -501,6 +501,26 @@ b, strong {
     }
     .registration-buy .form-reg__input {
         margin-bottom: 1rem;
+    }
+
+    /* попап выбор города / корзина */
+    .popup-enter-basket {
+        display: none;
+        padding: 3.1rem 3.1rem 1.8rem 3.1rem;
+    }
+    .popup-enter-basket .wrp__select {
+        margin-bottom: 1.2rem;
+    }
+    .select-city .dropdown-toggle {
+        padding: 0.9rem 1.25rem;
+        border: 1px solid #B6B6BA!important;
+        border-radius: 4px;
+        background-color: transparent!important;
+    }
+    .select-city .dropdown-toggle .filter-option-inner-inner {
+        font-size: 16px;
+        line-height: 18px;
+        color: #6C6C75;
     }
 
 

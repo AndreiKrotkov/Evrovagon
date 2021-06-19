@@ -554,6 +554,24 @@
         bottom: -12px;
         left: 0;
     }
+    .tab-content {
+        opacity: 0;
+        height: 0;
+    }
+    .active-tab .tab-content {
+        opacity: 1;
+        height: 100%;
+        padding: 1.5rem 1.9rem;
+        position: relative;
+        z-index: 5;
+    }
+    .card-tabs__head .active {
+        border-bottom: 2px solid #E4C380;
+    }
+    .card-tabs__head .active span {
+        color: black;
+        font-weight: 600;
+    }
 
     /* Чиать далее - актив */
     .show-more .tabs-prev__content {
@@ -842,24 +860,6 @@
         font-size: 14px;
         line-height: 16px;
         color: #B0B0B0;
-    }
-    .tab-content {
-        opacity: 0;
-        height: 0;
-    }
-    .active-tab .tab-content {
-        opacity: 1;
-        height: 100%;
-        padding: 1.5rem 1.9rem;
-        position: relative;
-        z-index: 5;
-    }
-    .card-tabs__head .active {
-        border-bottom: 2px solid #E4C380;
-    }
-    .card-tabs__head .active span {
-        color: black;
-        font-weight: 600;
     }
     .tab-content-text:not(:last-child) {
         margin-bottom: 1rem;

@@ -198,6 +198,14 @@ $(document).ready(function() {
         $.fancybox.close();
     });
 
+    // Попап выбора города при входе в корзину
+    $('.js-basket').on('click', function(e) {
+        e.preventDefault();
+        $.fancybox.open($('#popupEnterBasket'), {
+            touch: true,
+        });
+    });
+
     // ховер имен на полях формы
     $('.js-form-inp-name').focus(function(){
         $('.js-form-name--focus').addClass('inp-name-focus');
@@ -601,7 +609,7 @@ $(document).ready(function() {
     // Кастомные селекты в карточке товаров
     $('.js-cast-select').selectpicker();
 
-    // Табы на карточке после мобилке
+    // Табы на карточке
     $('.js-tab').on('click', function (e) {
         e.preventDefault();
         let $this = $(this);
@@ -615,6 +623,13 @@ $(document).ready(function() {
             $('.tab').removeClass('active-tab');
             $(attrLink).addClass('active-tab');
         }
+    });
+
+    $('.js-tab-select').on('change', function (e) {
+        e.stopPropagation();
+        let attrLink = "." + this.value;
+        $('.tab').removeClass('active-tab');
+        $(attrLink).addClass('active-tab');
     });
     // END tab
 
@@ -639,8 +654,13 @@ $(document).ready(function() {
             counterPrice--;
             $counterNumber.text(counterPrice);
         }
-
     });
+
+    $('.js-delete-product').on('click', function () {
+        $(this).toggleClass('del');
+    });
+
+
 
 });
 
