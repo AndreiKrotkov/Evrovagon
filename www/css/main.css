@@ -13,6 +13,7 @@
 @import "section-detail.css";
 @import "form.css";
 @import "basket.css";
+@import "making-order.css";
 
 /* Шрифт */
 @font-face {
@@ -44,6 +45,9 @@ b, strong {
 }
 .overflow-h {
     overflow: hidden;
+}
+.no-overflow {
+    overflow: inherit;
 }
 
 .section-success, .section-error {
@@ -126,9 +130,6 @@ b, strong {
         padding: 51px 20px 41px 20px;
         width: 100%;
         max-width: 371px;
-    }
-    .center {
-        overflow: hidden;
     }
 
     /* popup form */

@@ -1,0 +1,147 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@media screen and (min-width: 320px) {
+    /* Часть 1 */
+    .wrp__design-option .design-option:not(:last-child) {
+        margin-bottom: 4rem;
+    }
+    .design-option__title {
+        margin-bottom: 1rem;
+    }
+    .design-option__title h3 {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #212121;
+        margin-bottom: 0;
+    }
+    .design-option__item {
+        background: #FFFFFF;
+        -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 30px 20px;
+    }
+    .design-option__login .wrp__input-form {
+        margin-bottom: 20px;
+    }
+    .design-option__login .wrp__form-btn button {
+        font-size: 1rem;
+        padding: 18px 5px 18px 5px;
+    }
+    .design-option__login {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #EFEFEF;
+    }
+    .design-option__desc {
+        padding-top: 1.6rem;
+    }
+    .desc-title {
+        margin-bottom: 1rem;
+    }
+    .desc-title p {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 18px;
+        color: #212121;
+        margin-bottom: 0;
+    }
+    .desc-title a {
+        color: #C07E29;
+    }
+    .desc-list ul li {
+        position: relative;
+        font-style: italic;
+        font-size: 12px;
+        line-height: 14px;
+        color: #6C6C75;
+        padding-left: .7rem;
+    }
+    .desc-list ul li:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 3px;
+        height: 3px;
+        background: #6C6C75;
+        border-radius: 50%;
+    }
+    .desc-list ul li:not(:last-child) {
+        margin-bottom: .5rem;
+    }
+    .design-option__tooltip {
+        position: relative;
+        padding-left: .7rem;
+        margin-top: 1rem;
+    }
+    .design-option__tooltip p {
+        font-family: Ubuntu-L, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+        color: #6C6C75;
+        margin-bottom: 0;
+    }
+    .design-option__tooltip a {
+        font-size: 12px;
+        line-height: 16px;
+        color: #6C6C75;
+        text-decoration: underline;
+    }
+    .design-option__tooltip:after {
+        content: url("../../www/images/pop-form/pop-form-check.png");
+        position: absolute;
+        left: -7px;
+        top: -4px;
+    }
+
+    /* Часть 2 */
+
+
+
+}
+@media screen and (min-width: 767px) {
+    /* Часть 1 */
+    .design-option__login .wrp__form-help {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    /* Часть 2 */
+}
+@media screen and (min-width: 1200px) {
+    /* Часть 1 */
+    .wrp__design-option {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .design-option {
+        -ms-flex-preferred-size: 48.5%;
+        flex-basis: 48.5%;
+    }
+    .wrp__design-option .design-option:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    /* Часть 2 */
+
+
+}

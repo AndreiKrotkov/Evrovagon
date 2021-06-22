@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @media screen and (min-width: 320px) {
     .basket-tabs {
         border: 1px solid #EFEFEF;
@@ -12,7 +19,6 @@
     .basket-tabs .select-basket {
         border-radius: 10px;
         -webkit-box-shadow: 0px 8px 30px -13px rgba(34, 60, 80, 0.46);
-        -moz-box-shadow: 0px 8px 30px -13px rgba(34, 60, 80, 0.46);
         box-shadow: 0px 8px 30px -13px rgba(34, 60, 80, 0.46);
     }
     .basket-tabs .wrp__select {
@@ -25,6 +31,8 @@
     .basket-tabs .cs-select .dropdown-toggle::after {
         margin-top: 10px;
         content: url("../../www/images/catalog/icon/arrow-nav-big.svg");
+        -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
         transform: rotate(-180deg);
     }
     .basket-tabs .cs-select .dropdown-toggle::before {
@@ -102,7 +110,14 @@
         display: block;
     }
     .basket-total {
-        padding: 1.9rem 1.25rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: .5rem .75rem 1.9rem .75rem;
         background: #F4EFE6;
     }
     .basket-total__title {
@@ -117,13 +132,24 @@
         margin-bottom: 0;
     }
     .basket-total__desc ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
     .basket-total__desc ul li {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         margin-bottom: 1rem;
     }
@@ -131,7 +157,12 @@
         margin-right: 10px;
     }
     .basket-total__desc ul li .basket-total__desc-text {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .basket-total__desc ul li .basket-total__desc-text span {
@@ -139,6 +170,10 @@
         font-size: 12px;
         line-height: 22px;
         color: #212121;
+    }
+    .basket-total .basket-total__btn {
+        max-width: 270px;
+        margin: 0 auto;
     }
     .basket-total .basket-total__btn button {
         width: 100%;
@@ -156,6 +191,105 @@
         margin-right: 0.8rem;
     }
 
+    .delivery-info {
+        background: #FFFFFF;
+        padding: 10px;
+    }
+    .delivery-info-title {
+        text-align: center;
+        margin-bottom: .5rem;
+    }
+    .delivery-info-title p {
+        font-size: 14px;
+        line-height: 16px;
+        color: #212121;
+        margin-bottom: 0;
+    }
+    .delivery-info-price {
+        margin-bottom: .5rem;
+        text-align: center;
+    }
+    .delivery-info-price span {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 25px;
+        color: #C07E29;
+    }
+    .delivery-info-desc {
+        text-align: center;
+    }
+    .delivery-info-desc span {
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 16px;
+        color: #212121;
+        margin-bottom: 0;
+    }
+
 }
-@media screen and (min-width: 767px) {}
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 767px) {
+    .basket-tabs .card-tabs__head ul {
+        -webkit-box-pack: left;
+        -ms-flex-pack: left;
+        justify-content: left;
+    }
+    .basket-tabs .card-tabs__head ul li {
+        margin-right: 2rem;
+    }
+    .basket-tabs .price-list__btn {
+        margin: 0;
+    }
+    .basket-tabs .price-list__head {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+    .basket-total {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-orient: initial;
+        -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+        flex-direction: initial;
+        margin-top: .5rem;
+        padding: 20px;
+    }
+    .basket-total .wrp__content {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    }
+    .basket-total .wrp-basket__delivery-info {
+        -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    }
+    .delivery-info {
+        padding: 20px;
+    }
+
+}
+@media screen and (min-width: 1200px) {
+    .basket-tabs .price-list__table {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .basket-tabs .price-list__table .card-table {
+        width: 100%;
+    }
+    .basket-tabs .tab-content .card-table__link li:not(:first-child) {
+        height: 64px;
+    }
+    .basket-total .wrp-basket__delivery-info {
+        -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+    }
+    .basket-total .wrp__content {
+        -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    }
+    .basket-total__desc {
+        margin-bottom: 1rem;
+    }
+
+}

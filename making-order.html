@@ -2,14 +2,13 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Корзина</title>
+    <title>Оформление заказа</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="www/css/libs/bootstrap.min.css">
     <link rel="stylesheet" href="www/css/libs/jquery.fancybox.min.css">
     <link rel="stylesheet" href="www/css/libs/slick.css">
-    <link rel="stylesheet" href="www/css/libs/jquery.fancybox.min.css">
     <link rel="stylesheet" href="www/css/libs/bootstrap-select.min.css">
     <link rel="stylesheet" href="www/css/main.css">
     <script src="www/scripts/libs/Jquery-3.5.1.js"></script>
@@ -423,361 +422,100 @@
                 <article>
                     <section class="center">
                         <div class="breadcrumbs">
-                            <a href="/">Главная</a> - <a href="/">Личный кабинет</a> - <span>Корзина</span>
+                            <a href="/">Главная</a> - <a href="/">Личный кабинет</a> - <span>Оформление заказа</span>
                         </div>
 
-                        <!--  Табы корзины  -->
-                        <div class="basket-tabs">
-                            <div class="card-tabs__head">
-                                <ul class="d-none d-md-flex">
-                                    <li data-tab="tab1" class="js-tab">
-                                        <span>Мой профиль</span>
-                                    </li>
-                                    <li data-tab="tab2" class="js-tab active">
-                                        <span>Корзина</span>
-                                    </li>
-                                    <li data-tab="tab3" class="js-tab">
-                                        <span>Мои заказы</span>
-                                    </li>
-                                    <li data-tab="tab4" class="js-tab">
-                                        <span>Система скидок</span>
-                                    </li>
-                                </ul>
-                                <div class="wrp__select d-md-none">
-                                    <div class="cs-select">
-                                        <select name="" class="select-basket js-cast-select js-tab-select">
-                                            <option data-tab="tab1" value="tab1">Мой профиль</option>
-                                            <option data-tab="tab2" value="tab2" selected>Корзина</option>
-                                            <option data-tab="tab3" value="tab3">Мои заказы</option>
-                                            <option data-tab="tab4" value="tab4">Система скидок</option>
-                                        </select>
+                        <!--  Оформление заказа  -->
+                            <div class="wrp__design-option">
+                            <!--  Вы можете авторизоваться   -->
+                                <div class="design-option">
+                                    <div class="design-option__title">
+                                        <h3>Вы можете авторизоваться</h3>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="card-tabs__case">
-                                <ul>
-                                    <li class="tab1 tab">
-                                        <div class="tab-content">
-                                            <div class="tab-content-text">
-                                                <p>
-                                                    Планкен прямой — это вид фасадной доски. Прямой профиль применяется для отделки фасадов, интерьеров, террас, беседок, из него изготавливают скамьи,
-                                                    столешницы и заборы. Наиболее востребован на рынке планкен прямой из лиственницы, так как именно лиственница гарантирует оптимальные эксплуатационные характеристики изделия.
-                                                </p>
-                                            </div>
-                                            <div class="tab-content-title">
-                                                <p>Обшивка из лиственныцы по привлекательной цене: бюджетно, надежно, удобно</p>
-                                            </div>
-                                            <div class="tab-content-text">
-                                                <p>
-                                                    Прямой декинг из лиственницы монтируется с технологическими зазорами между планками: эти промежутки нужны для циркуляции воздуха.
-                                                    Поскольку этот отделочный материал часто используется «на свежем воздухе», важно, чтобы он мог переносить перепады температуры и влажности без какого-либо ущерба.
-                                                    Именно это качество считается одной из основных характеристик лиственницы.
-                                                </p>
-                                                <p>
-                                                    Компания «ПримаЛес» гарантирует максимально низкие цены на прямой профиль из лиственницы в Москве:
-                                                    материалы из отечественного сырья гораздо дешевле импортных аналогов.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="tab2 tab active-tab">
-                                        <div class="tab-content">
-                                            <form action="">
-                                                <div class="price-list">
-                                                    <div class="price-list__head">
-                                                        <div class="price-list__btn">
-                                                            <div class="print">
-                                                                <img src="./www/images/icons/print.svg" alt="">
-                                                                <a href="" print>Распечатать таблицу</a>
-                                                            </div>
+                                    <div class="design-option__item">
+                                        <div class="design-option__login">
+                                            <form action="" type="post">
+                                                <div class="popup-form">
+                                                    <div class="wrp__input-form js-input-focus" >
+                                                        <span>Ваш e-mail</span>
+                                                        <input type="text" maxlength="50" name="popupEmail">
+                                                    </div>
+                                                    <div class="wrp__input-form js-input-focus">
+                                                        <span>Пароль</span>
+                                                        <input type="password" class="js-pass-check-first" maxlength="50" name="popupPassw">
+                                                        <div class="passw-img">
+                                                            <img src="./www/images/icons/showPassw.svg" alt="show-passw" class="js-pass-show-first">
                                                         </div>
                                                     </div>
-                                                    <div class="price-list__table">
-                                                        <!-- Таблица -->
-                                                        <div class="card-table price-list__details-det">
-                                                            <table>
-                                                                <thead>
-                                                                <tr>
-                                                                    <th>Название</th>
-                                                                    <th>Ед. изм.</th>
-                                                                    <th>Кол-во</th>
-                                                                    <th>Площаль S, м2</th>
-                                                                    <th>Вес, кг</th>
-                                                                    <th>Цена, руб.</th>
-                                                                </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                <tr>
-                                                                    <td data-label="">Брикетированный уголь CHARCOAL 3,0 кг.</td>
-                                                                    <td data-label="">упак</td>
-                                                                    <td data-label="">
-                                                                        <div class="counter">
-                                                                            <div class="counter-minus js-counter-minus">
-                                                                                <img src="./www/images/icons/minus.svg" alt="">
-                                                                            </div>
-                                                                            <div class="counter-text">
-                                                                                <span class="counter-number js-counter-number">1</span>
-                                                                            </div>
-                                                                            <div class="counter-plus js-counter-plus">
-                                                                                <img src="./www/images/icons/plus.svg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td data-label="">4.0</td>
-                                                                    <td data-label="">0.00</td>
-                                                                    <td data-label="">299.00 руб</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td data-label="">Брикетированный уголь CHARCOAL 3,0 кг.</td>
-                                                                    <td data-label="">упак</td>
-                                                                    <td data-label="">
-                                                                        <div class="counter">
-                                                                            <div class="counter-minus js-counter-minus">
-                                                                                <img src="./www/images/icons/minus.svg" alt="">
-                                                                            </div>
-                                                                            <div class="counter-text">
-                                                                                <span class="counter-number js-counter-number">1</span>
-                                                                            </div>
-                                                                            <div class="counter-plus js-counter-plus">
-                                                                                <img src="./www/images/icons/plus.svg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td data-label="">4.0</td>
-                                                                    <td data-label="">0.00</td>
-                                                                    <td data-label="">299.00 руб</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td data-label="">Брикетированный уголь CHARCOAL 3,0 кг.</td>
-                                                                    <td data-label="">упак</td>
-                                                                    <td data-label="">
-                                                                        <div class="counter">
-                                                                            <div class="counter-minus js-counter-minus">
-                                                                                <img src="./www/images/icons/minus.svg" alt="">
-                                                                            </div>
-                                                                            <div class="counter-text">
-                                                                                <span class="counter-number js-counter-number">1</span>
-                                                                            </div>
-                                                                            <div class="counter-plus js-counter-plus">
-                                                                                <img src="./www/images/icons/plus.svg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td data-label="">4.0</td>
-                                                                    <td data-label="">0.00</td>
-                                                                    <td data-label="">299.00 руб</td>
-                                                                </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                        <div class="card-table__link">
-                                                            <ul>
-                                                                <li class="card-table__link-head">
-                                                                    Удалить
-                                                                </li>
-                                                                <li>
-                                                                <span class="wrp__delete js-delete-product">
-                                                                    <span class="delete-product"></span>
-                                                                </span>
-                                                                </li>
-                                                                <li>
-                                                                <span class="wrp__delete js-delete-product">
-                                                                    <span class="delete-product"></span>
-                                                                </span>
-                                                                </li>
-                                                                <li>
-                                                                <span class="wrp__delete js-delete-product">
-                                                                    <span class="delete-product"></span>
-                                                                </span>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
+                                                    <div class="wrp__form-btn">
+                                                        <button type="submit" class="pop-form-btn">Продолжить оформление заказа</button>
                                                     </div>
-                                                </div>
-
-                                                <div class="basket-total">
-                                                    <div class="wrp__content order-2 order-md-1">
-                                                        <div class="basket-total__title">
-                                                            <h3>
-                                                                Итого:
-                                                            </h3>
-                                                        </div>
-                                                        <div class="basket-total__desc">
-                                                            <ul>
-                                                                <li>
-                                                                    <div class="basket-total__desc-icon">
-                                                                        <img src="./www/images/icons/basket-total1.svg" alt="">
-                                                                    </div>
-                                                                    <div class="basket-total__desc-text">
-                                                                        <span>Объём заказа:</span>
-                                                                        <span><b>0.06 м3</b></span>
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <div class="basket-total__desc-icon">
-                                                                        <img src="./www/images/icons/basket-total2.svg" alt="">
-                                                                    </div>
-                                                                    <div class="basket-total__desc-text">
-                                                                        <span>Вес заказа:</span>
-                                                                        <span><b>28.7 кг</b></span>
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <div class="basket-total__desc-icon">
-                                                                        <img src="./www/images/icons/basket-total3.svg" alt="">
-                                                                    </div>
-                                                                    <div class="basket-total__desc-text">
-                                                                        <span>Стоимость:</span>
-                                                                        <span><b>4 750.00 руб.</b></span>
-                                                                    </div>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="basket-total__btn">
-                                                            <button type="submit">Оформить заявку</button>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="wrp-basket__delivery-info order-1 order-md-2 mb-4 mb-md-0">
-                                                        <div class="delivery-info">
-                                                            <div class="delivery-info-title">
-                                                                <p>Ориентировочная* стоимость доставки до Воронежа</p>
-                                                            </div>
-                                                            <div class="delivery-info-price">
-                                                                <span>2000</span> <span>руб</span>
-                                                            </div>
-                                                            <div class="delivery-info-desc">
-                                                                <span>Стоимость доставки расчитана от терминала в Москве
-                                                                    до терминала в Воронеже не включая доставку от склада до терминала и от терминала до клиента.</span>
-                                                            </div>
-                                                        </div>
+                                                    <div class="wrp__form-help">
+                                                        <a href="">Забыли пароль?</a>
+                                                        <a href="">Зарегистрироваться</a>
                                                     </div>
                                                 </div>
                                             </form>
                                         </div>
-                                    </li>
-                                    <li class="tab3 tab">
-                                        <div class="tab-content">
-                                            <div class="tab-content-text">
-                                                <p>
-                                                    Различают два вида профиля планкена – прямой (или классический) и скошенный (или косой). В отличии от «прямого», боковые грани «косого планкена» образуют угол в 45° с лицевой пластью доски.
-                                                </p>
-                                                <p>
-                                                    Преимущество косого планкена перед прямым заключается в том, что скошенные края зрительно закрывают промежуток между двумя досками и затрудняют попадание прямых осадков на внутреннюю сторону вентилируемого фасада. Но в то же время монтаж скошенного планкена значительно более трудоемкий, чем монтаж классического.
-                                                </p>
+                                        <div class="design-option__desc">
+                                            <div class="desc-title">
+                                                <p>Пройдя <a href="">регистрацию</a> Вы сможете:</p>
                                             </div>
-                                            <div class="views-card">
+                                            <div class="desc-list">
                                                 <ul>
-                                                    <li>
-                                                        <div class="views-card-title">
-                                                            <p>Прямой 20х90</p>
-                                                        </div>
-                                                        <div class="views-card-img">
-                                                            <a href="./www/images/card-product/view-card.png" data-fancybox="images">
-                                                                <img src="./www/images/card-product/view-card.png" alt="">
-                                                            </a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="views-card-title">
-                                                            <p>Прямой 20х90</p>
-                                                        </div>
-                                                        <div class="views-card-img">
-                                                            <a href="./www/images/card-product/case-img-02.png" data-fancybox="images">
-                                                                <img src="./www/images/card-product/case-img-02.png" alt="">
-                                                            </a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="views-card-title">
-                                                            <p>Прямой 20х90</p>
-                                                        </div>
-                                                        <div class="views-card-img">
-                                                            <a href="./www/images/card-product/view-card.png" data-fancybox="images">
-                                                                <img src="./www/images/card-product/view-card.png" alt="">
-                                                            </a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="views-card-title">
-                                                            <p>Прямой 20х90</p>
-                                                        </div>
-                                                        <div class="views-card-img">
-                                                            <a href="./www/images/card-product/case-img-02.png" data-fancybox="images">
-                                                                <img src="./www/images/card-product/case-img-02.png" alt="">
-                                                            </a>
-                                                        </div>
-                                                    </li>
+                                                    <li>получать накопительные скидки;</li>
+                                                    <li>заходить в свою корзину и личный кабинет с любого компьютера;</li>
+                                                    <li>Вам будет доступна история ваших покупок;</li>
+                                                    <li>Вы сможете получать специальные предложения и информацию об акциях.</li>
                                                 </ul>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="tab4 tab">
-                                        <div class="tab-content">
-                                            <div class="tab-content-text">
-                                                <p>
-                                                    Цена на планкен из лиственницы зависит от его сорта. Компания «ПримаЛес» предлагает четыре категории этого материала: Экстра, А, В и С. Широкий ассортимент позволит каждому покупателю выбрать оптимальное для него соотношение цена/качество. Сортность фасадной доски определяется «Нормами сортировки половой доски и террасной доски из древесины лиственницы». Для удобства наших покупателей мы приводим типичные изображения каждого из сортов.
-                                                </p>
+                                    </div>
+                                </div>
+                            <!--  Оформить заказа без регистрации  -->
+                                <div class="design-option">
+                                    <div class="design-option__title">
+                                        <h3>Оформить заказа без регистрации</h3>
+                                    </div>
+                                    <div class="design-option__item">
+                                        <div class="design-option__login">
+                                            <form action="" type="post">
+                                                <div class="popup-form">
+                                                    <div class="wrp__input-form js-input-focus">
+                                                        <span>Имя и фамилия</span>
+                                                        <input type="text" maxlength="50" name="firstName">
+                                                    </div>
+                                                    <div class="wrp__input-form js-input-focus">
+                                                        <span>Ваш телефон</span>
+                                                        <input type="tel" maxlength="20" class="js-input-mask" name="phone">
+                                                    </div>
+                                                    <div class="wrp__input-form js-input-focus" >
+                                                        <span>Ваш e-mail</span>
+                                                        <input type="text" maxlength="50" name="popupEmail">
+                                                    </div>
+                                                    <div class="wrp__form-btn">
+                                                        <button type="submit" class="pop-form-btn">Оформить заказ</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="design-option__desc">
+                                            <div class="desc-title">
+                                                <p>Без регистрации Вы НЕ сможете:</p>
                                             </div>
-                                            <div class="variety-case">
+                                            <div class="desc-list">
                                                 <ul>
-                                                    <li>
-                                                        <div class="variety-title">
-                                                            <p>Сорт «Экстра»</p>
-                                                        </div>
-                                                        <div class="variety-img">
-                                                            <a href="./www/images/card-product/sort-img-1.svg" data-fancybox="imagesSort">
-                                                                <img src="./www/images/card-product/sort-img-1.svg" alt="">
-                                                            </a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="variety-title">
-                                                            <p>Сорт «Экстра»</p>
-                                                        </div>
-                                                        <div class="variety-img">
-                                                            <a href="./www/images/card-product/sort-img-1.svg" data-fancybox="imagesSort">
-                                                                <img src="./www/images/card-product/sort-img-1.svg" alt="">
-                                                            </a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="variety-title">
-                                                            <p>Сорт «Экстра»</p>
-                                                        </div>
-                                                        <div class="variety-img">
-                                                            <a href="./www/images/card-product/sort-img-1.svg" data-fancybox="imagesSort">
-                                                                <img src="./www/images/card-product/sort-img-1.svg" alt="">
-                                                            </a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="variety-title">
-                                                            <p>Сорт «Экстра»</p>
-                                                        </div>
-                                                        <div class="variety-img">
-                                                            <a href="./www/images/card-product/sort-img-1.svg" data-fancybox="imagesSort">
-                                                                <img src="./www/images/card-product/sort-img-1.svg" alt="">
-                                                            </a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="variety-title">
-                                                            <p>Сорт «Экстра»</p>
-                                                        </div>
-                                                        <div class="variety-img">
-                                                            <a href="./www/images/card-product/sort-img-1.svg" data-fancybox="imagesSort">
-                                                                <img src="./www/images/card-product/sort-img-1.svg" alt="">
-                                                            </a>
-                                                        </div>
-                                                    </li>
+                                                    <li>воспользоваться системой накопительных скидок;</li>
+                                                    <li>хранить выбранные Вами товары в корзине.</li>
                                                 </ul>
                                             </div>
                                         </div>
-                                    </li>
-                                </ul>
+                                        <div class="design-option__tooltip">
+                                            <p>Нажимая кнопку «Оформить заказ» Вы даете согласие на <a href="">обработку персональных данных</a></p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
                         <!--  ==================  -->
 
                     </section>
