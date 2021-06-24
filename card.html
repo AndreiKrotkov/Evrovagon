@@ -95,13 +95,13 @@
                         </div>
                     </div>
 
-                    <div class="header-item basket-deck d-none d-xl-flex">
+                    <div class="header-item basket-deck js-basket d-none d-xl-flex">
                         <div class="basket-deck-img"></div>
                         <div class="basket-deck-content">
                             <span class="basket-deck-title">Корзина:</span>
                             <span class="basket-deck-counter">
-                                    <a href="">2 товара на <span class="basket-sum">25799</span> P</a>
-                                </span>
+                                <a href="">2 товара на <span class="basket-sum">25799</span> P</a>
+                            </span>
                         </div>
                     </div>
                 </header>
@@ -156,7 +156,7 @@
                                             <img src="www/images/header/nav-icon-search.svg" alt="icon-search">
                                         </div>
                                     </li>
-                                    <li class="nav-icons__item">
+                                    <li class="nav-icons__item js-basket">
                                         <div class="nav-icons nav-icons-bask">
                                             <a href=""><img src="www/images/header/nav-icon-bask.svg" alt="icon-bask"></a>
                                         </div>
@@ -2577,6 +2577,34 @@
                     </div>
                     <div class="wrp__pop-form-accept">
                         <p>Оставляя заявку вы соглашаетесь с <a href="">политикой конфиденциальности</a></p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--  popup выбора города при входе в корзину  -->
+<div id="popupEnterBasket" class="popup-enter-basket">
+    <div class="popup-content">
+        <div class="popup-title">
+            <p>Укажите Ваш регион</p>
+        </div>
+        <form action="" type="post">
+            <div class="popup-form">
+                <div class="registration-buy">
+                    <div class="wrp__select">
+                        <div class="cs-select">
+                            <select name="" class="select-city js-cast-select">
+                                <option value="C">Ваш город</option>
+                                <option value="B">Столица</option>
+                                <option value="B">Провинция</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="wrp__form-btn">
+                        <button class="arrange-order" type="submit">Выбрать город</button>
                     </div>
                 </div>
             </div>

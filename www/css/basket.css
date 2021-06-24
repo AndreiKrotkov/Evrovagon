@@ -186,6 +186,10 @@
         color: #FFFFFF;
         border: none;
         padding: 1.1rem 0;
+        transition: all .3s;
+    }
+    .basket-total .basket-total__btn button:hover {
+        background: #2F8429;
     }
     .basket-total__desc ul li:not(:last-child) {
         margin-right: 0.8rem;

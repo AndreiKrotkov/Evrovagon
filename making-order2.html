@@ -94,7 +94,7 @@
                         </div>
                     </div>
 
-                    <div class="header-item basket-deck d-none d-xl-flex">
+                    <div class="header-item basket-deck js-basket d-none d-xl-flex">
                         <div class="basket-deck-img"></div>
                         <div class="basket-deck-content">
                             <span class="basket-deck-title">Корзина:</span>
@@ -426,59 +426,296 @@
                         </div>
 
                         <!--  Оформление заказа  -->
-                        <div class="wrp__design-option">
-                            <div class="design-option">
-                                <div class="design-option__title">
+                        <div class="wrp__making-order">
+                            <div class="making-order js-mk-or">
+                                <div class="making-order__title">
                                     <h3>Оформление заказа</h3>
                                 </div>
-                                <div class="design-option__item">
-                                    <div class="design-option__login">
-                                        <div class="design-option__sub-title">
-                                            <p>Информация для доставки заказа</p>
-                                        </div>
-                                        <div class="design-option__login-form">
-                                            <form action="" type="post">
-                                                <div class="popup-form">
-                                                    <div class="wrp__input-form js-input-focus" >
-                                                        <span>Ваш e-mail</span>
-                                                        <input type="text" maxlength="50" name="popupEmail">
-                                                    </div>
-                                                    <div class="wrp__input-form js-input-focus">
-                                                        <span>Пароль</span>
-                                                        <input type="password" class="js-pass-check-first" maxlength="50" name="popupPassw">
-                                                        <div class="passw-img">
-                                                            <img src="./www/images/icons/showPassw.svg" alt="show-passw" class="js-pass-show-first">
+                                <div class="making-order__content">
+                                    <form action="" type="post" id="makingOrder">
+                                        <div class="making-order__form">
+                                            <div class="making-order__sub-title">
+                                                <p>Информация для доставки заказа</p>
+                                            </div>
+                                            <div class="making-order__login-form">
+                                                <div class="wrp-group-input">
+                                                    <div class="making-order__group-mobile">
+                                                        <div class="wrp__input-form making-order-fio js-input-focus">
+                                                            <span>Фио получателя</span>
+                                                            <input type="text" maxlength="50" name="name">
+                                                        </div>
+                                                        <div class="wrp__input-form making-order-tel js-input-focus">
+                                                            <span>Телефон получателя</span>
+                                                            <input type="tel" maxlength="20" class="js-input-mask" name="phone">
                                                         </div>
                                                     </div>
-                                                    <div class="wrp__form-btn">
-                                                        <button type="submit" class="pop-form-btn">Продолжить оформление заказа</button>
-                                                    </div>
-                                                    <div class="wrp__form-help">
-                                                        <a href="">Забыли пароль?</a>
-                                                        <a href="">Зарегистрироваться</a>
+                                                    <div class="wrp__input-form js-input-focus">
+                                                        <span>Адрес доставки</span>
+                                                        <input type="text" maxlength="100" name="address">
                                                     </div>
                                                 </div>
-                                            </form>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="wrp__delivery-service">
-                                        <div class="design-option__sub-title">
-                                            <p>Служба доставки</p>
+                                        <div class="delivery-service">
+                                            <div class="making-order__sub-title">
+                                                <p>Служба доставки</p>
+                                            </div>
+                                            <div class="desc__list">
+                                                <ul>
+                                                    <li class="delivery__item">
+                                                        <div class="delivery__item-radio">
+                                                            <div class="radio">
+                                                                <input class="custom-radio" type="radio" id="1" name="color" value="indigo" checked>
+                                                                <label for="1">Самовывоз</label>
+                                                            </div>
+                                                            <div class="delivery__item-desc">
+                                                                <p>Самовывоз со склада в Москве</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="delivery__item">
+                                                        <div class="delivery__item-radio">
+                                                            <div class="radio">
+                                                                <input class="custom-radio" type="radio" id="2" name="color" value="val">
+                                                                <label for="2">Курьер (для малогабаритных товаров)</label>
+                                                            </div>
+                                                            <div class="delivery__item-desc">
+                                                                <p>Максимальный вес - 15 кг. Минимальная стоимость - 565 руб. Окончательная стоимость рассчитывается менеджером в зависимости от веса заказа и адреса доставки.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="delivery__item">
+                                                        <div class="delivery__item-radio">
+                                                            <div class="radio">
+                                                                <input class="custom-radio" type="radio" id="3" name="color" value="inddigo">
+                                                                <label for="3">Газель 1,8т</label>
+                                                            </div>
+                                                            <div class="delivery__item-desc">
+                                                                <p>Макс. вместимость: 4м3 Макс. длина товара: 4м Стоимость: 50 руб./км Минимальная стоимость: 2500 руб.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="delivery__item">
+                                                        <div class="delivery__item-radio">
+                                                            <div class="radio">
+                                                                <input class="custom-radio" type="radio" id="4" name="color" value="valss">
+                                                                <label for="4">Бау-Феникс 2,8т</label>
+                                                            </div>
+                                                            <div class="delivery__item-desc">
+                                                                <p>Макс. вместимость: 6м3 Макс. длина товара: 6м Стоимость: 50 руб./км Оплата за грузоподъемность – 1000 руб. Минимальная стоимость: 2500 руб.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="delivery__item">
+                                                        <div class="delivery__item-radio">
+                                                            <div class="radio">
+                                                                <input class="custom-radio" type="radio" id="5" name="color" value="indddigo">
+                                                                <label for="5">Исузу 5т</label>
+                                                            </div>
+                                                            <div class="delivery__item-desc">
+                                                                <p>Макс. вместимость: 10м3 Макс. длина товара: 6м Стоимость: 50 руб./км Оплата за грузоподъемность – 2000 руб. Минимальная стоимость: 3500 руб.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="delivery__item">
+                                                        <div class="delivery__item-radio">
+                                                            <div class="radio">
+                                                                <input class="custom-radio" type="radio" id="6" name="color" value="vals">
+                                                                <label for="6">КАМАЗ 10т</label>
+                                                            </div>
+                                                            <div class="delivery__item-desc">
+                                                                <p>Макс. вместимость: 18м3 Макс. длина товара: 6м Стоимость доставки оговаривается отдельно.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="delivery__item">
+                                                        <div class="delivery__item-radio">
+                                                            <div class="radio">
+                                                                <input class="custom-radio" type="radio" id="7" name="color" value="indigo">
+                                                                <label for="7">Еврофура 20т</label>
+                                                            </div>
+                                                            <div class="delivery__item-desc">
+                                                                <p>Макс. вместимость: 20м3 Макс. длина товара: 6м Стоимость доставки оговаривается отдельно.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="delivery__item">
+                                                        <div class="delivery__item-radio">
+                                                            <div class="radio">
+                                                                <input class="custom-radio" type="radio" id="8" name="color" value="val">
+                                                                <label for="8">Доставка транспортной компанией</label>
+                                                            </div>
+                                                            <div class="delivery__item-desc">
+                                                                <p>Доставка в любой регион России. Объем товара не ограничен. Стоимость и сроки доставки определяется для каждого заказа индивидуально.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <div class="desc-list">
-                                            <ul>
-                                                <li>получать накопительные скидки;</li>
-                                                <li>заходить в свою корзину и личный кабинет с любого компьютера;</li>
-                                                <li>Вам будет доступна история ваших покупок;</li>
-                                                <li>Вы сможете получать специальные предложения и информацию об акциях.</li>
-                                            </ul>
+                                        <div class="delivery-service">
+                                            <div class="making-order__sub-title">
+                                                <p>Платежная система</p>
+                                            </div>
+                                            <div class="desc__list">
+                                                <ul>
+                                                    <li class="delivery__item">
+                                                        <div class="delivery__item-radio">
+                                                            <div class="radio">
+                                                                <input class="custom-radio" type="radio" id="9" name="pay" value="indigo" checked>
+                                                                <label for="9">Наличные на складе</label>
+                                                            </div>
+                                                            <div class="delivery__item-desc">
+                                                                <p>Оплата наличными при получении на складе. <a href="">Подробнее>></a></p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="delivery__item">
+                                                        <div class="delivery__item-radio">
+                                                            <div class="radio">
+                                                                <input class="custom-radio" type="radio" id="10" name="pay" value="val">
+                                                                <label for="10">Банковской картой на складе</label>
+                                                            </div>
+                                                            <div class="delivery__item-desc">
+                                                                <p>Оплата банковской картой на складе. Принимаются платежи по банковским картам платежных систем: Visa, Mastercard. <a href="">Подробнее>></a></p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="delivery__item">
+                                                        <div class="delivery__item-radio">
+                                                            <div class="radio">
+                                                                <input class="custom-radio" type="radio" id="11" name="pay" value="val">
+                                                                <label for="11">Банковский перевод</label>
+                                                            </div>
+                                                            <div class="delivery__item-desc">
+                                                                <p>Оплата банковским переводом. Доступна как для юридических, так и для физических лиц. <a href="">Подробнее>></a></p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </div>
+                                        <div class="order-info">
+                                            <div class="making-order__sub-title">
+                                                <p>Заказ</p>
+                                            </div>
+                                            <div class="order-info__table">
+                                                <!-- Таблица -->
+                                                <div class="card-table price-list__details-det">
+                                                    <table>
+                                                        <thead>
+                                                        <tr>
+                                                            <th>Название</th>
+                                                            <th>Ед. изм.</th>
+                                                            <th>Кол-во</th>
+                                                            <th>Площаль S, м2</th>
+                                                            <th>Объём, м3</th>
+                                                            <th>Вес, кг</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td data-label="">Штиль</td>
+                                                            <td data-label="">В-С</td>
+                                                            <td data-label="">4.0</td>
+                                                            <td data-label="">14x116</td>
+                                                            <td data-label="">110</td>
+                                                            <td data-label="">3.08</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-label="">Штиль</td>
+                                                            <td data-label="">В-С</td>
+                                                            <td data-label="">4.0</td>
+                                                            <td data-label="">14x116</td>
+                                                            <td data-label="">110</td>
+                                                            <td data-label="">3.08</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-label="">Штиль</td>
+                                                            <td data-label="">В-С</td>
+                                                            <td data-label="">4.0</td>
+                                                            <td data-label="">14x116</td>
+                                                            <td data-label="">110</td>
+                                                            <td data-label="">3.08</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="card-table__link">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="">Цена, руб.</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">299.00 руб</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">299.00 руб</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">299.00 руб</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="order-info__desc">
+                                                <div class="wrp__desc">
+                                                    <ul>
+                                                        <li>
+                                                            <p>Общий вес:</p>
+                                                            <p><span>28.7</span> кг</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Общий объем:</p>
+                                                            <p><span>0.06</span> м3</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Товаров на:</p>
+                                                            <p><span>5 049.00</span> руб</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Скидка:</p>
+                                                            <p><span>95.00</span> руб</p>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="order-info__desc-total">
+                                                        <p>Итого:</p>
+                                                        <p><span>4 954.00</span> руб</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="additional-info">
+                                            <div class="making-order__sub-title">
+                                                <p>Дополнительная информация</p>
+                                            </div>
+                                            <div class="wrp__input-form additional-info__comment">
+                                                <textarea name="textarea" id="" placeholder="Комментарий к заказу"></textarea>
+                                            </div>
+                                            <div class="additional-info__btn">
+                                                <button type="submit">Оформить заявку</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="making-order__success-form js-mk-or-success-form">
+                                <div class="success-form__img">
+                                    <img src="./www/images/icons/sucsess-form.svg" alt="">
+                                </div>
+                                <div class="success-form__title">
+                                    <p>Заказ сформирован</p>
+                                </div>
+                                <div class="success-form__info">
+                                    <p>Ваш заказ <span>№5953</span> от <span>2021-04-05 17:05:59</span> успешно создан.</p>
                                 </div>
                             </div>
                         </div>
                         <!--  ==================  -->
-
                     </section>
                 </article>
             </div>

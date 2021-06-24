@@ -94,7 +94,7 @@
                         </div>
                     </div>
 
-                    <div class="header-item basket-deck d-none d-xl-flex">
+                    <div class="header-item basket-deck js-basket d-none d-xl-flex">
                         <div class="basket-deck-img"></div>
                         <div class="basket-deck-content">
                             <span class="basket-deck-title">Корзина:</span>
@@ -434,15 +434,15 @@
                                     </div>
                                     <div class="design-option__item">
                                         <div class="design-option__login">
-                                            <form action="" type="post">
+                                            <form action="" type="post" id="loginOrder">
                                                 <div class="popup-form">
                                                     <div class="wrp__input-form js-input-focus" >
                                                         <span>Ваш e-mail</span>
-                                                        <input type="text" maxlength="50" name="popupEmail">
+                                                        <input type="text" maxlength="50" name="email">
                                                     </div>
                                                     <div class="wrp__input-form js-input-focus">
                                                         <span>Пароль</span>
-                                                        <input type="password" class="js-pass-check-first" maxlength="50" name="popupPassw">
+                                                        <input type="password" class="js-pass-check-first" maxlength="50" name="passw">
                                                         <div class="passw-img">
                                                             <img src="./www/images/icons/showPassw.svg" alt="show-passw" class="js-pass-show-first">
                                                         </div>
@@ -479,11 +479,11 @@
                                     </div>
                                     <div class="design-option__item">
                                         <div class="design-option__login">
-                                            <form action="" type="post">
+                                            <form action="" type="post" id="noLoginOrder">
                                                 <div class="popup-form">
                                                     <div class="wrp__input-form js-input-focus">
                                                         <span>Имя и фамилия</span>
-                                                        <input type="text" maxlength="50" name="firstName">
+                                                        <input type="text" maxlength="100" name="name">
                                                     </div>
                                                     <div class="wrp__input-form js-input-focus">
                                                         <span>Ваш телефон</span>
@@ -491,7 +491,7 @@
                                                     </div>
                                                     <div class="wrp__input-form js-input-focus" >
                                                         <span>Ваш e-mail</span>
-                                                        <input type="text" maxlength="50" name="popupEmail">
+                                                        <input type="text" maxlength="100" name="email">
                                                     </div>
                                                     <div class="wrp__form-btn">
                                                         <button type="submit" class="pop-form-btn">Оформить заказ</button>

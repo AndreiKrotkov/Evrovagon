@@ -647,7 +647,6 @@ $(document).ready(function() {
     $counterDelete.on('click', function (e) {
         e.preventDefault();
         let checkCounterNumber = Number($counterNumber.text());
-        console.log(checkCounterNumber)
         if(checkCounterNumber <= 1) {
             $counterNumber.text('1')
         } else {
@@ -658,6 +657,85 @@ $(document).ready(function() {
 
     $('.js-delete-product').on('click', function () {
         $(this).toggleClass('del');
+    });
+
+
+//  Оформление заказа
+    const $makingOrderForm = $('#makingOrder');
+    const $makingOrderInputName = $makingOrderForm.find('input[name=name]');
+    const $makingOrderInputPhone = $makingOrderForm.find('input[name=phone]');
+    const $makingOrderInputAddress = $makingOrderForm.find('input[name=address]');
+    const $makingOrderInputTextarea = $makingOrderForm.find('textarea[name=textarea]');
+
+    $makingOrderForm.submit(function(e) {
+        e.preventDefault();
+        const $form = $(this);
+        let checkFormValid;
+
+        $makingOrderInputName.val().length < 2 ? $makingOrderInputName.closest('.wrp__input-form').addClass('error-inp') : $makingOrderInputName.closest('.wrp__input-form').removeClass('error-inp');
+        $makingOrderInputPhone.val().length < 16 ? $makingOrderInputPhone.closest('.wrp__input-form').addClass('error-inp') : $makingOrderInputPhone.closest('.wrp__input-form').removeClass('error-inp');
+        $makingOrderInputAddress.val().length < 3 ? $makingOrderInputAddress.closest('.wrp__input-form').addClass('error-inp') : $makingOrderInputAddress.closest('.wrp__input-form').removeClass('error-inp');
+        $makingOrderInputTextarea.val().length < 3 ? $makingOrderInputTextarea.closest('.wrp__input-form').addClass('error-inp') : $makingOrderInputTextarea.closest('.wrp__input-form').removeClass('error-inp');
+
+        checkFormValid = $form.find('.wrp__input-form').hasClass('error-inp');
+
+        console.log(checkFormValid);
+        if(!checkFormValid) {
+            $('.js-mk-or').hide();
+            $('.js-mk-or-success-form').show(300);
+            $form.serialize()
+        } else {
+            checkFormValid = false;
+        }
+    });
+
+    //  Оформление заказа с авторизацией
+    const $loginOrderForm = $('#loginOrder');
+    const $loginOrderInputName = $loginOrderForm.find('input[name=email]');
+    const $loginOrderInputPassw = $loginOrderForm.find('input[name=passw]');
+
+    $loginOrderForm.submit(function(e) {
+        e.preventDefault();
+        const $form = $(this);
+        let checkFormValid;
+
+        $loginOrderInputName.val().length < 2 ? $loginOrderInputName.closest('.wrp__input-form').addClass('error-inp') : $loginOrderInputName.closest('.wrp__input-form').removeClass('error-inp');
+        $loginOrderInputPassw.val().length < 4 ? $loginOrderInputPassw.closest('.wrp__input-form').addClass('error-inp') : $loginOrderInputPassw.closest('.wrp__input-form').removeClass('error-inp');
+
+        checkFormValid = $form.find('.wrp__input-form').hasClass('error-inp');
+
+        console.log(checkFormValid);
+        if(!checkFormValid) {
+            $form.serialize()
+        } else {
+            checkFormValid = false;
+        }
+    });
+
+
+    //  Оформление заказа без авторизацией
+    const $noLoginOrderForm = $('#noLoginOrder');
+    const $noLoginOrderInputName = $noLoginOrderForm.find('input[name=name]');
+    const $noLoginOrderInputPhone = $noLoginOrderForm.find('input[name=phone]');
+    const $noLoginOrderInputEmail = $noLoginOrderForm.find('input[name=email]');
+
+    $noLoginOrderForm.submit(function(e) {
+        e.preventDefault();
+        const $form = $(this);
+        let checkFormValid;
+
+        $noLoginOrderInputName.val().length < 2 ? $noLoginOrderInputName.closest('.wrp__input-form').addClass('error-inp') : $noLoginOrderInputName.closest('.wrp__input-form').removeClass('error-inp');
+        $noLoginOrderInputPhone.val().length < 16 ? $noLoginOrderInputPhone.closest('.wrp__input-form').addClass('error-inp') : $noLoginOrderInputPhone.closest('.wrp__input-form').removeClass('error-inp');
+        $noLoginOrderInputEmail.val().length < 4 ? $noLoginOrderInputEmail.closest('.wrp__input-form').addClass('error-inp') : $noLoginOrderInputEmail.closest('.wrp__input-form').removeClass('error-inp');
+
+        checkFormValid = $form.find('.wrp__input-form').hasClass('error-inp');
+
+        console.log(checkFormValid);
+        if(!checkFormValid) {
+            $form.serialize();
+        } else {
+            checkFormValid = false;
+        }
     });
 
 
